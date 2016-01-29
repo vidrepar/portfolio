@@ -1,82 +1,91 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat|Lora:400italic,700italic);
-* {
+
+*{
   /*vertical-align: top;*/
-  border: black solid 1px;
+  border:black solid 1px;
 }
-html {
+
+html{
   overflow: visible !important;
   margin-right: 0px !important;
 }
-body {
+
+body{
   /*for testing purposes*/
   /*background-color: lightgrey !important;*/
 }
+
 /*FONT/TYPEFACE RULES*/
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.btn,
-ul {
+h1, h2, h3, h4, h5, h6, .btn, ul{
   font-family: 'Montserrat', sans-serif !important;
   font-weight: 700 !important;
   text-transform: uppercase;
 }
-h1,
-h2 {
+
+h1, h2{
   color: #fff !important;
 }
-h2 {
+
+h2{
   font-size: 40px !important;
   color: #000 !important;
 }
-p,
-label,
-input {
+
+p, label, input{
   font-family: 'Lora', serif !important;
   font-style: italic;
   font-size: 20px;
 }
-.p-details {
+
+.p-details{
   font-family: 'Lora', serif !important;
   font-style: italic;
   font-size: 14px;
 }
-label {
+
+label{
   font-weight: 100 !important;
 }
-.btn {
+
+.btn{
   text-transform: uppercase;
   letter-spacing: 3px;
   padding: 20px !important;
 }
-ul {
+
+ul{
   text-transform: uppercase;
   padding-left: 0px;
 }
+
 /*POPUP DESIGN*/
-#popup {
+
+#popup{
   color: #d3d3d3 !important;
   background-color: lightgrey !important;
   /*margin: 40px 40px !important;*/
   position: fixed;
+
   width: 100%;
   margin-left: -40px;
   top: 0px;
+
 }
-#popup-content {
+
+#popup-content{
   position: relative;
 }
-#popup-content h2 a {
+
+#popup-content h2 a{
   color: #fff !important;
   text-decoration: none;
 }
-#popup-icons img {
+
+#popup-icons img{
   margin: 10px 20px;
 }
-#close {
+
+#close{
   background: url("images/close.png") no-repeat;
   height: 57px !important;
   width: 66px !important;
@@ -84,121 +93,154 @@ ul {
   position: relative;
   margin: 40px !important;
 }
+
 /*FLOATING ELEMENTS*/
-.float-right {
+.float-right{
   float: right;
 }
-.float-left {
+
+.float-left{
   float: left;
 }
+
+
 /*INLINE BLOCK TEXT ALIGN HACK*/
-.inline-block {
+.inline-block{
   display: inline-block;
   margin: 0 auto !important;
 }
-.text-align-left {
+
+.text-align-left{
   text-align: left;
 }
-.text-align-center {
+
+.text-align-center{
   text-align: center !important;
 }
-.text-align-right {
+
+.text-align-right{
   text-align: right;
 }
+
 /*NAVIGATION*/
-nav {
+nav{
   position: fixed;
   width: 100%;
   padding: 40px;
   z-index: 1;
 }
-#logo {
+
+#logo{
   background: url(images/logo.png) no-repeat;
   width: 82px;
   height: 48px;
 }
-#hamburger {
+
+#hamburger{
   background: url(images/hamburger.png);
   width: 67px;
   height: 48px;
 }
-#hamburger:hover {
+
+#hamburger:hover{
   background: url(images/hamburger-hover.png);
   width: 67px;
   height: 48px;
   cursor: pointer;
 }
+
 /*LANDING PAGE*/
-.text-landing {
+.text-landing{
   color: #fff;
   margin-top: 40px;
 }
+
 /*LANDING SECTION 1*/
-.landing-section-1 {
+
+.landing-section-1{
   background: url(images/bg-landing.png) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
-.text-landing h1 {
+
+.text-landing h1{
   font-size: 72px;
 }
-.text-landing p {
+
+.text-landing p{
   font-size: 23px;
 }
+
 /*LANDING SECTION 2*/
-.landing-section-2 {
+
+.landing-section-2{
   background-color: cornflowerblue;
 }
+
 /*LANDING SECTION 3*/
-.landing-section-3 {
+
+.landing-section-3{
   background-color: coral;
 }
+
 /*ABOUT PAGE*/
 /*ABOUT SECTION 1*/
-#about-section-1 {
+
+#about-section-1{
   background: url(images/bg-about.png) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
-#about-section-1 .text-landing {
+
+#about-section-1 .text-landing{
   position: relative;
 }
+
 /*CONTACT PAGE*/
 /*CONTACT SECTION 1*/
-#contact-section-1 {
+
+#contact-section-1{
   background: url(images/bg-contact.png) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
-#contact-section-1 h1 {
+
+#contact-section-1 h1{
   font-size: 100px !important;
 }
+
 /*PORTFOLIO PAGE*/
 /*PORTFOLIO SECTION 1*/
-#portfolio-section-1 {
+
+#portfolio-section-1{
   background: url(images/bg-portfolio.png) repeat-x;
 }
-#portfolio-section-1 h1 {
+
+#portfolio-section-1 h1{
   font-size: 100px !important;
 }
-#portfolio-section-1 h1,
-#portfolio-section-1 p {
+
+#portfolio-section-1 h1, #portfolio-section-1 p{
   color: #333366 !important;
 }
-.container-first {
+
+.container-first{
   background-color: #f8f8f8;
   margin-top: 0px !important;
+
 }
-.grid {
+
+.grid{
   padding: 10px;
 }
-.grid-item {
+
+.grid-item{
   background: #fff;
   display: inline-block;
   width: 30%;
