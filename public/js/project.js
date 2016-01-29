@@ -28,10 +28,10 @@ $(document).ready(function() {
   //MASONRY
   //window on load because of the pics, suggestion from the tutorial
   $(window).on('load', function(){
-    $('div.grid').masonry({
+    $('.grid').masonry({
       // options
-      columnWidth: 'div.grid-item',
-      itemSelector: 'div.grid-item'
+      columnWidth: '.grid-item',
+      itemSelector: '.grid-item'
     });
   });
 
