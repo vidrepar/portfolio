@@ -75,7 +75,7 @@ module.exports = function(app){
 
         Project.find(function(err, docs){
 
-            res.render('projects/index', { title:'Projects', projects:docs, jsSrc:'js/project.js' });
+            res.render('projects/index', { title:'Work', projects:docs, jsSrc:'js/project.js' });
 
         });
 

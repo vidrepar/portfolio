@@ -9,25 +9,27 @@
 
     <% include ../nav.ejs %>
 
-    <div id="portfolio-section-1">
-    <div class="container container-first">
-    <h1>Welcome to my <%= title %> page</h1>
+    <div id="portfolio-section-1" class="text-align-center">
 
+      <h1>My <%= title %></h1>
+      <p>- Featured Projects -</p>
 
-      <div class="grid">
+      <div class="container container-first">
+        <div class="grid">
 
       <% for(var i=0;i<projects.length;i++) { %>
 
-        <div class="project-item grid-item">
+          <div class="project-item grid-item">
 
           <h3><%= projects[i].title %></h3>
           <p><%= projects[i].author %></p>
           <p><%= projects[i].timeStamp %></p>
 
-        </div>
+          </div>
 
     <% } %>
 
-      </div>
+        </div>
+      </div><!-- CLOSING DIV OF CONTAINER -->
 
     <% include ../footer.ejs %>

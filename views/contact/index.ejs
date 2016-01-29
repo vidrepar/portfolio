@@ -9,8 +9,7 @@
 
     <% include ../nav.ejs %>
 
-    <div id="fullpage">
-      <div class="section" id="contact-section-1">
+      <div id="contact-section-1">
         <div class="slide text-landing text-align-center">
           <h1 class="inline-block"><%= title %><br> me</h1>
           <p>- Send Something -</p>
@@ -24,11 +23,13 @@
             </div>
             <div class="col-md-8">
               <input type="text" placeholder="Message*" class="form-control">
+              <p>*Required fields</p>
             </div>
             <div class="col-md-8">
               <input type="submit" value="Submit" class="btn"></div>
           </div>
 
+        </div>
       </div>
 
     <% include ../footer.ejs %>

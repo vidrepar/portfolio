@@ -124,7 +124,7 @@ ul{
 
 /*NAVIGATION*/
 nav{
-  position: absolute;
+  position: fixed;
   width: 100%;
   padding: 40px;
   z-index: 1;
@@ -152,7 +152,9 @@ nav{
 /*LANDING PAGE*/
 .text-landing{
   color: #fff;
+  margin-top: 40px;
 }
+
 /*LANDING SECTION 1*/
 
 .landing-section-1{
@@ -194,6 +196,10 @@ nav{
   background-size: cover;
 }
 
+#about-section-1 .text-landing{
+  position: relative;
+}
+
 /*CONTACT PAGE*/
 /*CONTACT SECTION 1*/
 
@@ -205,11 +211,29 @@ nav{
   background-size: cover;
 }
 
+#contact-section-1 h1{
+  font-size: 100px !important;
+}
+
 /*PORTFOLIO PAGE*/
 /*PORTFOLIO SECTION 1*/
 
 #portfolio-section-1{
   background: url(images/bg-portfolio.png) repeat-x;
+}
+
+#portfolio-section-1 h1{
+  font-size: 100px !important;
+}
+
+#portfolio-section-1 h1, #portfolio-section-1 p{
+  color: #333366 !important;
+}
+
+.container-first{
+  background-color: #f8f8f8;
+  margin-top: 0px !important;
+  
 }
 
 .grid{

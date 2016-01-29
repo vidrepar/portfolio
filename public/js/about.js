@@ -1,13 +1,12 @@
 $(document).ready(function() {
 
-    //FULLPAGE.JS
-  $('#fullpage').fullpage({
-    autoScrolling: false,
-    fitToSection: false
-  });
-
-  // height for dynamic POPUP background
+  //COVER image
+  //NOT WORKING YET
   var $heightBrowser = $(window).height();
-  $('#test-popup').height($heightBrowser);
+  var heightBrowserNew = $heightBrowser - $heightBrowser*0.3;
+  $('#about-section-1').height(heightBrowserNew);
+  $('#about-section-1 .text-landing').css('top', '30%'); //make it more right...
+
+  console.log(heightBrowserNew);
 
 });
