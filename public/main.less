@@ -1,5 +1,38 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat|Lora:400italic,700italic);
 
+//DEFAULT COLORS
+//BLUE
+@blueDefault: #3550a0;
+@blueLight1: #3956ad;
+@blueLight2: #4e76ec;
+@blueDark1: #2d4386;
+@blueDark2: #203060;
+
+//RED
+@redDefault: #f05b55;
+@redLight: #ff7974;
+@redDark1: #bd4843;
+@redDark2: #702b28;
+
+//OTHER COLORS
+@footerColor: #252525;
+@footerTextColor: #fff;
+.FooterStyle{
+  background-color: @footerColor;
+  color: @footerTextColor !important;
+}
+
+//SHADOW
+@shadowDefault: 1px 2px 5px 0.00px rgba(0, 0, 0, 0.22);
+@shadowGrid: 1px 3px 7px 0.00px rgba(0, 0, 0, 0.35);
+
+//ROUND CORNERS
+.RoundCorner{
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
 *{
   /*vertical-align: top;*/
   border:black solid 1px;
@@ -56,6 +89,11 @@ label{
 ul{
   text-transform: uppercase;
   padding-left: 0px;
+}
+
+/*FOOTER DESIGN*/
+footer{
+  .FooterStyle;
 }
 
 /*POPUP DESIGN*/
@@ -233,11 +271,14 @@ nav{
 .container-first{
   background-color: #f8f8f8;
   margin-top: 0px !important;
+  padding: 0px !important;
+  .RoundCorner;
 
 }
 
 .grid{
   padding: 10px;
+    box-shadow: @shadowGrid;
 }
 
 .grid-item{

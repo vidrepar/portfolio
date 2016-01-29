@@ -1,13 +1,22 @@
 $(document).ready(function() {
 
-  //CLOSE/HIDE MENU
-  $("#hamburger").click(function(){
-    $("#popup").show();
+  $("#popup").hide();
+  $("#hamburger").on("click", function(){
+    $("#popup").fadeIn(150, function(){
+      $("#close").on("click", function(){
+        $("#popup").fadeOut(150);
+      });
+    });
   });
 
-  $("#close").click(function(){
-    $("#popup").hide();
-  });
+  ////CLOSE/HIDE MENU
+  //$("#hamburger").click(function(){
+  //  $("#popup").show();
+  //});
+  //
+  //$("#close").click(function(){
+  //  $("#popup").hide();
+  //});
 
   // height for dynamic POPUP background
   var $heightBrowser = $(window).height();
