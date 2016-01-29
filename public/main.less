@@ -15,12 +15,8 @@
 @redDark2: #702b28;
 
 //OTHER COLORS
-@footerColor: #252525;
-@footerTextColor: #fff;
-.FooterStyle{
-  background-color: @footerColor;
-  color: @footerTextColor !important;
-}
+@lightGrey: #d3d3d3;
+@lightBlack: #252525;
 
 //SHADOW
 @shadowDefault: 1px 2px 5px 0.00px rgba(0, 0, 0, 0.22);
@@ -32,6 +28,37 @@
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
+
+/*PORTFOLIO DESIGN GUIDELINES*/
+
+@projectsHeadingsColor: @blueDark2;
+.ProjectsHeadingsStyles{
+  color: @blueDark2 !important;
+  h1{
+    font-size: 100px;
+  }
+  h3{
+    font-size: 16px;
+  }
+  .grid p{
+    font-size: 14px;
+  }
+}
+
+
+
+//FOOTER DESIGN GUIDELINES
+@footerColor: @lightBlack;
+@footerTextColor: @lightGrey;
+.FooterStyles{
+  background-color: @footerColor;
+  color: @footerTextColor;
+  p{
+    font-size: 14px;
+    margin:20px 0px;
+  }
+}
+
 
 *{
   /*vertical-align: top;*/
@@ -56,7 +83,7 @@ h1, h2, h3, h4, h5, h6, .btn, ul{
 }
 
 h1, h2{
-  color: #fff !important;
+  color: #fff;
 }
 
 h2{
@@ -93,7 +120,7 @@ ul{
 
 /*FOOTER DESIGN*/
 footer{
-  .FooterStyle;
+  .FooterStyles;
 }
 
 /*POPUP DESIGN*/
@@ -214,13 +241,13 @@ nav{
 /*LANDING SECTION 2*/
 
 .landing-section-2{
-  background-color: cornflowerblue;
+  background-color: @blueDefault;
 }
 
 /*LANDING SECTION 3*/
 
 .landing-section-3{
-  background-color: coral;
+  background-color: @redDefault;
 }
 
 /*ABOUT PAGE*/
@@ -258,19 +285,12 @@ nav{
 
 #portfolio-section-1{
   background: url(images/bg-portfolio.png) repeat-x;
-}
-
-#portfolio-section-1 h1{
-  font-size: 100px !important;
-}
-
-#portfolio-section-1 h1, #portfolio-section-1 p{
-  color: #333366 !important;
+  .ProjectsHeadingsStyles;
 }
 
 .container-first{
   background-color: #f8f8f8;
-  margin-top: 0px !important;
+  margin: 75px auto 200px auto !important;
   padding: 0px !important;
   .RoundCorner;
 

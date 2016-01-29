@@ -1,12 +1,29 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat|Lora:400italic,700italic);
-.FooterStyle {
-  background-color: #252525;
-  color: #fff !important;
-}
 .RoundCorner {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
+}
+/*PORTFOLIO DESIGN GUIDELINES*/
+.ProjectsHeadingsStyles {
+  color: #203060 !important;
+}
+.ProjectsHeadingsStyles h1 {
+  font-size: 100px;
+}
+.ProjectsHeadingsStyles h3 {
+  font-size: 16px;
+}
+.ProjectsHeadingsStyles .grid p {
+  font-size: 14px;
+}
+.FooterStyles {
+  background-color: #252525;
+  color: #d3d3d3;
+}
+.FooterStyles p {
+  font-size: 14px;
+  margin: 20px 0px;
 }
 * {
   /*vertical-align: top;*/
@@ -35,7 +52,7 @@ ul {
 }
 h1,
 h2 {
-  color: #fff !important;
+  color: #fff;
 }
 h2 {
   font-size: 40px !important;
@@ -68,7 +85,11 @@ ul {
 /*FOOTER DESIGN*/
 footer {
   background-color: #252525;
-  color: #fff !important;
+  color: #d3d3d3;
+}
+footer p {
+  font-size: 14px;
+  margin: 20px 0px;
 }
 /*POPUP DESIGN*/
 #popup {
@@ -163,11 +184,11 @@ nav {
 }
 /*LANDING SECTION 2*/
 .landing-section-2 {
-  background-color: cornflowerblue;
+  background-color: #3550a0;
 }
 /*LANDING SECTION 3*/
 .landing-section-3 {
-  background-color: coral;
+  background-color: #f05b55;
 }
 /*ABOUT PAGE*/
 /*ABOUT SECTION 1*/
@@ -197,17 +218,20 @@ nav {
 /*PORTFOLIO SECTION 1*/
 #portfolio-section-1 {
   background: url(images/bg-portfolio.png) repeat-x;
+  color: #203060 !important;
 }
 #portfolio-section-1 h1 {
-  font-size: 100px !important;
+  font-size: 100px;
 }
-#portfolio-section-1 h1,
-#portfolio-section-1 p {
-  color: #333366 !important;
+#portfolio-section-1 h3 {
+  font-size: 16px;
+}
+#portfolio-section-1 .grid p {
+  font-size: 14px;
 }
 .container-first {
   background-color: #f8f8f8;
-  margin-top: 0px !important;
+  margin: 75px auto 200px auto !important;
   padding: 0px !important;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
