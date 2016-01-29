@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <% include ../head.ejs %>
+
+</head>
+<body>
+
+    <% include ../nav.ejs %>
+
+    <div id="portfolio-section-1">
+    <div class="container container-first">
+    <h1>Welcome to my <%= title %> page</h1>
+
+
+      <div class="grid">
+
+      <% for(var i=0;i<projects.length;i++) { %>
+
+        <div class="project-item grid-item">
+
+          <h3><%= projects[i].title %></h3>
+          <p><%= projects[i].author %></p>
+          <p><%= projects[i].timeStamp %></p>
+
+        </div>
+
+    <% } %>
+
+      </div>
+
+    <% include ../footer.ejs %>
