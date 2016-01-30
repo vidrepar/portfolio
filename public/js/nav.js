@@ -11,6 +11,6 @@ $(document).ready(function() {
 
   // height for dynamic POPUP background
   var $heightBrowser = $(window).height();
-  $('#popup').height($heightBrowser);
+  $('#popup').height($heightBrowser+300);
 
 });

@@ -1,8 +1,53 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat|Lora:400italic,700italic);
 .RoundCorner {
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+.DefaultParagraphStyles {
+  font-family: 'Lora', serif !important;
+  font-style: italic;
+}
+.DefaultParagraphStyles .p-details {
+  font-size: 14px !important;
+}
+.DefaultHeadingStyles {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+}
+/*BUTTON DESIGN GUIDELINES*/
+.Button {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 20px !important;
+  color: #fff !important;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.22);
+  -webkit-border-radius: 2px !important;
+  -moz-border-radius: 2px !important;
+  border-radius: 2px !important;
+}
+.Button:hover {
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff !important;
+  box-shadow: 1px 3px 7px 0px rgba(0, 0, 0, 0.35);
+}
+.Button:active {
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff !important;
+}
+/*FORM DESIGN GUIDELINES*/
+.Form {
+  height: 50px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
 }
 /*PORTFOLIO DESIGN GUIDELINES*/
 .ProjectsHeadingsStyles {
@@ -10,6 +55,8 @@
 }
 .ProjectsHeadingsStyles h1 {
   font-size: 100px;
+  margin-top: 0px;
+  padding-top: 30px;
 }
 .ProjectsHeadingsStyles h3 {
   font-size: 16px;
@@ -27,15 +74,12 @@
 }
 * {
   /*vertical-align: top;*/
-  border: black solid 1px;
-}
-html {
-  overflow: visible !important;
-  margin-right: 0px !important;
 }
 body {
   /*for testing purposes*/
-  /*background-color: lightgrey !important;*/
+  /*
+  top: -40px !important; !*very bad solution when border for all elements is turned of*!
+  */
 }
 /*FONT/TYPEFACE RULES*/
 h1,
@@ -44,7 +88,6 @@ h3,
 h4,
 h5,
 h6,
-.btn,
 ul {
   font-family: 'Montserrat', sans-serif !important;
   font-weight: 700 !important;
@@ -65,18 +108,65 @@ input {
   font-style: italic;
   font-size: 20px;
 }
-.p-details {
+p .p-details,
+label .p-details,
+input .p-details {
+  font-size: 14px !important;
+}
+textarea {
   font-family: 'Lora', serif !important;
   font-style: italic;
-  font-size: 14px;
+  /*this is a TEMPORARY solution*/
+  min-height: 100px;
+  max-width: auto;
 }
-label {
-  font-weight: 100 !important;
+textarea .p-details {
+  font-size: 14px !important;
+}
+textarea::-webkit-input-placeholder {
+  padding-top: 7px;
 }
 .btn {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 700 !important;
   text-transform: uppercase;
   letter-spacing: 3px;
   padding: 20px !important;
+  color: #fff !important;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.22);
+  -webkit-border-radius: 2px !important;
+  -moz-border-radius: 2px !important;
+  border-radius: 2px !important;
+}
+.btn:hover {
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff !important;
+  box-shadow: 1px 3px 7px 0px rgba(0, 0, 0, 0.35);
+}
+.btn:active {
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff !important;
+}
+.form-control {
+  height: 50px !important;
+  margin-top: 15px !important;
+  margin-bottom: 15px !important;
+  -webkit-border-radius: 2px !important;
+  -moz-border-radius: 2px !important;
+  border-radius: 2px !important;
+}
+.p-details {
+  font-family: 'Lora', serif !important;
+  font-style: italic;
+  font-size: 16px !important;
+}
+.p-details .p-details {
+  font-size: 14px !important;
+}
+label {
+  font-weight: 100 !important;
 }
 ul {
   text-transform: uppercase;
@@ -166,7 +256,7 @@ nav {
 /*LANDING PAGE*/
 .text-landing {
   color: #fff;
-  margin-top: 40px;
+  padding-top: 30px;
 }
 /*LANDING SECTION 1*/
 .landing-section-1 {
@@ -222,6 +312,8 @@ nav {
 }
 #portfolio-section-1 h1 {
   font-size: 100px;
+  margin-top: 0px;
+  padding-top: 30px;
 }
 #portfolio-section-1 h3 {
   font-size: 16px;
@@ -233,9 +325,9 @@ nav {
   background-color: #f8f8f8;
   margin: 75px auto 200px auto !important;
   padding: 0px !important;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
 }
 .grid {
   padding: 10px;

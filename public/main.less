@@ -18,15 +18,63 @@
 @lightGrey: #d3d3d3;
 @lightBlack: #252525;
 
+@buttonTextColor: #fff !important;
+
 //SHADOW
 @shadowDefault: 1px 2px 5px 0.00px rgba(0, 0, 0, 0.22);
 @shadowGrid: 1px 3px 7px 0.00px rgba(0, 0, 0, 0.35);
 
 //ROUND CORNERS
 .RoundCorner{
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.DefaultParagraphStyles{
+  font-family: 'Lora', serif !important;
+  font-style: italic;
+  .p-details{
+     font-size: 14px !important;
+   }
+}
+
+.DefaultHeadingStyles{
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+}
+
+/*BUTTON DESIGN GUIDELINES*/
+.Button{
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 20px !important;
+  color: @buttonTextColor;
+  text-decoration: none;
+  background: rgba(0,0,0,0.4);
+  box-shadow: @shadowDefault;
+
+  &:hover{
+    background: rgba(0,0,0,0.6);
+    color: @buttonTextColor;
+    box-shadow: @shadowGrid;
+  }
+  &:active{
+    background: rgba(0,0,0,0.8);
+    color: @buttonTextColor;
+  }
+  .RoundCorner !important;
+}
+
+/*FORM DESIGN GUIDELINES*/
+.Form{
+  height:50px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  .RoundCorner;
 }
 
 /*PORTFOLIO DESIGN GUIDELINES*/
@@ -36,6 +84,8 @@
   color: @blueDark2 !important;
   h1{
     font-size: 100px;
+    margin-top: 0px;
+    padding-top: 30px;
   }
   h3{
     font-size: 16px;
@@ -62,24 +112,21 @@
 
 *{
   /*vertical-align: top;*/
-  border:black solid 1px;
-}
-
-html{
-  overflow: visible !important;
-  margin-right: 0px !important;
+  //border:black solid 1px;
 }
 
 body{
   /*for testing purposes*/
-  /*background-color: lightgrey !important;*/
+  //background-color: lightgrey !important;
+
+  /*
+  top: -40px !important; !*very bad solution when border for all elements is turned of*!
+  */
 }
 
 /*FONT/TYPEFACE RULES*/
-h1, h2, h3, h4, h5, h6, .btn, ul{
-  font-family: 'Montserrat', sans-serif !important;
-  font-weight: 700 !important;
-  text-transform: uppercase;
+h1, h2, h3, h4, h5, h6, ul{
+  .DefaultHeadingStyles;
 }
 
 h1, h2{
@@ -92,25 +139,35 @@ h2{
 }
 
 p, label, input{
-  font-family: 'Lora', serif !important;
-  font-style: italic;
+  .DefaultParagraphStyles;
   font-size: 20px;
 }
 
+textarea{
+  .DefaultParagraphStyles;
+  /*this is a TEMPORARY solution*/
+  min-height: 100px;
+  max-width: auto;
+  &::-webkit-input-placeholder{
+    padding-top: 7px;
+  }
+}
+
+.btn{
+  .Button;
+}
+
+.form-control{
+  .Form !important;
+}
+
 .p-details{
-  font-family: 'Lora', serif !important;
-  font-style: italic;
-  font-size: 14px;
+  .DefaultParagraphStyles;
+  font-size: 16px !important;
 }
 
 label{
   font-weight: 100 !important;
-}
-
-.btn{
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  padding: 20px !important;
 }
 
 ul{
@@ -217,7 +274,7 @@ nav{
 /*LANDING PAGE*/
 .text-landing{
   color: #fff;
-  margin-top: 40px;
+  padding-top: 30px;
 }
 
 /*LANDING SECTION 1*/
