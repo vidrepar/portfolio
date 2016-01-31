@@ -1,8 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat|Lora:400italic,700italic);
 .RoundCorner {
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
+  -webkit-border-radius: 2px 2px 2px 2px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  border-radius: 2px 2px 2px 2px;
+}
+.RoundCornerForm {
+  -webkit-border-radius: 0px 0px 0px 0px;
+  -moz-border-radius: 0px 0px 0px 0px;
+  border-radius: 0px 0px 0px 0px;
 }
 .DefaultParagraphStyles {
   font-family: 'Lora', serif !important;
@@ -27,9 +32,9 @@
   text-decoration: none;
   background: rgba(0, 0, 0, 0.4);
   box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.22);
-  -webkit-border-radius: 2px !important;
-  -moz-border-radius: 2px !important;
-  border-radius: 2px !important;
+  -webkit-border-radius: 2px 2px 2px 2px !important;
+  -moz-border-radius: 2px 2px 2px 2px !important;
+  border-radius: 2px 2px 2px 2px !important;
 }
 .Button:hover {
   background: rgba(0, 0, 0, 0.6);
@@ -43,11 +48,27 @@
 /*FORM DESIGN GUIDELINES*/
 .Form {
   height: 50px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  -webkit-border-radius: 0px 0px 0px 0px !important;
+  -moz-border-radius: 0px 0px 0px 0px !important;
+  border-radius: 0px 0px 0px 0px !important;
+}
+.form-ctrl {
+  border-left: 12px solid #ff7974;
+  height: auto;
+  margin: 12px;
+  box-shadow: 1px 3px 7px 0px rgba(0, 0, 0, 0.35);
+}
+.form-ctrl {
+  width: auto;
+}
+.form-ctrl input {
+  margin-right: -100px !important;
+}
+.col-md-4,
+.col-md-8 {
+  padding: 0px !important;
 }
 /*PORTFOLIO DESIGN GUIDELINES*/
 .ProjectsHeadingsStyles {
@@ -67,6 +88,8 @@
 .FooterStyles {
   background-color: #252525;
   color: #d3d3d3;
+  position: relative;
+  bottom: 0px;
 }
 .FooterStyles p {
   font-size: 14px;
@@ -74,12 +97,6 @@
 }
 * {
   /*vertical-align: top;*/
-}
-body {
-  /*for testing purposes*/
-  /*
-  top: -40px !important; !*very bad solution when border for all elements is turned of*!
-  */
 }
 /*FONT/TYPEFACE RULES*/
 h1,
@@ -119,12 +136,18 @@ textarea {
   /*this is a TEMPORARY solution*/
   min-height: 100px;
   max-width: auto;
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
 }
 textarea .p-details {
   font-size: 14px !important;
 }
 textarea::-webkit-input-placeholder {
-  padding-top: 7px;
+  margin-top: 12px !important;
+}
+textarea:focus {
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
 }
 .btn {
   font-family: 'Montserrat', sans-serif !important;
@@ -136,9 +159,9 @@ textarea::-webkit-input-placeholder {
   text-decoration: none;
   background: rgba(0, 0, 0, 0.4);
   box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.22);
-  -webkit-border-radius: 2px !important;
-  -moz-border-radius: 2px !important;
-  border-radius: 2px !important;
+  -webkit-border-radius: 2px 2px 2px 2px !important;
+  -moz-border-radius: 2px 2px 2px 2px !important;
+  border-radius: 2px 2px 2px 2px !important;
 }
 .btn:hover {
   background: rgba(0, 0, 0, 0.6);
@@ -151,12 +174,11 @@ textarea::-webkit-input-placeholder {
 }
 .form-control {
   height: 50px !important;
-  margin-top: 15px !important;
-  margin-bottom: 15px !important;
-  -webkit-border-radius: 2px !important;
-  -moz-border-radius: 2px !important;
-  border-radius: 2px !important;
-  border: 5px blue !important;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  -webkit-border-radius: 0px 0px 0px 0px !important;
+  -moz-border-radius: 0px 0px 0px 0px !important;
+  border-radius: 0px 0px 0px 0px !important;
 }
 .p-details {
   font-family: 'Lora', serif !important;
@@ -177,6 +199,8 @@ ul {
 footer {
   background-color: #252525;
   color: #d3d3d3;
+  position: relative;
+  bottom: 0px;
 }
 footer p {
   font-size: 14px;
@@ -326,9 +350,9 @@ nav {
   background-color: #f8f8f8;
   margin: 75px auto 200px auto !important;
   padding: 0px !important;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
+  -webkit-border-radius: 2px 2px 2px 2px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  border-radius: 2px 2px 2px 2px;
 }
 .grid {
   padding: 10px;

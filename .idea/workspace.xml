@@ -12,9 +12,10 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/new.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/new.less" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms" afterPath="$PROJECT_DIR$/cms" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/router.js" afterPath="$PROJECT_DIR$/router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/projects/index.ejs" afterPath="$PROJECT_DIR$/views/projects/index.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/main.css" afterPath="$PROJECT_DIR$/public/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/main.less" afterPath="$PROJECT_DIR$/public/main.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/contact/index.ejs" afterPath="$PROJECT_DIR$/views/contact/index.ejs" />
     </list>
     <ignored path="dynamic.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,8 +41,8 @@
           <file leaf-file-name="footer.ejs" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/views/footer.ejs">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="4" column="56" selection-start-line="4" selection-start-column="56" selection-end-line="4" selection-end-column="56" />
+                <state vertical-scroll-proportion="-0.0">
+                  <caret line="0" column="30" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
                   <folding />
                 </state>
               </provider>
@@ -67,10 +68,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.ejs" pinned="false" current-in-tab="true">
+          <file leaf-file-name="index.ejs" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/views/projects/index.ejs">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.70434785">
+                <state vertical-scroll-proportion="-18.692308">
                   <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
                   <folding />
                 </state>
@@ -107,11 +108,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.ejs" pinned="false" current-in-tab="false">
+          <file leaf-file-name="index.ejs" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/views/contact/index.ejs">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-18.307692">
-                  <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+                <state vertical-scroll-proportion="0.44549763">
+                  <caret line="25" column="55" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
                   <folding />
                 </state>
               </provider>
@@ -120,7 +121,7 @@
         </leaf>
       </split-first>
       <split-second>
-        <splitter split-orientation="vertical" split-proportion="0.60215056">
+        <splitter split-orientation="vertical" split-proportion="0.7392473">
           <split-first>
             <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
               <file leaf-file-name="head.ejs" pinned="false" current-in-tab="false">
@@ -143,23 +144,33 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="main.less" pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/public/main.less">
+              <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/public/main.css">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="-3.3454545">
-                      <caret line="165" column="17" selection-start-line="165" selection-start-column="17" selection-end-line="165" selection-end-column="17" />
+                    <state vertical-scroll-proportion="46.423077">
+                      <caret line="102" column="1" selection-start-line="102" selection-start-column="1" selection-end-line="102" selection-end-column="1" />
                       <folding>
-                        <element signature="e#1938#2053#0" expanded="false" />
-                        <element signature="e#2004#2051#0" expanded="false" />
+                        <marker date="1454283217858" expanded="true" signature="103:130" placeholder="{...}" />
+                        <marker date="1454283217858" expanded="true" signature="7507:7510" placeholder="{...}" />
                       </folding>
                     </state>
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="router.js" pinned="false" current-in-tab="true">
+              <file leaf-file-name="main.less" pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/public/main.less">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state vertical-scroll-proportion="0.4055794">
+                      <caret line="100" column="27" selection-start-line="100" selection-start-column="27" selection-end-line="100" selection-end-column="27" />
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="router.js" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/router.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.50769234">
+                    <state vertical-scroll-proportion="-6.827586">
                       <caret line="82" column="27" selection-start-line="82" selection-start-column="27" selection-end-line="82" selection-end-column="27" />
                       <folding />
                     </state>
@@ -183,7 +194,7 @@
               <file leaf-file-name="project.js" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/public/js/project.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.76119405">
+                    <state vertical-scroll-proportion="1.2289157">
                       <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
                       <folding />
                     </state>
@@ -253,18 +264,18 @@
         <option value="$PROJECT_DIR$/public/js/about.js" />
         <option value="$PROJECT_DIR$/views/head.ejs" />
         <option value="$PROJECT_DIR$/public/new.less" />
-        <option value="$PROJECT_DIR$/views/footer.ejs" />
         <option value="$PROJECT_DIR$/views/nav.ejs" />
         <option value="$PROJECT_DIR$/views/about/index.ejs" />
         <option value="$PROJECT_DIR$/public/js/nav.js" />
         <option value="$PROJECT_DIR$/views/index.ejs" />
         <option value="$PROJECT_DIR$/public/main.css" />
-        <option value="$PROJECT_DIR$/public/main.less" />
-        <option value="$PROJECT_DIR$/views/contact/index.ejs" />
         <option value="$PROJECT_DIR$/public/js/project.js" />
         <option value="$PROJECT_DIR$/models/project.js" />
         <option value="$PROJECT_DIR$/router.js" />
         <option value="$PROJECT_DIR$/views/projects/index.ejs" />
+        <option value="$PROJECT_DIR$/views/footer.ejs" />
+        <option value="$PROJECT_DIR$/views/contact/index.ejs" />
+        <option value="$PROJECT_DIR$/public/main.less" />
       </list>
     </option>
   </component>
@@ -871,14 +882,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/footer.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="56" selection-start-line="4" selection-start-column="56" selection-end-line="4" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/nav.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -895,38 +898,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.615385">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="42" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/about/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.1272728">
           <caret line="47" column="19" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/contact/index.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.307692">
-          <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/main.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.3454545">
-          <caret line="165" column="17" selection-start-line="165" selection-start-column="17" selection-end-line="165" selection-end-column="17" />
-          <folding>
-            <element signature="e#1938#2053#0" expanded="false" />
-            <element signature="e#2004#2051#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -940,7 +916,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/project.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.76119405">
+        <state vertical-scroll-proportion="1.2289157">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
@@ -964,7 +940,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.50769234">
+        <state vertical-scroll-proportion="-6.827586">
           <caret line="82" column="27" selection-start-line="82" selection-start-column="27" selection-end-line="82" selection-end-column="27" />
           <folding />
         </state>
@@ -972,8 +948,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/projects/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.70434785">
+        <state vertical-scroll-proportion="-18.692308">
           <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/footer.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="30" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="46.423077">
+          <caret line="102" column="1" selection-start-line="102" selection-start-column="1" selection-end-line="102" selection-end-column="1" />
+          <folding>
+            <marker date="1454283217858" expanded="true" signature="103:130" placeholder="{...}" />
+            <marker date="1454283217858" expanded="true" signature="7507:7510" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/contact/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44549763">
+          <caret line="25" column="55" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/main.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4055794">
+          <caret line="100" column="27" selection-start-line="100" selection-start-column="27" selection-end-line="100" selection-end-column="27" />
           <folding />
         </state>
       </provider>

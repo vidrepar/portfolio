@@ -25,10 +25,17 @@
 @shadowGrid: 1px 3px 7px 0.00px rgba(0, 0, 0, 0.35);
 
 //ROUND CORNERS
+@roundCorners: 2px 2px 2px 2px;
 .RoundCorner{
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
+  -webkit-border-radius: @roundCorners;
+  -moz-border-radius: @roundCorners;
+  border-radius: @roundCorners;
+}
+@roundCornersForm: 0px 0px 0px 0px;
+.RoundCornerForm{
+  -webkit-border-radius: @roundCornersForm;
+  -moz-border-radius: @roundCornersForm;
+  border-radius: @roundCornersForm;
 }
 
 .DefaultParagraphStyles{
@@ -70,11 +77,35 @@
 }
 
 /*FORM DESIGN GUIDELINES*/
+@formFieldHeight:50px;
+@formDefaultMargin:12px;
+@textareaPadding:6px;
 .Form{
-  height:50px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  .RoundCorner;
+  height:@formFieldHeight;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  .RoundCornerForm !important;
+}
+
+.form-ctrl{
+  border-left: @formDefaultMargin solid @redLight;
+  height: auto;
+  margin: @formDefaultMargin;
+  box-shadow: @shadowGrid;
+}
+
+.form-ctrl{
+  width: auto;
+  input{
+
+    //not working, fix this
+    margin-right: -100px !important;
+
+  }
+}
+
+.col-md-4, .col-md-8{
+  padding: 0px !important;
 }
 
 /*PORTFOLIO DESIGN GUIDELINES*/
@@ -107,6 +138,9 @@
     font-size: 14px;
     margin:20px 0px;
   }
+  position: relative;
+  bottom: 0px;
+
 }
 
 
@@ -115,13 +149,12 @@
   //border:black solid 1px;
 }
 
-body{
-  /*for testing purposes*/
-  //background-color: lightgrey !important;
+html{
 
-  /*
-  top: -40px !important; !*very bad solution when border for all elements is turned of*!
-  */
+}
+
+body{
+
 }
 
 /*FONT/TYPEFACE RULES*/
@@ -146,10 +179,16 @@ p, label, input{
 textarea{
   .DefaultParagraphStyles;
   /*this is a TEMPORARY solution*/
-  min-height: 100px;
+  min-height: @formFieldHeight * 2;
   max-width: auto;
+  padding-top: @formDefaultMargin !important;
+  padding-bottom: @formDefaultMargin !important;
   &::-webkit-input-placeholder{
-    padding-top: 7px;
+    margin-top: @formDefaultMargin !important;
+  }
+  &:focus{
+    padding-top: @formDefaultMargin !important;
+    padding-bottom: @formDefaultMargin !important;
   }
 }
 
@@ -159,7 +198,6 @@ textarea{
 
 .form-control{
   .Form !important;
-  border: 5px blue !important;
 }
 
 .p-details{
