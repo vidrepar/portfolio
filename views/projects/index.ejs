@@ -23,51 +23,7 @@
 
           <h3><%= projects[i].title %></h3>
           <p><%=  projects[i].author %></p>
-          <p>
-
-            <% if(projects[i].timeStamp.getMonth() == 0){%>
-              <span>January</span>
-            <% } %>
-            <% if(projects[i].timeStamp.getMonth() == 1){ %>
-              <span>Februray</span>
-            <% } %>
-            <% if(projects[i].timeStamp.getMonth() == 2){ %>
-              <span>March</span>
-            <% } %>
-            <% if(projects[i].timeStamp.getMonth() == 3){ %>
-              <span>April</span>
-            <% } %>
-            <% if(projects[i].timeStamp.getMonth() == 4){ %>
-              <span>May</span>
-            <% } %>
-            <% if(projects[i].timeStamp.getMonth() == 5){ %>
-              <span>June</span>
-            <% } %>
-            <% if(projects[i].timeStamp.getMonth() == 6){ %>
-              <span>July</span>
-            <% } %>
-            <% if(projects[i].timeStamp.getMonth() == 7){ %>
-              <span>August</span>
-            <% } %>
-            <% if(projects[i].timeStamp.getMonth() == 8){ %>
-              <span>September</span>
-            <% } %>
-            <% if(projects[i].timeStamp.getMonth() == 9){ %>
-              <span>October</span>
-            <% } %>
-            <% if(projects[i].timeStamp.getMonth() == 10){ %>
-              <span>November</span>
-            <% } %>
-            <% if(projects[i].timeStamp.getMonth() == 11){ %>
-              <span>December</span>
-            <% } %>
-
-            <%=
-                  projects[i].timeStamp.getDay() +', ' +
-                  projects[i].timeStamp.getFullYear()
-            %>
-
-          </p>
+          <p><%=  moment(projects[i].timeStamp).format('LL') %></p>
 
           </div>
 

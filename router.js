@@ -1,4 +1,5 @@
 var mongoose = require('mongoose');
+var moment = require('moment');
 var token = '2309dfhdsf0lkasdASDasd821lk';
 
 
@@ -78,7 +79,8 @@ module.exports = function(app){
             res.render('projects/index', {
               title:'Work',
               projects:docs,
-              jsSrc:'js/project.js'
+              jsSrc:'js/project.js',
+              moment:moment
 
           });
 
