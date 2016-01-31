@@ -156,6 +156,7 @@ textarea::-webkit-input-placeholder {
   -webkit-border-radius: 2px !important;
   -moz-border-radius: 2px !important;
   border-radius: 2px !important;
+  border: 5px blue !important;
 }
 .p-details {
   font-family: 'Lora', serif !important;
