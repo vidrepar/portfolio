@@ -325,6 +325,9 @@ nav {
 #about-section-1 .text-landing {
   position: relative;
 }
+#text-about {
+  margin-top: 45px;
+}
 /*CONTACT PAGE*/
 /*CONTACT SECTION 1*/
 #contact-section-1 {

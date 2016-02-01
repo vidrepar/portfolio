@@ -1,12 +1,27 @@
 $(document).ready(function() {
 
   //COVER image
-  //NOT WORKING YET
-  var $heightBrowser = $(window).height();
-  var heightBrowserNew = $heightBrowser - $heightBrowser*0.3;
-  $('#about-section-1').height(heightBrowserNew);
-  $('#about-section-1 .text-landing').css('top', '30%'); //make it more right...
 
-  console.log(heightBrowserNew);
+  var $windowHeight = $(window).height();
+
+  $('#about-section-1').css(
+    {
+      "top": "33.3%",
+      "height": $windowHeight
+    });
+
+  /*resizing COVER image when resizing browser*/
+  $(window).on('resize', function(){
+    $windowHeight = $(window).height();
+    console.log($windowHeight);
+
+    $('#about-section-1').css(
+      {
+        "top": "33.3%",
+        "height": $windowHeight
+
+      });
+
+  });
 
 });
