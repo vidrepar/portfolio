@@ -23,6 +23,7 @@
 //SHADOW
 @shadowDefault: 1px 2px 5px 0.00px rgba(0, 0, 0, 0.22);
 @shadowGrid: 1px 3px 7px 0.00px rgba(0, 0, 0, 0.35);
+@shadowText: 1px 2px 5px rgba(0, 0, 0, 0.22);
 
 //ROUND CORNERS
 @roundCorners: 2px 2px 2px 2px;
@@ -98,6 +99,10 @@
 .col-md-4, .col-md-8{
   padding: 0px !important;
 }
+
+/*LANDING DESIGN GUIDELINES*/
+
+@marginLanding:30px;
 
 /*PORTFOLIO DESIGN GUIDELINES*/
 
@@ -306,6 +311,14 @@ nav{
 .text-landing{
   color: #fff;
   padding-top: 30px;
+  text-shadow: @shadowText;
+  p{
+    text-shadow: none;
+  }
+}
+
+.text-landing .btn{
+  margin-top: @marginLanding;
 }
 
 /*LANDING SECTION 1*/
@@ -331,6 +344,14 @@ nav{
 .landing-section-2{
   background-color: @blueDefault;
 }
+
+#landing-section-2{
+  margin-top: @marginLanding !important;
+  img{
+    padding: 0px 15px;
+  }
+}
+
 
 /*LANDING SECTION 3*/
 
@@ -362,6 +383,10 @@ nav{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
+  .btn{
+    margin-top: 0px;
+  }
 }
 
 #contact-section-1 h1{

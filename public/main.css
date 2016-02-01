@@ -64,6 +64,7 @@
 .col-md-8 {
   padding: 0px !important;
 }
+/*LANDING DESIGN GUIDELINES*/
 /*PORTFOLIO DESIGN GUIDELINES*/
 .ProjectsHeadingsStyles {
   color: #203060 !important;
@@ -276,6 +277,13 @@ nav {
 .text-landing {
   color: #fff;
   padding-top: 30px;
+  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.22);
+}
+.text-landing p {
+  text-shadow: none;
+}
+.text-landing .btn {
+  margin-top: 30px;
 }
 /*LANDING SECTION 1*/
 .landing-section-1 {
@@ -294,6 +302,12 @@ nav {
 /*LANDING SECTION 2*/
 .landing-section-2 {
   background-color: #3550a0;
+}
+#landing-section-2 {
+  margin-top: 30px !important;
+}
+#landing-section-2 img {
+  padding: 0px 15px;
 }
 /*LANDING SECTION 3*/
 .landing-section-3 {
@@ -319,6 +333,9 @@ nav {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+#contact-section-1 .btn {
+  margin-top: 0px;
 }
 #contact-section-1 h1 {
   font-size: 100px !important;

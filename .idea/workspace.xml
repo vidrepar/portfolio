@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f3cdca0-b0a8-4c6e-bd26-65057652e8c2" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/icon-github-hover.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/less/.bower.json" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/less/bower.json" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/less/browser.js" afterPath="" />
@@ -12,10 +13,9 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/new.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/new.less" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms" afterPath="$PROJECT_DIR$/cms" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/main.css" afterPath="$PROJECT_DIR$/public/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/main.less" afterPath="$PROJECT_DIR$/public/main.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/contact/index.ejs" afterPath="$PROJECT_DIR$/views/contact/index.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.ejs" afterPath="$PROJECT_DIR$/views/index.ejs" />
     </list>
     <ignored path="dynamic.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -92,7 +92,7 @@
             <entry file="file://$PROJECT_DIR$/views/index.ejs">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="-6.7636366">
-                  <caret line="29" column="48" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
+                  <caret line="32" column="62" selection-start-line="32" selection-start-column="62" selection-end-line="32" selection-end-column="62" />
                   <folding />
                 </state>
               </provider>
@@ -111,8 +111,8 @@
           <file leaf-file-name="index.ejs" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/views/contact/index.ejs">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.83254343">
-                  <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+                <state vertical-scroll-proportion="0.16113745">
+                  <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
                   <folding />
                 </state>
               </provider>
@@ -148,10 +148,10 @@
                 <entry file="file://$PROJECT_DIR$/public/main.css">
                   <provider selected="true" editor-type-id="text-editor">
                     <state vertical-scroll-proportion="46.423077">
-                      <caret line="98" column="1" selection-start-line="98" selection-start-column="1" selection-end-line="98" selection-end-column="1" />
+                      <caret line="125" column="1" selection-start-line="125" selection-start-column="1" selection-end-line="125" selection-end-column="1" />
                       <folding>
-                        <marker date="1454318183458" expanded="true" signature="103:130" placeholder="{...}" />
-                        <marker date="1454318183458" expanded="true" signature="7421:7424" placeholder="{...}" />
+                        <marker date="1454320987072" expanded="true" signature="103:130" placeholder="{...}" />
+                        <marker date="1454320987072" expanded="true" signature="7732:7735" placeholder="{...}" />
                       </folding>
                     </state>
                   </provider>
@@ -160,8 +160,8 @@
               <file leaf-file-name="main.less" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/public/main.less">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.7703863">
-                      <caret line="181" column="47" selection-start-line="181" selection-start-column="47" selection-end-line="181" selection-end-column="47" />
+                    <state vertical-scroll-proportion="0.33261803">
+                      <caret line="104" column="17" selection-start-line="104" selection-start-column="17" selection-end-line="104" selection-end-column="17" />
                       <folding />
                     </state>
                   </provider>
@@ -214,7 +214,7 @@
               <file leaf-file-name="contact.js" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/public/js/contact.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.40963855">
+                    <state vertical-scroll-proportion="0.28467155">
                       <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
                       <folding />
                     </state>
@@ -265,17 +265,17 @@
         <option value="$PROJECT_DIR$/views/nav.ejs" />
         <option value="$PROJECT_DIR$/views/about/index.ejs" />
         <option value="$PROJECT_DIR$/public/js/nav.js" />
-        <option value="$PROJECT_DIR$/views/index.ejs" />
         <option value="$PROJECT_DIR$/public/main.css" />
         <option value="$PROJECT_DIR$/models/project.js" />
         <option value="$PROJECT_DIR$/router.js" />
         <option value="$PROJECT_DIR$/views/projects/index.ejs" />
         <option value="$PROJECT_DIR$/views/footer.ejs" />
-        <option value="$PROJECT_DIR$/views/contact/index.ejs" />
-        <option value="$PROJECT_DIR$/public/main.less" />
         <option value="$PROJECT_DIR$/public/js/project.js" />
         <option value="$PROJECT_DIR$/public/js/about.js" />
         <option value="$PROJECT_DIR$/public/js/contact.js" />
+        <option value="$PROJECT_DIR$/views/index.ejs" />
+        <option value="$PROJECT_DIR$/views/contact/index.ejs" />
+        <option value="$PROJECT_DIR$/public/main.less" />
       </list>
     </option>
   </component>
@@ -882,14 +882,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.7636366">
-          <caret line="29" column="48" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/about/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.1272728">
@@ -941,27 +933,11 @@
     <entry file="file://$PROJECT_DIR$/public/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="46.423077">
-          <caret line="98" column="1" selection-start-line="98" selection-start-column="1" selection-end-line="98" selection-end-column="1" />
+          <caret line="125" column="1" selection-start-line="125" selection-start-column="1" selection-end-line="125" selection-end-column="1" />
           <folding>
-            <marker date="1454318183458" expanded="true" signature="103:130" placeholder="{...}" />
-            <marker date="1454318183458" expanded="true" signature="7421:7424" placeholder="{...}" />
+            <marker date="1454320987072" expanded="true" signature="103:130" placeholder="{...}" />
+            <marker date="1454320987072" expanded="true" signature="7732:7735" placeholder="{...}" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/contact/index.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.83254343">
-          <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/main.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7703863">
-          <caret line="181" column="47" selection-start-line="181" selection-start-column="47" selection-end-line="181" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -983,8 +959,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/contact.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40963855">
+        <state vertical-scroll-proportion="0.28467155">
           <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.7636366">
+          <caret line="32" column="62" selection-start-line="32" selection-start-column="62" selection-end-line="32" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/contact/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16113745">
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/main.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33261803">
+          <caret line="104" column="17" selection-start-line="104" selection-start-column="17" selection-end-line="104" selection-end-column="17" />
           <folding />
         </state>
       </provider>
