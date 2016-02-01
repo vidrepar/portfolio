@@ -60,12 +60,6 @@
   margin: 12px;
   box-shadow: 1px 3px 7px 0px rgba(0, 0, 0, 0.35);
 }
-.form-ctrl {
-  width: auto;
-}
-.form-ctrl input {
-  margin-right: -100px !important;
-}
 .col-md-4,
 .col-md-8 {
   padding: 0px !important;
