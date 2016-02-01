@@ -9,6 +9,12 @@
   -moz-border-radius: 0px 0px 0px 0px;
   border-radius: 0px 0px 0px 0px;
 }
+.BgSizeCover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 .DefaultParagraphStyles {
   font-family: 'Lora', serif !important;
   font-style: italic;
@@ -322,11 +328,50 @@ nav {
   -o-background-size: cover;
   background-size: cover;
 }
+#about-section-1 h1 {
+  font-size: 100px;
+}
 #about-section-1 .text-landing {
   position: relative;
 }
 #text-about {
   margin-top: 45px;
+}
+#about-section-abilities {
+  background: url("images/bg-abilities.png") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 414px;
+  margin-top: 60px;
+  border-bottom: 3px solid #3956ad !important;
+  z-index: 9999;
+}
+#section-connect {
+  background: url("images/bg-connect.png") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 60px;
+  padding-bottom: 150px;
+}
+#section-connect h2 {
+  color: #fff !important;
+}
+#section-connect #icon-github:hover {
+  content: url("images/icon-github-round-hover.png");
+}
+#section-connect #icon-facebook:hover {
+  content: url("images/icon-facebook-round-hover.png");
+}
+#section-connect #icon-behance:hover {
+  content: url("images/icon-behance-round-hover.png");
+}
+#section-connect .col-md-4 {
+  /*this is not working*/
+  margin-top: 120px !important;
 }
 /*CONTACT PAGE*/
 /*CONTACT SECTION 1*/

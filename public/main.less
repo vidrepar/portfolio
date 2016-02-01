@@ -39,6 +39,13 @@
   border-radius: @roundCornersForm;
 }
 
+.BgSizeCover{
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .DefaultParagraphStyles{
   font-family: 'Lora', serif !important;
   font-style: italic;
@@ -370,6 +377,10 @@ nav{
   background-size: cover;
 }
 
+#about-section-1 h1{
+  font-size: 100px;
+}
+
 #about-section-1 .text-landing{
   position: relative;
 }
@@ -377,6 +388,34 @@ nav{
 #text-about{
   margin-top: @marginLanding*1.5;
 }
+
+#about-section-abilities{
+  background: url("images/bg-abilities.png") no-repeat center center;
+  .BgSizeCover;
+  min-height: 414px;
+  margin-top: @marginLanding*2;
+  border-bottom: 3px solid @blueLight1 !important;
+  z-index: 9999;
+}
+
+#section-connect{
+  background: url("images/bg-connect.png") no-repeat center center;
+  .BgSizeCover;
+  padding-top: @marginLanding*2;
+  padding-bottom: @marginLanding*5;
+  h2{
+    color: #fff !important;
+  }
+  #icon-github:hover{    content: url("images/icon-github-round-hover.png");  }
+  #icon-facebook:hover{    content: url("images/icon-facebook-round-hover.png");  }
+  #icon-behance:hover{    content: url("images/icon-behance-round-hover.png");  }
+
+  & .col-md-4{
+    /*this is not working*/
+    margin-top: @marginLanding*4 !important;
+  }
+  }
+
 
 /*CONTACT PAGE*/
 /*CONTACT SECTION 1*/

@@ -6,8 +6,12 @@ $(document).ready(function() {
 
   $('#about-section-1').css(
     {
-      "top": "33.3%",
-      "height": $windowHeight
+      "height": $windowHeight*0.75
+    });
+
+  $('#about-section-1 .text-landing').css(
+    {
+      "top":"33.3%",
     });
 
   /*resizing COVER image when resizing browser*/
@@ -17,8 +21,7 @@ $(document).ready(function() {
 
     $('#about-section-1').css(
       {
-        "top": "33.3%",
-        "height": $windowHeight
+        "height": $windowHeight*0.75
 
       });
 
