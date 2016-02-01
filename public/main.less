@@ -393,16 +393,20 @@ nav{
   background: url("images/bg-abilities.png") no-repeat center center;
   .BgSizeCover;
   min-height: 414px;
-  margin-top: @marginLanding*2;
+  margin-top: @marginLanding*4;
+  padding-bottom: @marginLanding*3;
   border-bottom: 3px solid @blueLight1 !important;
   z-index: 9999;
+  h2{
+    padding-bottom: @marginLanding*3;
+  }
 }
 
 #section-connect{
   background: url("images/bg-connect.png") no-repeat center center;
   .BgSizeCover;
-  padding-top: @marginLanding*2;
-  padding-bottom: @marginLanding*5;
+  padding-top: @marginLanding*3;
+  padding-bottom: @marginLanding*4;
   h2{
     color: #fff !important;
   }
@@ -410,10 +414,16 @@ nav{
   #icon-facebook:hover{    content: url("images/icon-facebook-round-hover.png");  }
   #icon-behance:hover{    content: url("images/icon-behance-round-hover.png");  }
 
-  & .col-md-4{
+  & .col-md-8{
     /*this is not working*/
-    margin-top: @marginLanding*4 !important;
+    margin-top: @marginLanding*2;
   }
+
+  & a{
+    margin-left: @marginLanding/2;
+    margin-right: @marginLanding/2;
+  }
+
   }
 
 
