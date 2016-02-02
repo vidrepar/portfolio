@@ -1,5 +1,3 @@
-$(document).ready(function() {
-
   //FULLPAGE.JS
   $('#fullpage').fullpage({
 
@@ -10,6 +8,4 @@ $(document).ready(function() {
   // height for dynamic POPUP background
   var $heightBrowser = $(window).height();
   $('#test-popup').height($heightBrowser);
-
-});
 

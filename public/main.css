@@ -2,7 +2,7 @@
 .ColorOverlay {
   background: rgba(78, 118, 236, 0.82);
   overflow: hidden;
-  z-index: 2;
+  z-index: 1;
 }
 .RoundCorner {
   -webkit-border-radius: 2px 2px 2px 2px;
@@ -266,7 +266,7 @@ nav {
   position: fixed;
   width: 100%;
   padding: 40px;
-  z-index: 1;
+  z-index: 333!important;
 }
 #logo {
   background: url(images/logo.png) no-repeat;
@@ -442,7 +442,7 @@ nav {
     */
   background: rgba(78, 118, 236, 0.82);
   overflow: hidden;
-  z-index: 2;
+  z-index: 1;
 }
 .grid-item:hover #info-project {
   display: inline-block;

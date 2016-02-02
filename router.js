@@ -20,8 +20,8 @@ module.exports = function(app){
 
     });
 
-      // API Files routes
-    APP.get('/api/files', function(req, res){
+  //Files API GET routes
+  APP.get('/api/files', function(req, res){
 
         var File = mongoose.model('File');
 
@@ -38,8 +38,8 @@ module.exports = function(app){
         });
 
     });
-
-    APP.post('/api/file', function(req, res){
+  //Files API POST route
+  APP.post('/api/file', function(req, res){
 
         var data = req.body;
 
@@ -68,15 +68,53 @@ module.exports = function(app){
 
   });
 
+  // About GET route
+  app.get('/about', function(req, res){
 
-  // Project routes
-    app.get('/projects', function(req, res){
+    res.render('about/index', { title:'About Me', jsSrc:'js/about.js' });
+
+  });
+
+  // Contact GET route
+  app.get('/contact', function(req, res){
+
+    var Project = mongoose.model('Project');
+
+    Project.find(function(err, docs){
+
+      res.render('contact/index', { title:'Contact', jsSrc:'js/contact.js' });
+
+    });
+
+  });
+
+  // Project GET route
+  app.get('/projects', function(req, res){
+
+    var Project = mongoose.model('Project');
+
+    Project.find(function(err, docs){
+
+      res.render('projects/index', {
+        title:'Work',
+        projects:docs,
+        jsSrc:'js/project.js',
+        moment:moment
+
+      });
+
+    });
+
+  });
+
+  // Project Description GET route
+    app.get('/presentation', function(req, res){
 
         var Project = mongoose.model('Project');
 
         Project.find(function(err, docs){
 
-            res.render('projects/index', {
+            res.render('presentation/index', {
               title:'Work',
               projects:docs,
               jsSrc:'js/project.js',
@@ -88,7 +126,8 @@ module.exports = function(app){
 
     });
 
-    // API Project routes
+
+  //Project API GET routes
 	app.get('/api/project', function(req, res){
 
 		var Project = mongoose.model('Project');
@@ -105,7 +144,6 @@ module.exports = function(app){
 		});
 
 	});
-
   //Project API POST route
 	app.post('/api/project', function(req, res){
 
@@ -126,7 +164,6 @@ module.exports = function(app){
 		});
 
 	});
-
   //Project API DELETE route
 	app.delete('/api/project/:id', function(req, res){
 
@@ -143,7 +180,6 @@ module.exports = function(app){
 		});
 
 	});
-
   //Project API PUT route
 	app.put('/api/project/:id', function(req, res){
 
@@ -161,60 +197,75 @@ module.exports = function(app){
 
 	});
 
-  // About GET route
-  app.get('/about', function(req, res){
+  //Post  API GET route
+  app.get('/api/post', function(req, res){
 
-      res.render('about/index', { title:'About Me', jsSrc:'js/about.js' });
+      var Post = mongoose.model('Post');
+
+      Post.find(function(err, docs){
+
+          if(err){
+              res.sendStatus(400);
+          }else{
+              res.send(docs);
+          }
+
+      });
+
+  });
+  //Post  API POST route
+  app.post('/api/post', function(req, res){
+
+      var Post        = mongoose.model('Post');
+      var postData    = req.body;
+      var post        = new Post(postData);
+
+      post.save(function(err){
+
+          if(err){
+              res.sendStatus(400);
+          }else{
+              res.send(post);
+          }
+
+      });
 
   });
 
-  // Contact GET route
-  app.get('/contact', function(req, res){
+  //Inquiry  API GET route
+  app.get('/api/inquiries', function(req, res){
 
-    var Project = mongoose.model('Project');
+    var Inquiry = mongoose.model('Inquiry');
 
-    Project.find(function(err, docs){
+    Inquiry.find(function(err, docs){
 
-      res.render('contact/index', { title:'Contact', jsSrc:'js/contact.js' });
+      if(err){
+        res.sendStatus(400);
+      }else{
+        res.send(docs);
+      }
 
     });
 
   });
+  //Inquiry  API POST route
+  app.post('/api/inquiries', function(req, res){
 
-    // API GET Post route
-    app.get('/api/post', function(req, res){
+    var Inquiry        = mongoose.model('Inquiry');
+    var inquiryData    = req.body;
+    var inquiry        = new Inquiry(inquiryData);
 
-        var Post = mongoose.model('Post');
+    post.save(function(err){
 
-        Post.find(function(err, docs){
-
-            if(err){
-                res.sendStatus(400);
-            }else{
-                res.send(docs);
-            }
-
-        });
-
-    });
-
-    app.post('/api/post', function(req, res){
-
-        var Post        = mongoose.model('Post');
-        var postData    = req.body;
-        var post        = new Post(postData);
-
-        post.save(function(err){
-
-            if(err){
-                res.sendStatus(400);
-            }else{
-                res.send(post);
-            }
-
-        });
+      if(err){
+        res.sendStatus(400);
+      }else{
+        res.send(post);
+      }
 
     });
+
+  });
 
 };
 

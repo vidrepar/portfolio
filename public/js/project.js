@@ -1,5 +1,3 @@
-$(document).ready(function() {
-
   //MASONRY
   //window on load because of the pics, suggestion from the tutorial
   $(window).on('load', function(){
@@ -15,5 +13,3 @@ $(document).ready(function() {
     $widthBrowser = $(window).width();
     console.log($widthBrowser);
   });
-
-});

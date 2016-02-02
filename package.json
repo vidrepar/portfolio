@@ -1,10 +1,14 @@
 {
-  "name": "dynamic-site",
+  "name": "vid-portfolio",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "run.js",
+  "engines":{
+    "node":"4.1.1",
+    "npm":"2.1.x"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start":"node run"
   },
   "author": "",
   "license": "ISC",

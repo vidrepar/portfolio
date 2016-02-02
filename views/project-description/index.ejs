@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <% include ../head.ejs %>
+
+</head>
+<body>
+
+    <% include ../nav.ejs %>
+
+    <div id="portfolio-section-1" class="text-align-center">
+
+      <h1>My <%= title %></h1>
+      <p>- Featured Projects -</p>
+
+      <div class="container container-first">
+        <div class="grid">
+
+      <% for(var i=0;i<projects.length;i++) { %>
+
+          <div class="grid-item">
+
+              <div id="info-project">
+                <h3><%= projects[i].title %></h3>
+
+                <p><%= projects[i].author %></p>
+
+                <p><%= moment(projects[i].timeStamp).format('LL') %></p>
+              </div>
+
+
+          </div>
+
+    <% } %>
+
+          </div>
+        </div><!-- CLOSING DIV OF CONTAINER -->
+      </div>
+
+    <% include ../footer.ejs %>

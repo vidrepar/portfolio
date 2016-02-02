@@ -2,16 +2,16 @@ var express     = require('express');
 var bodyParser  = require('body-parser');
 var app         = express();
 
-var database    = require('./database');
-var router      = require('./router');
+var database    = require('./../database');
+var router      = require('./../router');
 
-var PORT = 3000;
+var PORT = process.env.PORT || 3000;
 
 GLOBAL.APP = app;
 
 // Initialization of our server
 
-function start(){
+exports.start = function(){
 
     // middlewares for processing the request
 	app.use(bodyParser.json());
@@ -20,7 +20,7 @@ function start(){
 
     app.set('view engine', 'ejs');
 
-    // serve content from the public folder 
+    // serve content from the public folder
 	app.use('/', express.static('public'));
     // serve content from the cms folder
 	app.use('/cms', express.static('cms'));
@@ -32,7 +32,7 @@ function start(){
 		app.listen(PORT, function(){
 
             // routes for our API
-			router(app);
+			      router(app);
             console.log('Server running on http://localhost:'+PORT)
 
 		});
@@ -41,23 +41,29 @@ function start(){
 
 }
 
+exports.stop = function(){
+
+
+
+};
+
 function setupModels(){
 
-	require('./models/project');
-    require('./models/post');
-    require('./models/file');
+    require('./../models/file');
+	  require('./../models/project');
+    require('./../models/post');
+    require('./../models/inquiry');
+
 
 }
 
 //CORS middleware
 var allowCrossDomain = function(req, res, next) {
-    
+
     res.header('Access-Control-Allow-Origin', '*');
     res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
     res.header('Access-Control-Allow-Headers', 'Content-Type');
 
     next();
-    
-}
 
-start();
+}

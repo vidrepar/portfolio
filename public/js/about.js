@@ -1,5 +1,3 @@
-$(document).ready(function() {
-
   //COVER image
 
   var $windowHeight = $(window).height();
@@ -26,5 +24,3 @@ $(document).ready(function() {
       });
 
   });
-
-});
