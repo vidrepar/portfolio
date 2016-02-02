@@ -1,4 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat|Lora:400italic,700italic);
+.ColorOverlay {
+  background: rgba(78, 118, 236, 0.82);
+  overflow: hidden;
+  z-index: 2;
+}
 .RoundCorner {
   -webkit-border-radius: 2px 2px 2px 2px;
   -moz-border-radius: 2px 2px 2px 2px;
@@ -425,9 +430,25 @@ nav {
   background: #000;
   display: inline-block;
   margin: 2px;
+  height: 300px;
+  padding: 10px;
+}
+.grid-item #info-project {
+  display: none;
+}
+.grid-item:hover {
   /*
-  height: 450px;
-  */
+    background-color: @blueLight1;
+    */
+  background: rgba(78, 118, 236, 0.82);
+  overflow: hidden;
+  z-index: 2;
+}
+.grid-item:hover #info-project {
+  display: inline-block;
+  position: relative;
+  top: 40px;
+  color: #fff;
 }
 .grid {
   box-shadow: 1px 3px 7px 0px rgba(0, 0, 0, 0.35);

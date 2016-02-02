@@ -21,9 +21,14 @@
 
           <div class="grid-item">
 
-          <h3><%= projects[i].title %></h3>
-          <p><%=  projects[i].author %></p>
-          <p><%=  moment(projects[i].timeStamp).format('LL') %></p>
+              <div id="info-project">
+                <h3><%= projects[i].title %></h3>
+
+                <p><%= projects[i].author %></p>
+
+                <p><%= moment(projects[i].timeStamp).format('LL') %></p>
+              </div>
+
 
           </div>
 

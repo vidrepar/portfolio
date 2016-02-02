@@ -20,6 +20,12 @@
 
 @buttonTextColor: #fff !important;
 
+.ColorOverlay{
+  background: rgba(78, 118, 236, 0.82);
+  overflow: hidden;
+  z-index: 2;
+}
+
 //SHADOW
 @shadowDefault: 1px 2px 5px 0.00px rgba(0, 0, 0, 0.22);
 @shadowGrid: 1px 3px 7px 0.00px rgba(0, 0, 0, 0.35);
@@ -468,9 +474,28 @@ nav{
   background: #000;
   display: inline-block;
   margin: 2px;
-  /*
-  height: 450px;
-  */
+  height: 300px;
+  padding: 10px;
+
+  #info-project{
+    display: none;
+  }
+
+  &:hover{
+
+    /*
+    background-color: @blueLight1;
+    */
+    .ColorOverlay;
+
+    #info-project{
+      display: inline-block;
+      position: relative;
+      top: 40px;
+      color: #fff;
+    }
+  }
+
 }
 
 .grid{
