@@ -33,7 +33,7 @@ exports.start = function(){
 
             // routes for our API
 			      router(app);
-            console.log('Server running on http://localhost:'+PORT)
+            console.log('Server running on http://localhost:'+PORT);
 
 		});
 
