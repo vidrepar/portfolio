@@ -2,9 +2,9 @@ var mongoose = require('mongoose');
 
 var db = mongoose.connection;
 
-exports.openDatabase = function(cb){
+exports.connect = function(cb){
 
-	mongoose.connect('mongodb://localhost/dynamic');
+	mongoose.connect('mongodb://admin:SlamSuNg@ds055925.mongolab.com:55925/heroku_cqp0f4zb');
 
 	db.on('error', console.error.bind(console, 'connection error:'));
 

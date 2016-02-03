@@ -2,10 +2,9 @@ var express     = require('express');
 var bodyParser  = require('body-parser');
 var app         = express();
 
-var serveIndex = require('serve-index');
+var serveIndex  = require('serve-index');
 var serveStatic = require('serve-static');
 
-var database    = require('./../database');
 var router      = require('./router');
 
 var PORT = process.env.PORT || 3000;
@@ -13,7 +12,6 @@ var PORT = process.env.PORT || 3000;
 GLOBAL.APP = app;
 
 // Initialization of our server
-
 exports.start = function(){
 
   // middlewares for processing the request
@@ -25,43 +23,18 @@ exports.start = function(){
 
   // serve content from the public folder
   app.use('/assets', serveStatic('public'));
+  app.use('/cms-dev', serveStatic('cms-dev'));
   app.use('/cms', serveStatic('cms-dist'));
   app.use('/assets', serveIndex('public'));
 
-  // serve content from the cms folder
-	app.use('/cms', express.static('cms'));
+  app.listen(PORT, function(){
 
-	database.openDatabase(function(){
+    console.log('Server running on http://localhost:'+PORT);
+    router(app); // routes for our API in our router
 
-		setupModels();
-
-		app.listen(PORT, function(){
-
-            // routes for our API in our router
-			      router(app);
-            console.log('Server running on http://localhost:'+PORT);
-
-		});
-
-	});
-
-}
-
-exports.stop = function(){
-
-
+  });
 
 };
-
-function setupModels(){
-
-    require('./../models/file');
-	  require('./../models/project');
-    require('./../models/post');
-    require('./../models/inquiry');
-
-
-}
 
 //CORS middleware
 var allowCrossDomain = function(req, res, next) {
@@ -72,4 +45,4 @@ var allowCrossDomain = function(req, res, next) {
 
     next();
 
-}
+};

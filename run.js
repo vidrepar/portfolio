@@ -1,10 +1,20 @@
-var server = require('./server/server');
+var server      = require('./server/server');
+var database    = require('./server/database');
 
-//initalization file
+//initialization file
 
 function init(){
 
-  server.start();
+  database.connect(function(){
+
+    server.start();
+
+    require('./server/models/project');
+    require('./server/models/post');
+    require('./server/models/file');
+    require('./server/models/inquiry');
+
+  });
 
 }
 
