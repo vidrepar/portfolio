@@ -16,7 +16,7 @@ GLOBAL.APP = app;
 
 exports.start = function(){
 
-    // middlewares for processing the request
+  // middlewares for processing the request
 	app.use(bodyParser.json());
 	app.use(bodyParser.urlencoded());
 	app.use(allowCrossDomain);
@@ -24,9 +24,9 @@ exports.start = function(){
   app.set('view engine', 'ejs');
 
   // serve content from the public folder
-  app.use('/', serveStatic('public'));
-  app.use('/cms', serveStatic('cms-dev/dist'));
-  app.use('/', serveIndex('public'));
+  app.use('/assets', serveStatic('public'));
+  app.use('/cms', serveStatic('cms-dist'));
+  app.use('/assets', serveIndex('public'));
 
   // serve content from the cms folder
 	app.use('/cms', express.static('cms'));

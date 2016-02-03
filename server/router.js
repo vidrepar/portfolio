@@ -9,14 +9,14 @@ module.exports = function(app){
   // Landing page route
   app.get('/', function(req, res){
 
-    res.render('index', { title:'Welcome', jsSrc:'js/index.js' });
+    res.render('index', { title:'Welcome', jsSrc:'assets/js/index.js' });
 
   });
 
   // About GET route
   app.get('/about', function(req, res){
 
-    res.render('about/index', { title:'About Me', jsSrc:'js/about.js' });
+    res.render('about/index', { title:'About Me', jsSrc:'assets/js/about.js' });
 
   });
 
@@ -27,7 +27,7 @@ module.exports = function(app){
 
     Project.find(function(err, docs){
 
-      res.render('contact/index', { title:'Contact', jsSrc:'js/contact.js' });
+      res.render('contact/index', { title:'Contact', jsSrc:'assets/js/contact.js' });
 
     });
 
@@ -43,7 +43,7 @@ module.exports = function(app){
       res.render('projects/index', {
         title:'Work',
         projects:docs,
-        jsSrc:'js/project.js',
+        jsSrc:'assets/js/project.js',
         moment:moment
 
       });
@@ -62,7 +62,7 @@ module.exports = function(app){
       res.render('presentation/index', {
         title:'Work',
         projects:docs,
-        jsSrc:'js/project.js',
+        jsSrc:'assets/js/project.js',
         moment:moment
 
       });
