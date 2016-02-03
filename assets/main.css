@@ -233,7 +233,7 @@ footer p {
   margin: 10px 20px;
 }
 #close {
-  background: url("images/close.png") no-repeat;
+  background: url("../assets/images/close.png") no-repeat;
   height: 57px !important;
   width: 66px !important;
   cursor: pointer;
@@ -269,17 +269,17 @@ nav {
   z-index: 333!important;
 }
 #logo {
-  background: url(images/logo.png) no-repeat;
+  background: url(../assets/images/logo.png) no-repeat;
   width: 82px;
   height: 48px;
 }
 #hamburger {
-  background: url(images/hamburger.png);
+  background: url(../assets/images/hamburger.png);
   width: 67px;
   height: 48px;
 }
 #hamburger:hover {
-  background: url(images/hamburger-hover.png);
+  background: url(../assets/images/hamburger-hover.png);
   width: 67px;
   height: 48px;
   cursor: pointer;
@@ -298,7 +298,7 @@ nav {
 }
 /*LANDING SECTION 1*/
 .landing-section-1 {
-  background: url(images/bg-landing.png) no-repeat center center;
+  background: url(../assets/images/bg-landing.png) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -327,7 +327,7 @@ nav {
 /*ABOUT PAGE*/
 /*ABOUT SECTION 1*/
 #about-section-1 {
-  background: url(images/bg-about.png) no-repeat center center;
+  background: url(../assets/images/bg-about.png) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -343,7 +343,7 @@ nav {
   margin-top: 45px;
 }
 #about-section-abilities {
-  background: url("images/bg-abilities.png") no-repeat center center;
+  background: url("../assets/images/bg-abilities.png") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -358,7 +358,7 @@ nav {
   padding-bottom: 90px;
 }
 #section-connect {
-  background: url("images/bg-connect.png") no-repeat center center;
+  background: url("../assets/images/bg-connect.png") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -370,13 +370,13 @@ nav {
   color: #fff !important;
 }
 #section-connect #icon-github:hover {
-  content: url("images/icon-github-round-hover.png");
+  content: url("../assets/images/icon-github-round-hover.png");
 }
 #section-connect #icon-facebook:hover {
-  content: url("images/icon-facebook-round-hover.png");
+  content: url("../assets/images/icon-facebook-round-hover.png");
 }
 #section-connect #icon-behance:hover {
-  content: url("images/icon-behance-round-hover.png");
+  content: url("../assets/images/icon-behance-round-hover.png");
 }
 #section-connect .col-md-8 {
   /*this is not working*/
@@ -389,7 +389,7 @@ nav {
 /*CONTACT PAGE*/
 /*CONTACT SECTION 1*/
 #contact-section-1 {
-  background: url(images/bg-contact.png) no-repeat center center;
+  background: url(../assets/images/bg-contact.png) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -404,7 +404,7 @@ nav {
 /*PORTFOLIO PAGE*/
 /*PORTFOLIO SECTION 1*/
 #portfolio-section-1 {
-  background: url(images/bg-portfolio.png) repeat-x;
+  background: url(../assets/images/bg-portfolio.png) repeat-x;
   color: #203060 !important;
 }
 #portfolio-section-1 h1 {
