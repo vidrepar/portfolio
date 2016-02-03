@@ -22,10 +22,10 @@ exports.start = function(){
   app.set('view engine', 'ejs');
 
   // serve content from the public folder
-  app.use('/assets', serveStatic('public'));
+  app.use('/assets', serveStatic('assets'));
   app.use('/cms-dev', serveStatic('cms-dev'));
   app.use('/cms', serveStatic('cms-dist'));
-  app.use('/assets', serveIndex('public'));
+  app.use('/assets', serveIndex('assets'));
 
   app.listen(PORT, function(){
 
