@@ -2,8 +2,11 @@ var express     = require('express');
 var bodyParser  = require('body-parser');
 var app         = express();
 
+var serveIndex = require('serve-index');
+var serveStatic = require('serve-static');
+
 var database    = require('./../database');
-var router      = require('./../router');
+var router      = require('./router');
 
 var PORT = process.env.PORT || 3000;
 
@@ -18,11 +21,14 @@ exports.start = function(){
 	app.use(bodyParser.urlencoded());
 	app.use(allowCrossDomain);
 
-    app.set('view engine', 'ejs');
+  app.set('view engine', 'ejs');
 
-    // serve content from the public folder
-	app.use('/', express.static('public'));
-    // serve content from the cms folder
+  // serve content from the public folder
+  app.use('/', serveStatic('public'));
+  app.use('/cms', serveStatic('cms-dev/dist'));
+  app.use('/', serveIndex('public'));
+
+  // serve content from the cms folder
 	app.use('/cms', express.static('cms'));
 
 	database.openDatabase(function(){
@@ -31,7 +37,7 @@ exports.start = function(){
 
 		app.listen(PORT, function(){
 
-            // routes for our API
+            // routes for our API in our router
 			      router(app);
             console.log('Server running on http://localhost:'+PORT);
 

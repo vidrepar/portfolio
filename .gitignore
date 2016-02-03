@@ -1,4 +1,2 @@
 node_modules/
-dynamic-cms/node_modules
-dynamic-cms/bower_components
-cms-dev
+bower_components/

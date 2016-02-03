@@ -1,0 +1,52 @@
+<div class="col-md-12">
+
+	<h1>My projects</h1>
+    <div class="btn btn-primary" ng-click="createProject()">Create project</div>
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Title</th>
+				<th>Date</th>
+				<th>Published</th>
+				<th>Actions</th>
+			</tr>
+		</thead>
+        <!-- ng-model="projects" as-sortable -->
+		<tbody>
+            <!-- as-sortable-item  -->
+			<tr ng-repeat="project in projects" ng-class="{'green-row':project.isPublished}">
+                <!--  as-sortable-item-handle -->
+				<td>
+					{{project.title}}
+				</td>
+				<td>
+					{{project.dateTime | date:'dd/MM/yyyy, hh:mm:ss'}}
+				</td>
+				<td>
+					{{project.isPublished}}
+				</td>
+				<td>
+					<div class="btn btn-xs btn-primary" ng-click="editProject(project)">Edit</div>
+					<div class="btn btn-xs btn-danger" ng-click="removeProject(project._id)">Remove</div>
+					<div class="btn btn-xs btn-success" ng-if="!project.isPublished" ng-click="publishProject(project)">Publish</div>
+					<div class="btn btn-xs btn-warning" ng-if="project.isPublished" ng-click="unpublishProject(project)">Unpublish</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

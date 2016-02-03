@@ -3,12 +3,12 @@
   "version": "0.0.1",
   "description": "",
   "main": "run.js",
-  "engines":{
-    "node":"4.1.1",
-    "npm":"2.1.x"
+  "engines": {
+    "node": "4.1.1",
+    "npm": "2.1.x"
   },
   "scripts": {
-    "start":"node run.js"
+    "start": "node run"
   },
   "author": "",
   "license": "ISC",
@@ -17,6 +17,8 @@
     "ejs": "^2.3.4",
     "express": "^4.13.3",
     "moment": "^2.11.1",
-    "mongoose": "^4.2.5"
+    "mongoose": "^4.2.5",
+    "serve-index": "^1.7.3",
+    "serve-static": "^1.10.2"
   }
 }

@@ -5,8 +5,74 @@ var token = '2309dfhdsf0lkasdASDasd821lk';
 
 module.exports = function(app){
 
-      // API Login routes
-    app.post('/api/login', function(req, res){
+  /*EJS ROUTES*/
+  // Landing page route
+  app.get('/', function(req, res){
+
+    res.render('index', { title:'Welcome', jsSrc:'js/index.js' });
+
+  });
+
+  // About GET route
+  app.get('/about', function(req, res){
+
+    res.render('about/index', { title:'About Me', jsSrc:'js/about.js' });
+
+  });
+
+  // Contact GET route
+  app.get('/contact', function(req, res){
+
+    var Project = mongoose.model('Project');
+
+    Project.find(function(err, docs){
+
+      res.render('contact/index', { title:'Contact', jsSrc:'js/contact.js' });
+
+    });
+
+  });
+
+  // Project GET route
+  app.get('/projects', function(req, res){
+
+    var Project = mongoose.model('Project');
+
+    Project.find(function(err, docs){
+
+      res.render('projects/index', {
+        title:'Work',
+        projects:docs,
+        jsSrc:'js/project.js',
+        moment:moment
+
+      });
+
+    });
+
+  });
+
+  // Project Description GET route
+  app.get('/presentation', function(req, res){
+
+    var Project = mongoose.model('Project');
+
+    Project.find(function(err, docs){
+
+      res.render('presentation/index', {
+        title:'Work',
+        projects:docs,
+        jsSrc:'js/project.js',
+        moment:moment
+
+      });
+
+    });
+
+  });
+
+  // API Login routes
+  app.post('/api/login', function(req, res){
 
 		var username = 'franci';
 		var password = 'mypassword';
@@ -60,72 +126,6 @@ module.exports = function(app){
         });
 
     });
-
-  // Landing page route
-  app.get('/', function(req, res){
-
-      res.render('index', { title:'Welcome', jsSrc:'js/index.js' });
-
-  });
-
-  // About GET route
-  app.get('/about', function(req, res){
-
-    res.render('about/index', { title:'About Me', jsSrc:'js/about.js' });
-
-  });
-
-  // Contact GET route
-  app.get('/contact', function(req, res){
-
-    var Project = mongoose.model('Project');
-
-    Project.find(function(err, docs){
-
-      res.render('contact/index', { title:'Contact', jsSrc:'js/contact.js' });
-
-    });
-
-  });
-
-  // Project GET route
-  app.get('/projects', function(req, res){
-
-    var Project = mongoose.model('Project');
-
-    Project.find(function(err, docs){
-
-      res.render('projects/index', {
-        title:'Work',
-        projects:docs,
-        jsSrc:'js/project.js',
-        moment:moment
-
-      });
-
-    });
-
-  });
-
-  // Project Description GET route
-    app.get('/presentation', function(req, res){
-
-        var Project = mongoose.model('Project');
-
-        Project.find(function(err, docs){
-
-            res.render('presentation/index', {
-              title:'Work',
-              projects:docs,
-              jsSrc:'js/project.js',
-              moment:moment
-
-          });
-
-        });
-
-    });
-
 
   //Project API GET routes
 	app.get('/api/project', function(req, res){

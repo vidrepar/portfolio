@@ -1,0 +1,40 @@
+<div class="col-md-12">
+
+	<h1>My posts</h1>
+    <div class="btn btn-primary" ng-click="createNew()">Create new</div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Title
+                </th>
+                <th>
+                    Date
+                </th>
+                <th>
+                    Author
+                </th>
+                <th>
+                    Actions
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="post in posts">
+                <td>
+                    {{post.title}}
+                </td>
+                <td>
+                    {{post.dateTime | date:'dd/MM/yyyy hh:mm:ss'}}
+                </td>
+                <td>
+                    {{post.author}}
+                </td>
+                <td>
+                    <div class="btn btn-xs btn-danger" ng-click="removePost(post.id)">remove</div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
