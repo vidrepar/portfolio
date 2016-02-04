@@ -2,79 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f3cdca0-b0a8-4c6e-bd26-65057652e8c2" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/.keep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/fullpage.js/.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/fullpage.js/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/fullpage.js/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/fullpage.js/dist/jquery.fullpage.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/fullpage.js/dist/jquery.fullpage.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/fullpage.js/dist/jquery.fullpage.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/fullpage.js/dist/jquery.fullpage.min.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/fullpage.js/dist/jquery.fullpage.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/fullpage.js/dist/jquery.fullpage.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/fullpage.js/gulpfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/fullpage.js/jquery.fullPage.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/fullpage.js/jquery.fullPage.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/fullpage.js/jquery.fullPage.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/fullpage.js/jquery.fullPage.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/fullpage.js/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/fullpage.js/pure javascript (Alpha)/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/fullpage.js/pure javascript (Alpha)/demo.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/fullpage.js/pure javascript (Alpha)/javascript.fullPage.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/fullpage.js/pure javascript (Alpha)/javascript.fullPage.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/fullpage.js/pure javascript (Alpha)/javascript.fullPage.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/fullpage.js/vendors/jquery.easings.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/fullpage.js/vendors/jquery.slimscroll.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/fullpage.js/vendors/jquery.slimscroll.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/jquery/.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/jquery/AUTHORS.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/jquery/LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/jquery/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/jquery/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/jquery/dist/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/jquery/dist/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/masonry/.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/masonry/README.mdown" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/masonry/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/masonry/dist/masonry.pkgd.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/masonry/dist/masonry.pkgd.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/masonry/masonry.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/bg-abilities.png" afterPath="$PROJECT_DIR$/assets/images/bg-abilities.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/bg-about.png" afterPath="$PROJECT_DIR$/assets/images/bg-about.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/bg-connect.png" afterPath="$PROJECT_DIR$/assets/images/bg-connect.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/bg-contact.png" afterPath="$PROJECT_DIR$/assets/images/bg-contact.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/bg-landing.png" afterPath="$PROJECT_DIR$/assets/images/bg-landing.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/bg-portfolio.png" afterPath="$PROJECT_DIR$/assets/images/bg-portfolio.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/close.png" afterPath="$PROJECT_DIR$/assets/images/close.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/hamburger-hover.png" afterPath="$PROJECT_DIR$/assets/images/hamburger-hover.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/hamburger.png" afterPath="$PROJECT_DIR$/assets/images/hamburger.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/icon-angular.png" afterPath="$PROJECT_DIR$/assets/images/icon-angular.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/icon-animations.png" afterPath="$PROJECT_DIR$/assets/images/icon-animations.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/icon-apps.png" afterPath="$PROJECT_DIR$/assets/images/icon-apps.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/icon-behance-hover.png" afterPath="$PROJECT_DIR$/assets/images/icon-behance-hover.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/icon-behance-round-hover.png" afterPath="$PROJECT_DIR$/assets/images/icon-behance-round-hover.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/icon-behance-round.png" afterPath="$PROJECT_DIR$/assets/images/icon-behance-round.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/icon-behance.png" afterPath="$PROJECT_DIR$/assets/images/icon-behance.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/icon-facebook-hover.png" afterPath="$PROJECT_DIR$/assets/images/icon-facebook-hover.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/icon-facebook-round-hover.png" afterPath="$PROJECT_DIR$/assets/images/icon-facebook-round-hover.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/icon-facebook-round.png" afterPath="$PROJECT_DIR$/assets/images/icon-facebook-round.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/icon-facebook.png" afterPath="$PROJECT_DIR$/assets/images/icon-facebook.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/icon-github-round-hover.png" afterPath="$PROJECT_DIR$/assets/images/icon-github-round-hover.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/icon-github-round.png" afterPath="$PROJECT_DIR$/assets/images/icon-github-round.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/icon-github.png" afterPath="$PROJECT_DIR$/assets/images/icon-github.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/icon-node.png" afterPath="$PROJECT_DIR$/assets/images/icon-node.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/icon-photoshop.png" afterPath="$PROJECT_DIR$/assets/images/icon-photoshop.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/icon-vector.png" afterPath="$PROJECT_DIR$/assets/images/icon-vector.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/logo.png" afterPath="$PROJECT_DIR$/assets/images/logo.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/js/about.js" afterPath="$PROJECT_DIR$/assets/js/about.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/js/contact.js" afterPath="$PROJECT_DIR$/assets/js/contact.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/js/index.js" afterPath="$PROJECT_DIR$/assets/js/index.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/js/nav.js" afterPath="$PROJECT_DIR$/assets/js/nav.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/js/presentation.js" afterPath="$PROJECT_DIR$/assets/js/presentation.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/js/project.js" afterPath="$PROJECT_DIR$/assets/js/project.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/main.css" afterPath="$PROJECT_DIR$/assets/main.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/main.less" afterPath="$PROJECT_DIR$/assets/main.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/head.ejs" afterPath="$PROJECT_DIR$/views/head.ejs" />
     </list>
     <ignored path="dynamic.iws" />
@@ -96,16 +23,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/js/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="contact.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/contact.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -129,8 +46,18 @@
       <file leaf-file-name="head.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/head.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.21683674">
-              <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.47959185">
+              <caret line="14" column="125" selection-start-line="14" selection-start-column="125" selection-end-line="14" selection-end-column="125" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -345,7 +272,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -507,13 +434,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/contact/index.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21818182">
-          <caret line="21" column="52" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/about/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.2181818">
@@ -886,10 +806,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/head.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21683674">
-          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.47959185">
+          <caret line="14" column="125" selection-start-line="14" selection-start-column="125" selection-end-line="14" selection-end-column="125" />
           <folding />
         </state>
       </provider>
