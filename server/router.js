@@ -33,6 +33,16 @@ module.exports = function(app){
 
   });
 
+
+
+
+
+
+
+
+
+
+
   // Project GET route
   app.get('/projects', function(req, res){
 
@@ -45,31 +55,65 @@ module.exports = function(app){
         projects:docs,
         jsSrc:'assets/js/project.js',
         moment:moment
-
       });
 
     });
 
   });
 
-  // Project Description GET route
-  app.get('/presentation', function(req, res){
+
+
+
+
+
+
+
+
+
+
+
+
+
+  //SINGLE Project GET route
+  app.get('/projects/:id', function(req, res){
 
     var Project = mongoose.model('Project');
 
-    Project.find(function(err, docs){
+    var id = req.params.id;
+    Project.findOne({'_id':req.params.id},function(err, result) {
+      if(!err){
 
-      res.render('presentation/index', {
-        title:'Work',
-        projects:docs,
-        jsSrc:'assets/js/project.js',
-        moment:moment
 
-      });
+        res.render('presentation/index', {
+          title:'Work',
+          project:result,
+          jsSrc:'assets/js/presentation.js',
+          moment:moment
+        });
 
+
+      }
     });
-
   });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   // API Login routes
   app.post('/api/login', function(req, res){
@@ -126,6 +170,17 @@ module.exports = function(app){
         });
 
     });
+
+
+
+
+
+
+
+
+
+
+
 
   //Project API GET routes
 	app.get('/api/project', function(req, res){
@@ -196,6 +251,39 @@ module.exports = function(app){
 		});
 
 	});
+
+
+
+
+
+
+
+
+
+  //SINGLE Project API GET route
+  app.get('/api/project/:id', function(req, res){
+
+    var Project = mongoose.model('Project');
+
+    var id = req.params.id;
+    Project.findOne({'_id':req.params.id},function(err, result) {
+      if(!err){
+        res.send(result);
+      }
+    });
+  });
+
+
+
+
+
+
+
+
+
+
+
+
 
   //Post  API GET route
   app.get('/api/post', function(req, res){
