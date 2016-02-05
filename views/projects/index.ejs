@@ -19,18 +19,15 @@
 
       <% for(var i=0;i<projects.length;i++) { %>
 
-          <div class="grid-item">
-
+          <a href="/projects/<%= projects[i]._id %>">
+            <div class="grid-item">
               <div id="info-project">
                 <h3><%= projects[i].title %></h3>
-
                 <p><%= projects[i].author %></p>
-
                 <p><%= moment(projects[i].timeStamp).format('LL') %></p>
               </div>
-
-
-          </div>
+            </div>
+          </a>
 
     <% } %>
 

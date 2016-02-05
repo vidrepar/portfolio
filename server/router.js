@@ -33,16 +33,6 @@ module.exports = function(app){
 
   });
 
-
-
-
-
-
-
-
-
-
-
   // Project GET route
   app.get('/projects', function(req, res){
 
@@ -62,32 +52,20 @@ module.exports = function(app){
   });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
   //SINGLE Project GET route
   app.get('/projects/:id', function(req, res){
 
     var Project = mongoose.model('Project');
 
     var id = req.params.id;
-    Project.findOne({'_id':req.params.id},function(err, result) {
+    Project.findOne({'_id':id},function(err, result) {
       if(!err){
 
 
         res.render('presentation/index', {
           title:'Work',
           project:result,
-          jsSrc:'assets/js/presentation.js',
+          jsSrc:'/assets/js/presentation.js',
           moment:moment
         });
 
