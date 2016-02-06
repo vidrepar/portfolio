@@ -9,25 +9,33 @@
 
   <% include ../nav.ejs %>
 
-  <div id="presentation-section-1" class="text-align-center">
+  <div class="container">
+    <div id="presentation-section-1" class="text-align-center">
 
-    <h1><%= project.title %></h1>
-    <p><%= moment(project.timeStamp).format('LL') %></p>
+      <div class="container"><h1><%= project.title %></h1>
 
-    <div class="container">
-      <div id="project-services" class="col-md-4">Test</div>
-      <div id="project-description" class="col-md-8">
-        <p><%= project.description %></p>
-      </div>
-    </div>
+        <p>- <%= moment(project.timeStamp).format('LL') %> -</p></div>
 
-    <div id="project-context" class="container-fluid">
+      <img src="/assets/images/bg-presentation.png">
 
     </div>
+  </div>
 
-    <div class="container">
-
+  <div class="container" id="presentation-section-2">
+    <div id="project-services" class="col-md-offset-1 col-md-3">
+      <h2>Provided Services</h2>
+      <p>Web Design</p>
     </div>
+    <div id="project-description" class="col-md-7">
+      <p><%= project.description %></p>
+    </div>
+  </div>
+
+  <div id="project-context" class="container-fluid">
+
+  </div>
+
+  <div class="container">
 
   </div>
 
