@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat|Lora:400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Montserrat|Lora:400,400italic,700,700italic);
 .ColorOverlay {
   background: rgba(78, 118, 236, 0.82);
   overflow: hidden;
@@ -472,6 +472,43 @@ nav {
 #presentation-section-2 {
   position: relative;
   margin-top: 150px !important;
+  margin-bottom: 150px !important;
+}
+#presentation-section-2 p {
+  font-style: normal !important;
+  line-height: 40px;
+}
+#presentation-section-3 {
+  border: solid black 1px;
+  padding: 0px;
+}
+#project-context-left {
+  height: 400px;
+  border: solid black 1px;
+}
+#project-context-right {
+  height: 400px;
+  border: solid black 1px;
+}
+#presentation-section-4 {
+  border: solid black 1px;
+  padding-top: 150px !important;
+  padding-bottom: 150px !important;
+}
+#presentation-section-5 {
+  border: solid black 1px;
+  padding-top: 150px !important;
+  padding-bottom: 150px !important;
+}
+#presentation-section-6 {
+  border: solid black 1px;
+  padding-top: 150px !important;
+  padding-bottom: 150px !important;
+}
+#presentation-section-7 {
+  border: solid black 1px;
+  padding-top: 150px !important;
+  padding-bottom: 150px !important;
 }
 /*MEDIA QUERIES FOR MASONRY GRID & GRID ITEMS*/
 /* Large desktop */
