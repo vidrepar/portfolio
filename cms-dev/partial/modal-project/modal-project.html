@@ -4,11 +4,16 @@
         <h3 class="modal-title">{{type}} project</h3>
 </div>
 <div class="modal-body">
-    
-    <label>Project title</label>
-    <input class="form-control" type="text" ng-model="project.title" />
-    <label>Project Description</label>
-    <textarea class="form-control" ng-model="project.description"></textarea>
+
+    <label for="title">Project title</label>
+    <input class="form-control" id="title" type="text" ng-model="project.title" />
+    <label for="description">Project Description</label>
+    <textarea class="form-control" id="description" ui-tinymce ng-model="tinymceModel"></textarea>
+    <label>Upload cover</label><br/>
+    <div class="btn btn-primary" ngf-select="upload($file)">Upload on file select</div>
+
+    <br/><br/>
+    <div class="btn btn-lg btn-block btn-success">Save</div>
 
 </div>
 <div class="modal-footer">

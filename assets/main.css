@@ -207,6 +207,8 @@ footer {
   color: #d3d3d3;
   position: relative;
   bottom: 0px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 footer p {
   font-size: 14px;
@@ -509,6 +511,20 @@ nav {
   border: solid black 1px;
   padding-top: 150px !important;
   padding-bottom: 150px !important;
+}
+#lets-work {
+  background: url("images/bg-lets-work.png") repeat-x;
+  height: 526px;
+  padding-top: 120px;
+  padding-bottom: 150px;
+  color: white;
+  position: relative;
+  margin-top: -48px;
+  margin-bottom: -48px;
+  z-index: 1;
+}
+#lets-work h2 {
+  color: white !important;
 }
 /*MEDIA QUERIES FOR MASONRY GRID & GRID ITEMS*/
 /* Large desktop */

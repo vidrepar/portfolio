@@ -4,7 +4,8 @@ angular.module('cms',
     'ui.utils',
     'ui.router',
     'ngAnimate',
-    'as.sortable'
+    'as.sortable',
+        'ui.tinymce'
     ]);
 
 angular.module('cms').config(function($stateProvider, $urlRouterProvider, $locationProvider) {
