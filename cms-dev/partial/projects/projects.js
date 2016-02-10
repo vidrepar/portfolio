@@ -46,7 +46,7 @@ angular.module('cms')
 
 	$scope.removeProject = function(projectId){
 
-		var c = confirm('Are you sure you want to delete this project');
+		var c = confirm('Are you sure you want to delete this project?');
 
 		if(c){
 			ProjectService.deleteProject(projectId);

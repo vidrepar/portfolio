@@ -175,7 +175,7 @@ module.exports = function(app){
      .resize(353, 257)
      .autoOrient()
      .write(thumbPath, function (err) {
-       if (err) console.log(' hooray!, but error ');
+       if (err) console.log(' hooray! ');
      //  if (!err) console.log(' hooray! ');
      });
 

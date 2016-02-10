@@ -5,16 +5,59 @@
 </div>
 <div class="modal-body">
 
+    <!-- PROJECT TITLE, COVER AND DESCRIPTION -->
     <label for="title">Project title</label>
-    <input class="form-control" id="title" type="text" ng-model="project.title" />
+    <input class="form-control" id="title" type="text" ng-model="project.title" /><br/>
+    <label>Upload cover</label>
+    <div class="btn btn-primary" ngf-select="upload($file)">Upload image</div><br/><br/>
     <label for="description">Project Description</label>
     <textarea class="form-control" id="description" ui-tinymce ng-model="project.description"></textarea>
     <br/>
-    <label>Upload images</label><br/>
-    <div class="btn btn-primary" ngf-select="upload($file)">Upload cover</div>
-    <br/><br/>
-    <label>Upload cover</label><br/>
-    <div class="btn btn-primary" ngf-select="upload($file)">Upload images</div>
+    <hr>
+
+
+    <!-- CONTEXT SECTION, 2 IMAGES 50% WIDTH EACH ON THE WEBSITE -->
+    <label>Upload Context Image</label><br/>
+    <div class="btn btn-primary" ngf-select="upload($file)">Upload image</div><br/>
+    <label>Upload Corporate Logo/Graphic</label><br/>
+    <div class="btn btn-primary" ngf-select="upload($file)">Upload image</div>
+    <br/>
+    <hr>
+
+    <!-- CUSTOM SECTION 1 / TYPOGRAPHY SECTION -->
+    <label for="title">Section {{ project.sectionOne.title }}</label>
+    <input class="form-control" id="title" type="text" ng-model="project.sectionOne.title" /><br/>
+    <label>Upload {{ project.sectionOne.title }} Image</label><br/>
+    <div class="btn btn-primary" ngf-select="upload($file)">Upload image</div>
+    <br/>
+    <hr>
+    <!-- CUSTOM SECTION 2 / COLOR SCHEME SECTION -->
+    <label for="title">Section {{ project.sectionTwo.title }}</label>
+    <input class="form-control" id="title" type="text" ng-model="project.sectionTwo.title" /><br/>
+    <label>Upload {{ project.sectionTwo.title }} Image</label><br/>
+    <div class="btn btn-primary" ngf-select="upload($file)">Upload image</div>
+    <br/>
+    <hr>
+<!-- CUSTOM SECTION 3 -->
+    <label for="title">Section {{ project.sectionThree.title }}</label>
+    <input class="form-control" id="title" type="text" ng-model="project.sectionThree.title" /><br/>
+    <label>Upload {{ project.sectionThree.title }} Image</label><br/>
+    <div class="btn btn-primary" ngf-select="upload($file)">Upload image</div>
+    <br/>
+    <hr>
+<!-- CUSTOM SECTION 4 -->
+    <label for="title">Section {{ project.sectionFour.title }}</label>
+    <input class="form-control" id="title" type="text" ng-model="project.sectionFour.title" /><br/>
+    <label>Upload {{ project.sectionFour.title }} Image</label><br/>
+    <div class="btn btn-primary" ngf-select="upload($file)">Upload image</div>
+    <br/>
+    <hr>
+<!-- CUSTOM SECTION 5 -->
+    <label for="title">Section {{ project.sectionFive.title }}</label>
+    <input class="form-control" id="title" type="text" ng-model="project.sectionFive.title" /><br/>
+    <label>Upload {{ project.sectionFive.title }} Image</label><br/>
+    <div class="btn btn-primary" ngf-select="upload($file)">Upload image</div>
+    <br/>
 
 </div>
 <div class="modal-footer">
