@@ -14,8 +14,10 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.14.1",
+    "connect-multiparty": "^2.0.0",
     "ejs": "^2.3.4",
     "express": "^4.13.3",
+    "gm": "^1.21.1",
     "moment": "^2.11.2",
     "mongoose": "^4.2.5",
     "nodemailer": "^2.1.0",

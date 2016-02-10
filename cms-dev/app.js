@@ -5,6 +5,7 @@ angular.module('cms',
     'ui.router',
     'ngAnimate',
     'as.sortable',
+        'ngFileUpload',
         'ui.tinymce'
     ]);
 
@@ -44,6 +45,8 @@ angular.module('cms').config(function($stateProvider, $urlRouterProvider, $locat
         url: '/inquiries',
         templateUrl: 'partial/inquiries/inquiries.html'
     });
+
+
     /* Add New States Above */
     $urlRouterProvider.otherwise('/projects');
 

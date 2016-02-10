@@ -1,5 +1,5 @@
 angular.module('cms')
-.controller('ModalProjectCtrl',function($scope, $modalInstance, ProjectService, project){
+.controller('ModalProjectCtrl',function($scope, Upload, $modalInstance, ProjectService, project){
 
     var newProject = false;
 
@@ -35,6 +35,22 @@ angular.module('cms')
 		$modalInstance.close();
 
 	};
+
+    $scope.upload = function(file){
+
+        Upload.upload({
+            url: '/api/upload',
+            data: {file: file}
+        }).then(function (resp) {
+            console.log('Success ' + resp.config.data.file.name + 'uploaded. Response: ' + resp.data);
+        }, function (resp) {
+            console.log('Error status: ' + resp.status);
+        }, function (evt) {
+            var progressPercentage = parseInt(100.0 * evt.loaded / evt.total);
+            console.log('progress: ' + progressPercentage + '% ' + evt.config.data.file.name);
+        });
+
+    };
 
 });
 

@@ -68,6 +68,12 @@ angular.module('cms')
 
 	};
 
+    $scope.save = function(){
+
+
+
+    };
+
 });
 
 

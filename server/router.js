@@ -1,7 +1,11 @@
 var mongoose = require('mongoose');
 var moment = require('moment');
+var multipart = require('connect-multiparty');
+var multipartMiddleware = multipart({ uploadDir: './assets/images' });
 var nodemailer = require('nodemailer');
 var token = '2309dfhdsf0lkasdASDasd821lk';
+
+var gm = require('gm');
 
 
 module.exports = function(app){
@@ -149,6 +153,35 @@ module.exports = function(app){
         });
 
     });
+
+
+
+  //File Upload API routes
+ app.post('/api/upload', multipartMiddleware, function(req, res){
+
+    console.log('Body: ', req.body);
+    console.log('Files: ', req.files);
+
+   var path = req.files.file.path;
+
+   var uniqueFilenameParts = path.split('/');
+   var uniqueFilename = uniqueFilenameParts[uniqueFilenameParts.length-1];
+
+   console.log('uniqueFilename is: ', uniqueFilename);
+
+   var thumbPath = './assets/thumbs/'+uniqueFilename;
+
+   gm(path)
+     .resize(353, 257)
+     .autoOrient()
+     .write(thumbPath, function (err) {
+       if (err) console.log(' hooray!, but error ');
+     //  if (!err) console.log(' hooray! ');
+     });
+
+   res.sendStatus(200);
+
+ });
 
 
 

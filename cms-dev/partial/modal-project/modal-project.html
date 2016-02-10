@@ -8,12 +8,13 @@
     <label for="title">Project title</label>
     <input class="form-control" id="title" type="text" ng-model="project.title" />
     <label for="description">Project Description</label>
-    <textarea class="form-control" id="description" ui-tinymce ng-model="tinymceModel"></textarea>
-    <label>Upload cover</label><br/>
-    <div class="btn btn-primary" ngf-select="upload($file)">Upload on file select</div>
-
+    <textarea class="form-control" id="description" ui-tinymce ng-model="project.description"></textarea>
+    <br/>
+    <label>Upload images</label><br/>
+    <div class="btn btn-primary" ngf-select="upload($file)">Upload cover</div>
     <br/><br/>
-    <div class="btn btn-lg btn-block btn-success">Save</div>
+    <label>Upload cover</label><br/>
+    <div class="btn btn-primary" ngf-select="upload($file)">Upload images</div>
 
 </div>
 <div class="modal-footer">
