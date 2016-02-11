@@ -3,10 +3,12 @@ angular.module('cms').factory('ProjectService',function($http) {
 	var project = {
         apiUrl:'http://localhost:3000',
 		model:{
-			list : [],
+			list : [],  //this is a list of ALL projects from the DB
             item : null
 		},
         getProjects:function(){
+
+            console.log('THIS IS IN PROJECT SERVICE', project.apiUrl);
 
             var promise = $http.get(project.apiUrl+'/api/project');
 
@@ -42,6 +44,12 @@ angular.module('cms').factory('ProjectService',function($http) {
             return promise;
 
         },
+
+
+
+
+
+
         createProject:function(projectData){
 
             var promise = $http.post(project.apiUrl+'/api/project', projectData);
@@ -55,6 +63,12 @@ angular.module('cms').factory('ProjectService',function($http) {
             return promise;
 
         },
+
+
+
+
+
+
         updateProject:function(projectId, projectData){
 
             var promise = $http.put(project.apiUrl+'/api/project/'+projectId, projectData);

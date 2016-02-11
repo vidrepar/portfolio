@@ -2,10 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f3cdca0-b0a8-4c6e-bd26-65057652e8c2" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/0R_KPGwysB4a9Y_2pNmvR-Eb.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/BMWKFHVZbvMFzToLpyRP5LnR.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/Es7groPDxmL5IgEDU6FJ4R2W.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/FR35HO36lO1_kZIUnaavm5s9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/FWZhp5Z_FjSYAbNV2h3hcAe7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/G8IJCfQ7FF2MnjSCDt-FyjS6.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/I9gTB6ZBSz6maInaQOqm7KGS.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/N6NmrLVgBRTC83ZOPzyhegj5.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/O8aaEQrUuXYKEPbPijDu_6Rh.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/SsZEq6aqOqsf5oEyZQISzRwG.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/USUx5RkR5r-HZaA9ZBRYSzwb.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/UgyIBAOa9fhXgp_2KsVqEUP2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/VgdPSZFC3WxsV2vTXv6jeJ6t.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/XDVzgVpamJ8L0cVHlmY3GlxC.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/XYaGH1jcQQyQXYluCACO40iJ.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/Z639BBDeACTrYOSSyVWnkgz2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/cXhr7tydAScNfSyyvYPYbDPg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/fFRRkUKKxNY6HYEnDUZZhQCX.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/mSVQUXdcbeexS3QKISoBFhgI.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/nyYZLaeRBW43zkcctimSVPxm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/q7i-c0WQjovSSy1QsEJgNGgp.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/rhwbKgOSfOBbNmm--unanhcG.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/u1gPzRB1BdMcHJqxrvf2Pf82.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/vIuFiMb5IRswSJKxdbYzM_wG.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/wuHfqIfXTbSsHXT9B0pLXF9M.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms-dev/partial/modal-project/modal-project.html" afterPath="$PROJECT_DIR$/cms-dev/partial/modal-project/modal-project.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms-dev/partial/projects/projects.js" afterPath="$PROJECT_DIR$/cms-dev/partial/projects/projects.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/models/project.js" afterPath="$PROJECT_DIR$/server/models/project.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms-dev/partial/modal-project/modal-project.js" afterPath="$PROJECT_DIR$/cms-dev/partial/modal-project/modal-project.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms-dev/service/project.js" afterPath="$PROJECT_DIR$/cms-dev/service/project.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/router.js" afterPath="$PROJECT_DIR$/server/router.js" />
     </list>
     <ignored path="dynamic.iws" />
@@ -26,7 +51,7 @@
     <favorites_list name="dynamic" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.52964425">
+    <splitter split-orientation="horizontal" split-proportion="0.512253">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
@@ -52,7 +77,7 @@
           <file leaf-file-name="projects.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/cms-dev/partial/projects/projects.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-16.73077">
+                <state vertical-scroll-proportion="-17.115385">
                   <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
                   <folding />
                 </state>
@@ -62,9 +87,11 @@
           <file leaf-file-name="modal-project.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/cms-dev/partial/modal-project/modal-project.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.70434785">
-                  <caret line="57" column="17" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
-                  <folding />
+                <state vertical-scroll-proportion="0.34492755">
+                  <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+                  <folding>
+                    <element signature="n#style#0;n#div#0;n#div#2;n#div#1;n#!!top" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -76,8 +103,8 @@
           <file leaf-file-name="projects.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/cms-dev/partial/projects/projects.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+                <state vertical-scroll-proportion="5.0">
+                  <caret line="23" column="18" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="18" />
                   <folding />
                 </state>
               </provider>
@@ -86,28 +113,18 @@
           <file leaf-file-name="modal-project.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/cms-dev/partial/modal-project/modal-project.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-1.7586207">
-                  <caret line="3" column="11" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="11" />
+                <state vertical-scroll-proportion="-12.0">
+                  <caret line="68" column="11" selection-start-line="68" selection-start-column="11" selection-end-line="68" selection-end-column="11" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="router.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="router.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/server/router.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-11.413794">
-                  <caret line="216" column="21" selection-start-line="216" selection-start-column="21" selection-end-line="216" selection-end-column="21" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="project.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/server/models/project.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.2849162">
-                  <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+                <state vertical-scroll-proportion="0.63027656">
+                  <caret line="177" column="22" selection-start-line="177" selection-start-column="22" selection-end-line="177" selection-end-column="22" />
                   <folding />
                 </state>
               </provider>
@@ -116,8 +133,18 @@
           <file leaf-file-name="project.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/cms-dev/service/project.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="6.793103">
-                  <caret line="21" column="27" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="27" />
+                <state vertical-scroll-proportion="-7.275862">
+                  <caret line="71" column="9" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="9" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="project.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/server/models/project.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
                   <folding />
                 </state>
               </provider>
@@ -141,7 +168,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/cms/partial/modal-post/modal-post.js" />
         <option value="$PROJECT_DIR$/cms/partial/inquiries/inquiries.js" />
         <option value="$PROJECT_DIR$/cms/partial/about/about.js" />
         <option value="$PROJECT_DIR$/views/landing/index.ejs" />
@@ -186,12 +212,13 @@
         <option value="$PROJECT_DIR$/views/presentation/index.ejs" />
         <option value="$PROJECT_DIR$/assets/main.less" />
         <option value="$PROJECT_DIR$/cms-dev/index.html" />
-        <option value="$PROJECT_DIR$/cms-dev/partial/modal-project/modal-project.js" />
         <option value="$PROJECT_DIR$/cms-dev/app.js" />
         <option value="$PROJECT_DIR$/server/models/project.js" />
         <option value="$PROJECT_DIR$/cms-dev/partial/projects/projects.js" />
+        <option value="$PROJECT_DIR$/cms-dev/service/project.js" />
         <option value="$PROJECT_DIR$/server/router.js" />
         <option value="$PROJECT_DIR$/cms-dev/partial/modal-project/modal-project.html" />
+        <option value="$PROJECT_DIR$/cms-dev/partial/modal-project/modal-project.js" />
       </list>
     </option>
   </component>
@@ -248,6 +275,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="vidrep" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dynamic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vidrep" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -729,13 +770,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/nav.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/projects/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -852,14 +886,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.413794">
-          <caret line="216" column="21" selection-start-line="216" selection-start-column="21" selection-end-line="216" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cms-dev/service/project-spec.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -868,50 +894,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cms-dev/service/project.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="6.793103">
-          <caret line="21" column="27" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-dev/partial/modal-project/modal-project.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.7586207">
-          <caret line="3" column="11" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-dev/partial/projects/projects.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cms-dev/partial/projects/projects.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.73077">
+        <state vertical-scroll-proportion="-17.115385">
           <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/nav.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/models/project.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2849162">
+        <state vertical-scroll-proportion="0.0">
           <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-dev/service/project.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.275862">
+          <caret line="71" column="9" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-dev/partial/projects/projects.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="5.0">
+          <caret line="23" column="18" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cms-dev/partial/modal-project/modal-project.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.70434785">
-          <caret line="57" column="17" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.34492755">
+          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-dev/partial/modal-project/modal-project.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.0">
+          <caret line="68" column="11" selection-start-line="68" selection-start-column="11" selection-end-line="68" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.63027656">
+          <caret line="177" column="22" selection-start-line="177" selection-start-column="22" selection-end-line="177" selection-end-column="22" />
           <folding />
         </state>
       </provider>

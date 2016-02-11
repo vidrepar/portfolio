@@ -156,21 +156,24 @@ module.exports = function(app){
 
 
 
-  //File Upload API routes
+  //File Upload API POST routes
  app.post('/api/upload', multipartMiddleware, function(req, res){
 
-    console.log('Body: ', req.body);
-    console.log('Files: ', req.files);
+    console.log('UPLOADED FILE in /api/upload: ', req.files.file.path);
 
    var path = req.files.file.path;
 
-   var uniqueFilenameParts = path.split('/');
+   /* creating a unique FILENAME */
+   var uniqueFilenameParts = path.split('\\');
    var uniqueFilename = uniqueFilenameParts[uniqueFilenameParts.length-1];
-
-   console.log('uniqueFilename is: ', uniqueFilename);
+   /*console.log('uniqueFilename is: ', uniqueFilename);
+   console.log('uniqueFilenameParts are: ', uniqueFilenameParts);*/
 
    var thumbPath = './assets/thumbs/'+uniqueFilename;
+   console.log('thumbPath is: ', thumbPath);
 
+   /* GM is for creating THUMBNAILS */
+   /* NOT WORKING yet */
    gm(path)
      .resize(353, 257)
      .autoOrient()
@@ -210,8 +213,8 @@ module.exports = function(app){
 
 		Project.find(function(err, docs){
 
-			console.log(docs);
-			console.log(err);
+			console.log('ALL DOCS IN APP.GET /api/projects in router: ', docs);
+			console.log('ERROR STATUS IN APP.GET /api/projects in router is: ', err);
 
 			if(!err){
 				res.send(docs);
