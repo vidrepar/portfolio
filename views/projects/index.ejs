@@ -22,6 +22,7 @@
           <a href="/projects/<%= projects[i]._id %>">
             <div class="grid-item">
               <div id="info-project">
+                <img src="/assets/images/<%= projects[i].imageUrl.fileName %>">
                 <h3><%= projects[i].title %></h3>
                 <p><%= projects[i].author %></p>
                 <p><%= moment(projects[i].timeStamp).format('LL') %></p>

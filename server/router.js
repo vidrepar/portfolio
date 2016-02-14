@@ -166,11 +166,8 @@ module.exports = function(app){
    /* creating a unique FILENAME */
    var uniqueFilenameParts = path.split('\\');
    var uniqueFilename = uniqueFilenameParts[uniqueFilenameParts.length-1];
-   /*console.log('uniqueFilename is: ', uniqueFilename);
-   console.log('uniqueFilenameParts are: ', uniqueFilenameParts);*/
 
    var thumbPath = './assets/thumbs/'+uniqueFilename;
-   console.log('thumbPath is: ', thumbPath);
 
    /* GM is for creating THUMBNAILS */
    /* NOT WORKING yet */
@@ -178,11 +175,13 @@ module.exports = function(app){
      .resize(353, 257)
      .autoOrient()
      .write(thumbPath, function (err) {
-       if (err) console.log(' hooray! ');
-     //  if (!err) console.log(' hooray! ');
+       if (!err) console.log(' hooray! ');
      });
 
-   res.sendStatus(200);
+   res.send({
+     path     : path,
+     fileName : uniqueFilename
+   });
 
  });
 
@@ -227,8 +226,6 @@ module.exports = function(app){
 	app.post('/api/project', function(req, res){
 
 		var Project = mongoose.model('Project');
-
-        console.log(req.body);
 
 		var project = new Project(req.body);
 

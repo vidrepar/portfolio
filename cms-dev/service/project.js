@@ -6,37 +6,35 @@ angular.module('cms').factory('ProjectService',function($http) {
 			list : [],  //this is a list of ALL projects from the DB
             item : null
 		},
-        getProjects:function(){
 
-            console.log('THIS IS IN PROJECT SERVICE', project.apiUrl);
+        createProject:function(data){
 
-            var promise = $http.get(project.apiUrl+'/api/project');
-
+            var promise = $http.post(project.apiUrl+'/api/project', data);
             promise.success(function(res){
-
-                project.model.list = res;
-
+                project.model.list.push(res);
             });
-
             return promise;
 
         },
-        deleteProject:function(projectId){
 
-            var promise = $http.delete(project.apiUrl+'/api/project/'+projectId);
+        getProjects:function(){
 
+            var promise = $http.get(project.apiUrl+'/api/project');
             promise.success(function(res){
+                project.model.list = res;
+            });
+            return promise;
 
+        },
+        deleteProject:function(id){
+
+            var promise = $http.delete(project.apiUrl+'/api/project/'+id);
+            promise.success(function(res){
                 console.log('Delete status: ',res);
-
                 angular.forEach(project.model.list, function(_project, i){
-
                     if(projectId === _project._id){
-
                         project.model.list.splice(i,1);
-
                     }
-
                 });
 
             });
@@ -44,29 +42,6 @@ angular.module('cms').factory('ProjectService',function($http) {
             return promise;
 
         },
-
-
-
-
-
-
-        createProject:function(projectData){
-
-            var promise = $http.post(project.apiUrl+'/api/project', projectData);
-
-            promise.success(function(projectResponse){
-
-                project.model.list.push(projectResponse);
-
-            });
-
-            return promise;
-
-        },
-
-
-
-
 
 
         updateProject:function(projectId, projectData){

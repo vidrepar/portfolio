@@ -383,6 +383,13 @@ nav{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
+  position: relative;
+
+  img{
+    position:relative;
+  }
+
 }
 
 #about-section-1 h1{
@@ -395,6 +402,11 @@ nav{
 
 #text-about{
   margin-top: @marginLanding*1.5;
+}
+
+#arrow-nav{
+  position: absolute;
+  bottom:0px;
 }
 
 #about-section-abilities{
@@ -480,7 +492,12 @@ nav{
   float: left;
 
   #info-project{
-    display: none;
+
+    img{
+      height: 100%;
+      width: 100%;
+    }
+
   }
 
   &:hover{

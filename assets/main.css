@@ -334,6 +334,10 @@ nav {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  position: relative;
+}
+#about-section-1 img {
+  position: relative;
 }
 #about-section-1 h1 {
   font-size: 100px;
@@ -343,6 +347,10 @@ nav {
 }
 #text-about {
   margin-top: 45px;
+}
+#arrow-nav {
+  position: absolute;
+  bottom: 0px;
 }
 #about-section-abilities {
   background: url("images/bg-abilities.png") no-repeat center center;
@@ -435,8 +443,9 @@ nav {
   padding: 10px;
   float: left;
 }
-.grid-item #info-project {
-  display: none;
+.grid-item #info-project img {
+  height: 100%;
+  width: 100%;
 }
 .grid-item:hover {
   /*
