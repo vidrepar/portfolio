@@ -6,9 +6,14 @@ var projectSchema = mongoose.Schema({
 	description	  : { type:String },
 	timeStamp	    : { type:Date, default:Date.now },
 	url 		      : String,
-	imageUrl	    : { fileName:String, path:String },
+  author        : String,
+  imageUrl	    : { fileName:String, path:String },
   images        : [ { fileName:String, path:String } ],
-  author        : String
+  sections       : [
+    { title:String,
+      imageUrl:{ path:String, fileName:String
+      }
+    } ]
 
 });
 

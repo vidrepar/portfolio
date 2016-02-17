@@ -35,13 +35,30 @@
     <hr>
 
 
-    <!-- CONTEXT SECTION, 2 IMAGES 50% WIDTH EACH ON THE WEBSITE -->
+    <!-- SECTIONS DYNAMICALlY -->
+    <label>CREATING SECITONS DYNAMICALLY</label></div><br/>
+    <div ng-repeat="section in sections">
+        <input type="text" class="form-control" ng-model="section.title">
+        <div class="btn btn-primary" ngf-select="upload($file, section)">Upload</div><br/>
+    </div>
+    <div class="btn btn-success" ng-click="addUploadButton()">+</div>
+    <br/>
+    <br/>
+
+
+
+
+
+
+
+
+    <!-- CONTEXT SECTION, 2 IMAGES 50% WIDTH EACH ON THE WEBSITE
     <label>Upload Context Image</label><br/>
     <div class="btn btn-primary" ngf-select="upload($file)">Upload image</div><br/>
     <label>Upload Corporate Logo/Graphic</label><br/>
     <div class="btn btn-primary" ngf-select="upload($file)">Upload image</div>
     <br/>
-    <hr>
+    <hr>-->
 
 </div>
 <div class="modal-footer">

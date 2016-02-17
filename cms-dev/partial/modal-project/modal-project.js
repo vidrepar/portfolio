@@ -1,9 +1,21 @@
 angular.module('cms')
 .controller('ModalProjectCtrl',function($scope, $http, Upload, $modalInstance, ProjectService, project){
 
+    $scope.sections = [
+        {
+            title:''
+        }
+    ];
+
     $scope.options = {};
     $scope.project = {
       images : []
+    };
+
+    $scope.addUploadButton = function(){
+
+        $scope.sections.push({ title:'' })
+
     };
 
     $scope.selectFile = function(file){
@@ -12,7 +24,7 @@ angular.module('cms')
 
     };
 
-    $scope.upload = function(file){
+    $scope.upload = function(file, section){
 
         $scope.options.fileName = file.name;
 
@@ -21,10 +33,16 @@ angular.module('cms')
             data: {file: file}
         }).then(function (res) {
 
+
+
+            //REPAIR THAT
+/*
+            section.imageUrl = res.data;
+*/
+
             //on upload complete
             console.log(res);
             $scope.options.fileUploaded = file;
-            $scope.project.imageUrl = res.data;
 
         }, function (resp) {
             console.log('Error status: ' + res.status);
@@ -52,6 +70,7 @@ angular.module('cms')
 
 	$scope.ok = function(){
 
+        $scope.project.sections = $scope.sections;
 		$scope.project.dateTime = Date.now();
         if(newProject){
             ProjectService.createProject($scope.project);
