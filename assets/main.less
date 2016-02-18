@@ -56,14 +56,14 @@
   font-family: 'Lora', serif !important;
   font-style: normal;
   .p-details{
-     font-size: 14px !important;
-   }
+    font-size: 14px !important;
+  }
 }
 
 .DefaultHeadingStyles{
-    font-family: 'Montserrat', sans-serif !important;
-    font-weight: 700 !important;
-    text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 700 !important;
+  text-transform: uppercase;
 }
 
 /*BUTTON DESIGN GUIDELINES*/
@@ -458,7 +458,7 @@ nav{
     margin-right: @marginLanding/2;
   }
 
-  }
+}
 
 
 /*CONTACT PAGE*/
@@ -661,19 +661,21 @@ nav{
   }
 }
 
-  @media (max-width: 740px){
+@media (max-width: 740px){
   .grid-item{
     width: 100%;
   }
 }
 
-/* MEDIA QUERIES */
+/* MEDIA QUERIES FOR DIFFERENT DEVICES */
 
-@btnHeightTablet: height: 130px;
-@btnHeightPhone: height: 160px;
+@btnHeightTablet: 130px;
+@btnHeightPhone: 160px;
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) and (orientation: portrait) {
+@media only screen
+and (max-width : 992px)
+and (orientation: portrait) {
 
   .text-landing{
 
@@ -697,25 +699,35 @@ nav{
     padding: 0px 30px;
   }
 
-  .form-group{
-    font-size: 200px !important;
-  }
+  /* CONTACT ME TABLET */
+  #contact-section-1 {
 
-  .form-ctrl{
-    border-left: 12px @formDefaultMargin solid @redLight;
-    height: auto;
-    margin: @formDefaultMargin;
-    box-shadow: @shadowGrid;
+    input{
+      font-size: 30px;
+      height: @btnHeightPhone*(1/2) !important;
+    }
+
+    textarea{
+      font-size: 30px;
+      height: @btnHeightPhone*(4/3) !important;
+
+    }
+
+    .p-details{
+      font-size: 30px !important;
+    }
+
   }
 
 }
 
 /*PHONE*/
 
+
 @media only screen
-  and (max-width : 992px)
-  and (orientation: portrait)
-  and (-webkit-device-pixel-ratio: 2) {
+and (max-width : 992px)
+and (orientation: portrait)
+and (-webkit-device-pixel-ratio: 2) {
 
 
   #logo{
@@ -768,21 +780,24 @@ nav{
   }
 
 
-  /* CONTACT ME MOBILE */
+  /* CONTACT ME PHONE */
+  #contact-section-1 {
 
-  #contact-section-1{
-    .btn{
-      width: 100%;
-      height: @btnHeightPhone*2;
+    input{
+      font-size: 35px;
+      height: @btnHeightPhone*(2/3) !important;
+    }
+
+    textarea{
+      font-size: 35px;
+      height: @btnHeightPhone*(4/3) !important;
+
+    }
+
+    .p-details{
       font-size: 35px !important;
     }
 
-    textarea, input{
-      max-height: @btnHeightPhone !important;
-    }
-
   }
-
-
 
 }
