@@ -22,7 +22,7 @@
 }
 .DefaultParagraphStyles {
   font-family: 'Lora', serif !important;
-  font-style: italic;
+  font-style: normal;
 }
 .DefaultParagraphStyles .p-details {
   font-size: 14px !important;
@@ -128,7 +128,7 @@ p,
 label,
 input {
   font-family: 'Lora', serif !important;
-  font-style: italic;
+  font-style: normal;
   font-size: 20px;
 }
 p .p-details,
@@ -138,7 +138,7 @@ input .p-details {
 }
 textarea {
   font-family: 'Lora', serif !important;
-  font-style: italic;
+  font-style: normal;
   /*this is a TEMPORARY solution*/
   min-height: 100px;
   max-width: auto;
@@ -185,14 +185,18 @@ textarea:focus {
   -webkit-border-radius: 0px 0px 0px 0px !important;
   -moz-border-radius: 0px 0px 0px 0px !important;
   border-radius: 0px 0px 0px 0px !important;
+  font-style: italic !important;
 }
 .p-details {
   font-family: 'Lora', serif !important;
-  font-style: italic;
+  font-style: normal;
   font-size: 16px !important;
 }
 .p-details .p-details {
   font-size: 14px !important;
+}
+.italic {
+  font-style: italic !important;
 }
 label {
   font-weight: 100 !important;
@@ -628,7 +632,7 @@ nav {
   }
   /* CONTACT ME MOBILE */
   .form-ctrl {
-    border-left: 12px solid #ff7974;
+    border-left: none;
     height: auto;
     margin: 12px;
     box-shadow: 1px 3px 7px 0px rgba(0, 0, 0, 0.35);
@@ -636,7 +640,7 @@ nav {
   }
   textarea {
     font-family: 'Lora', serif !important;
-    font-style: italic;
+    font-style: normal;
     min-height: 300px;
     max-width: auto;
     padding-top: 12px !important;
