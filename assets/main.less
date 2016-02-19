@@ -675,10 +675,99 @@ nav{
 
 /* MEDIA QUERIES FOR DIFFERENT DEVICES */
 
+/*IPHONE 6 IN PORTRAIT*/
+@media only screen
+and (max-device-width : 667px)
+and (orientation : portrait) {
+
+  .text-landing{
+    h1{
+      font-size: 40px !important;
+    }
+
+    p{
+      font-size: 20px;
+      margin-top: @marginLanding;
+    }
+
+    .btn{
+      width: 100%;
+    }
+  }
+
+  #landing-section-2 img {
+    padding: 0px 15px;
+    width: 75px;
+    height: auto;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 @btnHeightTablet: 130px;
 @btnHeightPhone: 160px;
 
-/* Medium Devices, Desktops */
+!* Medium Devices, Desktops *!
 @media only screen
 and (max-width : 992px)
 and (orientation: portrait) {
@@ -705,7 +794,7 @@ and (orientation: portrait) {
     padding: 0px 30px;
   }
 
-  /* CONTACT ME TABLET */
+  !* CONTACT ME TABLET *!
   #contact-section-1 {
 
     input{
@@ -727,7 +816,7 @@ and (orientation: portrait) {
 
 }
 
-/*PHONE*/
+!*PHONE*!
 
 
 @media only screen
@@ -786,7 +875,7 @@ and (-webkit-device-pixel-ratio: 2) {
   }
 
 
-  /* CONTACT ME PHONE */
+  !* CONTACT ME PHONE *!
   #contact-section-1 {
 
     input{
@@ -807,3 +896,4 @@ and (-webkit-device-pixel-ratio: 2) {
   }
 
 }
+*/

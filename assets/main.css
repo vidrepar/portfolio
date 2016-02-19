@@ -576,87 +576,155 @@ nav {
   }
 }
 /* MEDIA QUERIES FOR DIFFERENT DEVICES */
-/* Medium Devices, Desktops */
-@media only screen and (max-width: 992px) and (orientation: portrait) {
+/*IPHONE 6 IN PORTRAIT*/
+@media only screen and (max-device-width: 667px) and (orientation: portrait) {
   .text-landing h1 {
-    font-size: 85px;
+    font-size: 40px !important;
   }
   .text-landing p {
-    font-size: 40px;
-    margin-top: 60px;
-    margin-bottom: 50px;
+    font-size: 20px;
+    margin-top: 30px;
   }
   .text-landing .btn {
     width: 100%;
-    height: 130px;
-    font-size: 25px !important;
   }
   #landing-section-2 img {
-    padding: 0px 30px;
-  }
-  /* CONTACT ME TABLET */
-  #contact-section-1 input {
-    font-size: 30px;
-    height: 80px !important;
-  }
-  #contact-section-1 textarea {
-    font-size: 30px;
-    height: 213.33333333px !important;
-  }
-  #contact-section-1 .p-details {
-    font-size: 30px !important;
+    padding: 0px 15px;
+    width: 75px;
+    height: auto;
   }
 }
-/*PHONE*/
-@media only screen and (max-width: 992px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
-  #logo {
+/*
+@btnHeightTablet: 130px;
+@btnHeightPhone: 160px;
+
+!* Medium Devices, Desktops *!
+@media only screen
+and (max-width : 992px)
+and (orientation: portrait) {
+
+  .text-landing{
+
+    h1{
+      font-size: 85px;
+    }
+    p{
+      font-size: 40px;
+      margin-top: 60px;
+      margin-bottom: 50px;
+
+    }
+    .btn{
+      width: 100%;
+      height: @btnHeightTablet;
+      font-size: 25px !important;
+    }
+  }
+
+  #landing-section-2 img{
+    padding: 0px 30px;
+  }
+
+  !* CONTACT ME TABLET *!
+  #contact-section-1 {
+
+    input{
+      font-size: 30px;
+      height: @btnHeightPhone*(1/2) !important;
+    }
+
+    textarea{
+      font-size: 30px;
+      height: @btnHeightPhone*(4/3) !important;
+
+    }
+
+    .p-details{
+      font-size: 30px !important;
+    }
+
+  }
+
+}
+
+!*PHONE*!
+
+
+@media only screen
+and (max-width : 992px)
+and (orientation: portrait)
+and (-webkit-device-pixel-ratio: 2) {
+
+
+  #logo{
     background: url(images/logo-lg.png) no-repeat;
     width: 151px;
     height: 86px;
   }
-  #hamburger {
+
+  #hamburger{
     background: url(images/hamburger-lg.png) no-repeat;
     width: 134px;
     height: 96px;
   }
-  #hamburger:hover {
+
+  #hamburger:hover{
     background: url(images/hamburger-hover-lg.png) no-repeat;
     width: 134px;
     height: 96px;
   }
-  #close {
+
+  #close{
     background: url("images/close-lg.png") no-repeat;
     height: 124px !important;
     width: 107px !important;
     position: relative;
     margin-right: 60px !important;
   }
-  .text-landing h1 {
-    font-size: 100px !important;
+
+
+  .text-landing{
+
+    h1{
+      font-size: 100px !important;
+    }
+    p{
+      font-size: 55px;
+      margin-top: 60px;
+      margin-bottom: 50px;
+
+    }
+    .btn{
+      width: 100%;
+      height: @btnHeightPhone;
+      font-size: 35px !important;
+    }
   }
-  .text-landing p {
-    font-size: 55px;
-    margin-top: 60px;
-    margin-bottom: 50px;
-  }
-  .text-landing .btn {
-    width: 100%;
-    height: 160px;
-    font-size: 35px !important;
-  }
-  #landing-section-2 img {
+
+  #landing-section-2 img{
     padding: 20px 35px;
   }
-  /* CONTACT ME PHONE */
-  #contact-section-1 input {
-    font-size: 35px;
-    height: 106.66666667px !important;
+
+
+  !* CONTACT ME PHONE *!
+  #contact-section-1 {
+
+    input{
+      font-size: 35px;
+      height: @btnHeightPhone*(2/3) !important;
+    }
+
+    textarea{
+      font-size: 35px;
+      height: @btnHeightPhone*(4/3) !important;
+
+    }
+
+    .p-details{
+      font-size: 35px !important;
+    }
+
   }
-  #contact-section-1 textarea {
-    font-size: 35px;
-    height: 213.33333333px !important;
-  }
-  #contact-section-1 .p-details {
-    font-size: 35px !important;
-  }
+
 }
+*/
