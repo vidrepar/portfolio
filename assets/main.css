@@ -50,7 +50,7 @@
 .Button:hover {
   background: rgba(0, 0, 0, 0.6);
   color: #fff !important;
-  box-shadow: 1px 3px 7px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.35);
 }
 .Button:active {
   background: rgba(0, 0, 0, 0.8);
@@ -69,7 +69,7 @@
   border-left: 12px 12px solid #ff7974;
   height: auto;
   margin: 12px;
-  box-shadow: 1px 3px 7px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.35);
 }
 .col-md-4,
 .col-md-8 {
@@ -99,6 +99,7 @@
 }
 .FooterStyles p {
   font-size: 14px;
+  font-style: italic;
   margin: 20px 0px;
 }
 * {
@@ -123,6 +124,11 @@ h2 {
 h2 {
   font-size: 40px !important;
   color: #000 !important;
+}
+h5 {
+  color: #fff !important;
+  text-decoration: line-through;
+  margin-top: 19px !important;
 }
 p,
 label,
@@ -172,7 +178,7 @@ textarea:focus {
 .btn:hover {
   background: rgba(0, 0, 0, 0.6);
   color: #fff !important;
-  box-shadow: 1px 3px 7px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.35);
 }
 .btn:active {
   background: rgba(0, 0, 0, 0.8);
@@ -216,6 +222,7 @@ footer {
 }
 footer p {
   font-size: 14px;
+  font-style: italic;
   margin: 20px 0px;
 }
 /*POPUP DESIGN*/
@@ -231,25 +238,26 @@ footer p {
 #popup-content {
   position: relative;
 }
-#popup-content .inline-block {
-  position: relative;
-  top: 50%;
-  transform: translateY(27%);
+a {
+  color: #fff;
 }
-#popup-content h2 a {
-  color: #fff !important;
-  text-decoration: none;
+#popup-content a {
+  color: #fff;
+  text-decoration: none !important;
+}
+#popup-content a:hover {
+  color: #3956ad;
+}
+#popup-content .active {
+  color: #4e76ec;
 }
 #popup-icons img {
   margin: 10px 20px;
 }
 #close {
-  background: url("images/close.png") no-repeat;
-  height: 57px !important;
-  width: 66px !important;
   cursor: pointer;
   position: relative;
-  margin: 40px !important;
+  margin: 40px;
 }
 /*FLOATING ELEMENTS*/
 .float-right {
@@ -279,25 +287,13 @@ nav {
   padding: 40px;
   z-index: 333!important;
 }
-#logo {
-  background: url(images/logo.png) no-repeat;
-  width: 82px;
-  height: 48px;
-}
 #hamburger {
-  background: url(images/hamburger.png) no-repeat;
-  width: 67px;
-  height: 48px;
+  cursor: pointer;
 }
 #hamburger:hover {
-  background: url(images/hamburger-hover.png) no-repeat;
-  width: 67px;
-  height: 48px;
+  cursor: pointer;
 }
 #close {
-  background: url("images/close.png") no-repeat;
-  height: 57px !important;
-  width: 66px !important;
   cursor: pointer;
   position: relative;
   margin: 40px !important;
@@ -425,7 +421,7 @@ nav {
   margin-top: 0px;
 }
 #contact-section-1 h1 {
-  font-size: 100px !important;
+  font-size: 100px;
 }
 /*PORTFOLIO PAGE*/
 /*PORTFOLIO SECTION 1*/
@@ -478,7 +474,7 @@ nav {
   color: #fff;
 }
 .grid {
-  box-shadow: 1px 3px 7px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.35);
   padding: 1px;
 }
 #presentation-section-1 {
@@ -578,153 +574,65 @@ nav {
 /* MEDIA QUERIES FOR DIFFERENT DEVICES */
 /*IPHONE 6 IN PORTRAIT*/
 @media only screen and (max-device-width: 667px) and (orientation: portrait) {
+  nav {
+    padding: 34px 20px 0px 20px;
+    height: 4px;
+  }
   .text-landing h1 {
     font-size: 40px !important;
   }
   .text-landing p {
     font-size: 20px;
-    margin-top: 30px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+  .text-landing .p-details {
+    margin-top: 0px;
+    margin-bottom: 15px !important;
   }
   .text-landing .btn {
     width: 100%;
+  }
+  .landing-section-1 .text-landing p,
+  .landing-section-2 .text-landing p,
+  .landing-section-3 .text-landing p {
+    margin-top: 20px;
+    margin-bottom: 0px;
   }
   #landing-section-2 img {
     padding: 0px 15px;
     width: 75px;
     height: auto;
   }
+  /* HEADINGS ON PHONE */
+  #portfolio-section-1 h1,
+  #about-section-1 h1,
+  #contact-section-1 h1 {
+    font-size: 40px;
+  }
+  #portfolio-section-1 #popup,
+  #about-section-1 #popup,
+  #contact-section-1 #popup {
+    right: -20px;
+  }
+  #portfolio-section-1 #popup-content h2 a,
+  #about-section-1 #popup-content h2 a,
+  #contact-section-1 #popup-content h2 a {
+    font-size: 5px !important;
+  }
+  #portfolio-section-1 p,
+  #about-section-1 p,
+  #contact-section-1 p {
+    font-size: 20px;
+  }
+  #logo,
+  #hamburger,
+  #hamburger:hover,
+  #close {
+    height: 30px;
+    width: auto;
+  }
+  #close {
+    margin: 34px 20px;
+  }
 }
-/*
-@btnHeightTablet: 130px;
-@btnHeightPhone: 160px;
-
-!* Medium Devices, Desktops *!
-@media only screen
-and (max-width : 992px)
-and (orientation: portrait) {
-
-  .text-landing{
-
-    h1{
-      font-size: 85px;
-    }
-    p{
-      font-size: 40px;
-      margin-top: 60px;
-      margin-bottom: 50px;
-
-    }
-    .btn{
-      width: 100%;
-      height: @btnHeightTablet;
-      font-size: 25px !important;
-    }
-  }
-
-  #landing-section-2 img{
-    padding: 0px 30px;
-  }
-
-  !* CONTACT ME TABLET *!
-  #contact-section-1 {
-
-    input{
-      font-size: 30px;
-      height: @btnHeightPhone*(1/2) !important;
-    }
-
-    textarea{
-      font-size: 30px;
-      height: @btnHeightPhone*(4/3) !important;
-
-    }
-
-    .p-details{
-      font-size: 30px !important;
-    }
-
-  }
-
-}
-
-!*PHONE*!
-
-
-@media only screen
-and (max-width : 992px)
-and (orientation: portrait)
-and (-webkit-device-pixel-ratio: 2) {
-
-
-  #logo{
-    background: url(images/logo-lg.png) no-repeat;
-    width: 151px;
-    height: 86px;
-  }
-
-  #hamburger{
-    background: url(images/hamburger-lg.png) no-repeat;
-    width: 134px;
-    height: 96px;
-  }
-
-  #hamburger:hover{
-    background: url(images/hamburger-hover-lg.png) no-repeat;
-    width: 134px;
-    height: 96px;
-  }
-
-  #close{
-    background: url("images/close-lg.png") no-repeat;
-    height: 124px !important;
-    width: 107px !important;
-    position: relative;
-    margin-right: 60px !important;
-  }
-
-
-  .text-landing{
-
-    h1{
-      font-size: 100px !important;
-    }
-    p{
-      font-size: 55px;
-      margin-top: 60px;
-      margin-bottom: 50px;
-
-    }
-    .btn{
-      width: 100%;
-      height: @btnHeightPhone;
-      font-size: 35px !important;
-    }
-  }
-
-  #landing-section-2 img{
-    padding: 20px 35px;
-  }
-
-
-  !* CONTACT ME PHONE *!
-  #contact-section-1 {
-
-    input{
-      font-size: 35px;
-      height: @btnHeightPhone*(2/3) !important;
-    }
-
-    textarea{
-      font-size: 35px;
-      height: @btnHeightPhone*(4/3) !important;
-
-    }
-
-    .p-details{
-      font-size: 35px !important;
-    }
-
-  }
-
-}
-*/

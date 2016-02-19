@@ -1,26 +1,27 @@
 <script src="/assets/js/nav.js"></script>
+
 <nav>
-      <a href="/"><div class="float-left" id="logo"></div></a>
-  <!-- don't understand test popup, check when you're fresh -->
-      <a href="#test-popup" class="open-popup-link float-right"><div id="hamburger"></div></a>
+
+  <a href="/"><img src="/assets/images/logo.png" class="open-popup-link float-left" id="logo"></a>
+  <img src="/assets/images/hamburger.png" id="hamburger" class="open-popup-link float-right">
+
   <div class="clearfix"></div>
 
       <div id="popup">
         <div class="text-align-right">
-          <div id="close" class="inline-block"></div>
+          <img src="/assets/images/close.png" id="close" class="inline-block">
         </div>
         <div id="popup-content" class="text-align-center">
           <div class="inline-block">
             <ul>
-              <h2><a href="/">Home</a></h2>
+              <h2><a href="/" id="home">Home</a></h2>
 
-              <h2><a href="/projects">Portfolio</a></h2>
+              <h2><a href="/projects" id="portfolio">Portfolio</a></h2>
 
-              <h2><a href="/about">About</a></h2>
+              <h2><a href="/about" id="about">About</a></h2>
 
-              <h2><a href="/contact">Contact</a></h2>
+              <h2><a href="/contact" id="contact">Contact</a></h2>
             </ul>
-            <br>
             <h5>Connect With Me</h5>
 
             <div id="popup-icons">
