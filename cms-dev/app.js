@@ -1,52 +1,27 @@
-angular.module('cms',
-    [
+angular.module('cms', [
     'ui.bootstrap',
     'ui.utils',
     'ui.router',
     'ngAnimate',
-    'as.sortable',
-        'ngFileUpload',
-        'ui.tinymce'
-    ]);
+    'ngFileUpload',
+    'ui.tinymce'
+]);
 
-angular.module('cms').config(function($stateProvider, $urlRouterProvider, $locationProvider) {
-
-    //$locationProvider.html5Mode(true).hashPrefix('!');
+angular.module('cms').config(function($stateProvider, $urlRouterProvider) {
 
     $stateProvider.state('projects', {
         url: '/projects',
         templateUrl: 'partial/projects/projects.html',
-        controller:'ProjectsCtrl',
         resolve:{
-            projects:function(ProjectService){
-
-                return ProjectService.getProjects();
-
+            projects:function(projectService){
+                return projectService.getList();
             }
         }
     });
-    $stateProvider.state('posts', {
-        url: '/posts',
-        templateUrl: 'partial/posts/posts.html',
-        controller:'PostsCtrl',
-        resolve:{
-            posts:function(PostsService){
-
-                return PostsService.getPosts();
-
-            }
-        }
+    $stateProvider.state('project', {
+        url: '/project',
+        templateUrl: 'partial/project/project.html'
     });
-    $stateProvider.state('about', {
-        url: '/about',
-        templateUrl: 'partial/about/about.html'
-    });
-    $stateProvider.state('inquiries', {
-        url: '/inquiries',
-        templateUrl: 'partial/inquiries/inquiries.html'
-    });
-
-
     /* Add New States Above */
     $urlRouterProvider.otherwise('/projects');
 

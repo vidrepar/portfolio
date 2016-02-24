@@ -1,12 +1,12 @@
-describe('ModalPostCtrl', function() {
+describe('ProjectCtrl', function() {
 
-	beforeEach(module('angularRevision'));
+	beforeEach(module('cms'));
 
 	var scope,ctrl;
 
     beforeEach(inject(function($rootScope, $controller) {
       scope = $rootScope.$new();
-      ctrl = $controller('ModalPostCtrl', {$scope: scope});
+      ctrl = $controller('ProjectCtrl', {$scope: scope});
     }));	
 
 	it('should ...', inject(function() {

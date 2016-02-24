@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8">
   <link href="app.less" type="text/css" rel="stylesheet/less">
-  <link rel="stylesheet" type="text/css" href="bower_components/ng-sortable/dist/ng-sortable.min.css">
 </head>
 <body>
 
@@ -24,50 +23,28 @@
   <script src="bower_components/angular-resource/angular-resource.js"></script>
   <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
   <script src="bower_components/angular-ui-utils/ui-utils.js"></script>
-  <script type="text/javascript" src="bower_components/ng-sortable/dist/ng-sortable.min.js"></script>
-  <script src="bower_components/tinymce-dist/tinymce.min.js"></script>
-  <script src="bower_components/angular-ui-tinymce/src/tinymce.js"></script>
   <script src="bower_components/ng-file-upload-shim/ng-file-upload-shim.min.js"></script>
   <script src="bower_components/ng-file-upload-shim/ng-file-upload.min.js"></script>
-
+  <script src="bower_components/tinymce-dist/tinymce.min.js"></script>
+  <script src="bower_components/angular-ui-tinymce/src/tinymce.js"></script>
   <!-- Add New Bower Component JS Above -->
 
 
   <!-- Main App JS -->
   <script src="app.js"></script>
   <script src="partial/projects/projects.js"></script>
-  <script src="partial/posts/posts.js"></script>
-  <script src="partial/about/about.js"></script>
-  <script src="partial/inquiries/inquiries.js"></script>
-  <script src="partial/modal-project/modal-project.js"></script>
+  <script src="partial/project/project.js"></script>
   <script src="service/project.js"></script>
-  <script src="service/posts.js"></script>
-  <script src="partial/modal-post/modal-post.js"></script>
   <!-- Add New Component JS Above -->
 
-
-    <div class="main-menu-container">
-      <div class="menu-button" ui-sref-active="menu-button-active" ui-sref="projects">Projects</div>
-      <div class="menu-button" ui-sref-active="menu-button-active" ui-sref="posts">Posts</div>
-      <div class="menu-button" ui-sref-active="menu-button-active" ui-sref="about">About</div>
-      <div class="menu-button" ui-sref-active="menu-button-active" ui-sref="inquiries">Inquiries</div>
-    </div>
-    <div id="content" class="main-container">
-
+  <div>
+    <div id="content" class="container">
+      <div class="row">
         <div ui-view>
         </div>
-
+      </div>
     </div>
-
+  </div>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-

@@ -1,87 +1,45 @@
-angular.module('cms')
-.controller('ProjectsCtrl',function($scope, $modal, projects, ProjectService){
+angular.module('cms').controller('ProjectsCtrl',function($scope, $state, projectService){
 
-	$scope.projects = ProjectService.model.list;
+    $scope.list = projectService.model.list;
 
-	$scope.editProject = function(project){
+    $scope.options = {
+        orderFilter:'-date'
+    };
 
-		var modalInstance = $modal.open({
-	      animation: true,
-	      templateUrl: 'partial/modal-project/modal-project.html',
-	      controller: 'ModalProjectCtrl',
-	      size: 'lg',
-	      resolve: {
-	        project: function () {
-                return project;
-	        }
-	      }
-	    });
-	};
+    $scope.toggleDateOrder = function(){
 
-	$scope.dragControlListeners = {
-	    accept: function (sourceItemHandleScope, destSortableScope) {return true;},
-	    itemMoved: function (event) {},
-	    orderChanged: function(event) {},
-	    containment: '#board',
-	    clone: true,
-	    allowDuplicates: false
-	};
+        if($scope.options.orderFilter === '-date'){
+            $scope.options.orderFilter = 'date';
+        }else{
+            $scope.options.orderFilter = '-date';
+        }
 
-
-    $scope.createProject = function(){
-
-        var modalInstance = $modal.open({
-	      animation: true,
-	      templateUrl: 'partial/modal-project/modal-project.html',
-	      controller: 'ModalProjectCtrl',
-	      size: 'lg',
-	      resolve: {
-	        project: function () {
-                return null;
-	        }
-	      }
-	    });
+        console.log('something', $scope.list);
 
     };
 
-	$scope.removeProject = function(projectId){
+    $scope.createProject = function(){
 
-		var c = confirm('Are you sure you want to delete this project?');
+        $state.go('project');
 
-		if(c){
-			ProjectService.deleteProject(projectId);
-		}
+    };
 
-	};
+    $scope.deleteProject = function(id){
 
-	$scope.publishProject = function(project){
+        console.log(id);
 
-		console.log($scope.projects);
+        projectService.remove(id, function(){
 
-		project.isPublished = true;
+            angular.forEach($scope.list, function(project, index){
 
-	};
+                if(project._id === id){
+                    $scope.list.splice(index,1);
+                }
 
-	$scope.unpublishProject = function(project){
+            });
 
-		project.isPublished = false;
-
-	};
-
-    $scope.save = function(){
-
-
+        });
 
     };
 
 });
-
-
-
-
-
-
-
-
-
-

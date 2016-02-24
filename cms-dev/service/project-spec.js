@@ -1,6 +1,6 @@
 describe('project', function() {
 
-  beforeEach(module('angularRevision'));
+  beforeEach(module('cms'));
 
   it('should ...', inject(function(project) {
 

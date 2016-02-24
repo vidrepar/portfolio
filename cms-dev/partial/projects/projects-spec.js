@@ -1,6 +1,6 @@
 describe('ProjectsCtrl', function() {
 
-	beforeEach(module('angularRevision'));
+	beforeEach(module('cms'));
 
 	var scope,ctrl;
 

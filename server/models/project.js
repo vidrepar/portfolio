@@ -1,20 +1,20 @@
 var mongoose = require('mongoose');
 
-var projectSchema = mongoose.Schema({
+var schema = mongoose.Schema({
 
-	title		      : { type:String, required:true},
-	description	  : { type:String },
-	timeStamp	    : { type:Date, default:Date.now },
-	url 		      : String,
-  author        : String,
-  imageUrl	    : { fileName:String, path:String },
-  images        : [ { fileName:String, path:String } ],
-  sections       : [
-    { title:String,
-      imageUrl:{ path:String, fileName:String
-      }
+  title           : String,
+  description     : String,
+  date            : { type:Date, default:Date.now },
+  coverImage      : { fileName:String, path:String },
+  sections         : [
+    {
+      title:String,
+      image:{
+        fileName:String,
+        path:String
+        }
     } ]
 
 });
 
-var myProject = mongoose.model('Project', projectSchema);
+mongoose.model('Project', schema);

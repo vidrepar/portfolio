@@ -7,24 +7,21 @@ var token = '2309dfhdsf0lkasdASDasd821lk';
 
 var gm = require('gm');
 
-
 module.exports = function(app){
 
-  /*EJS ROUTES*/
+  /*EJS ROUTES ///////////////////////////////////////////////////////////////////////////////*/
   // Landing page route
   app.get('/', function(req, res){
 
     res.render('index', { title:'Welcome', jsSrc:'assets/js/index.js' });
 
   });
-
   // About GET route
   app.get('/about', function(req, res){
 
     res.render('about/index', { title:'About Me', jsSrc:'assets/js/about.js' });
 
   });
-
   // Contact GET route
   app.get('/contact', function(req, res){
 
@@ -37,7 +34,6 @@ module.exports = function(app){
     });
 
   });
-
   // Project GET route
   app.get('/projects', function(req, res){
 
@@ -55,8 +51,6 @@ module.exports = function(app){
     });
 
   });
-
-
   //SINGLE Project GET route
   app.get('/projects/:id', function(req, res){
 
@@ -80,23 +74,121 @@ module.exports = function(app){
   });
 
 
+  /*API ROUTES ///////////////////////////////////////////////////////////////////////////////*/
 
 
+  /*PROJECTS  ///////////////////////////////////////////////////////////////////////////////*/
 
+  //Projects API GET routes
+  app.get('/api/projects', function(req, res){
 
+    var Project = mongoose.model('Project');
 
+    Project.find(function(err, docs){
+      if(!err){
+        res.send(docs);
+      }else{
+        console.log(err);
+      }
 
+    });
 
+  });
+  //Project API POST route
+  app.post('/api/project', function(req, res){
 
+    console.log('Create project');
 
+    var Project = mongoose.model('Project');
 
+    var project = new Project(req.body);
 
+    project.save(function(err){
+      if(!err){
+        res.send(project);
+      }else{
+        res.sendStatus(400);
+      }
 
+    });
 
+  });
+  //Project API DELETE route
+  app.delete('/api/project/:id', function(req, res){
 
+    var id = req.params.id;
+    var Project = mongoose.model('Project');
 
+    Project.findByIdAndRemove(id, function(err, doc){
 
+      if(!err){
+        res.sendStatus(200);
+      }else{
+        res.sendStatus(400);
+      }
 
+    });
+
+  });
+  //Project API PUT route
+  app.put('/api/project/:id', function(req, res){
+
+    var Project = mongoose.model('Project');
+
+    Project.findByIdAndUpdate(req.params.id, req.body,{new: true}, function(err, doc){
+
+      if(!err){
+        res.send(doc);
+      }else{
+        res.sendStatus(400);
+      }
+
+    });
+
+  });
+  //SINGLE Project API GET route
+  app.get('/api/project/:id', function(req, res){
+
+    var Project = mongoose.model('Project');
+
+    var id = req.params.id;
+    Project.findOne({'_id':req.params.id},function(err, result) {
+      if(!err){
+        res.send(result);
+      }
+    });
+  });
+
+  //File Upload API POST routes
+  app.post('/api/upload', multipartMiddleware, function(req, res){
+
+    console.log(req.body, req.files);
+
+    var path = req.files.file.path;
+
+    /* creating a unique FILENAME */
+    var uniqueFilenameParts = path.split('\\');
+    var uniqueFilename = uniqueFilenameParts[uniqueFilenameParts.length-1];
+
+    var thumbPath = './assets/thumbs/'+uniqueFilename;
+
+    /* gm conversion to thumbs */
+    /* todo gm is not creating thumbnails, fix it */
+    gm(path)
+      .resize(353, 257)
+      .autoOrient()
+      .write(thumbPath, function (err) {
+        if (!err) console.log(' hooray! ');
+      });
+
+    console.log(thumbPath);
+
+    res.send({
+      path     : path,
+      fileName : uniqueFilename
+    });
+
+  });
 
   // API Login routes
   app.post('/api/login', function(req, res){
@@ -154,41 +246,7 @@ module.exports = function(app){
 
     });
 
-
-
-  //File Upload API POST routes
- app.post('/api/upload', multipartMiddleware, function(req, res){
-
-    console.log('UPLOADED FILE in /api/upload: ', req.files.file.path);
-
-   var path = req.files.file.path;
-
-   /* creating a unique FILENAME */
-   var uniqueFilenameParts = path.split('\\');
-   var uniqueFilename = uniqueFilenameParts[uniqueFilenameParts.length-1];
-
-   var thumbPath = './assets/thumbs/'+uniqueFilename;
-
-   /* GM is for creating THUMBNAILS */
-   /* NOT WORKING yet */
-   gm(path)
-     .resize(353, 257)
-     .autoOrient()
-     .write(thumbPath, function (err) {
-       if (!err) console.log(' hooray! ');
-     });
-
-   res.send({
-     path     : path,
-     fileName : uniqueFilename
-   });
-
- });
-
-
-
-
-//Email POST API routes
+  //Email POST API routes
   app.post('/api/email', function(req, res){
 
     //email, message
@@ -199,110 +257,6 @@ module.exports = function(app){
     });
 
   });
-
-
-
-
-
-
-  //Project API GET routes
-	app.get('/api/project', function(req, res){
-
-		var Project = mongoose.model('Project');
-
-		Project.find(function(err, docs){
-
-			console.log('ALL DOCS IN APP.GET /api/projects in router: ', docs);
-			console.log('ERROR STATUS IN APP.GET /api/projects in router is: ', err);
-
-			if(!err){
-				res.send(docs);
-			}
-
-		});
-
-	});
-  //Project API POST route
-	app.post('/api/project', function(req, res){
-
-		var Project = mongoose.model('Project');
-
-		var project = new Project(req.body);
-
-		project.save(function(err){
-
-			if(!err){
-				res.send(project);
-			}else{
-				res.sendStatus(400);
-			}
-
-		});
-
-	});
-  //Project API DELETE route
-	app.delete('/api/project/:id', function(req, res){
-
-		var Project = mongoose.model('Project');
-
-		Project.findByIdAndRemove(req.params.id, function(err, doc){
-
-			if(!err){
-				res.sendStatus(200);
-			}else{
-				res.sendStatus(400);
-			}
-
-		});
-
-	});
-  //Project API PUT route
-	app.put('/api/project/:id', function(req, res){
-
-		var Project = mongoose.model('Project');
-
-		Project.findByIdAndUpdate(req.params.id, req.body,{new: true}, function(err, doc){
-
-			if(!err){
-				res.send(doc);
-			}else{
-				res.sendStatus(400);
-			}
-
-		});
-
-	});
-
-
-
-
-
-
-
-
-
-  //SINGLE Project API GET route
-  app.get('/api/project/:id', function(req, res){
-
-    var Project = mongoose.model('Project');
-
-    var id = req.params.id;
-    Project.findOne({'_id':req.params.id},function(err, result) {
-      if(!err){
-        res.send(result);
-      }
-    });
-  });
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -340,7 +294,6 @@ module.exports = function(app){
       });
 
   });
-
   //Inquiry  API GET route
   app.get('/api/inquiries', function(req, res){
 
@@ -377,6 +330,7 @@ module.exports = function(app){
   });
 
 };
+
 
 function myAuth(req, res, next){
 

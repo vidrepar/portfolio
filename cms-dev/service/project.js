@@ -1,65 +1,49 @@
-angular.module('cms').factory('ProjectService',function($http) {
+angular.module('cms').factory('projectService',function($http) {
 
 	var project = {
-        apiUrl:'http://localhost:3000',
-		model:{
-			list : [],  //this is a list of ALL projects from the DB
-            item : null
-		},
 
-        createProject:function(data){
-
-            var promise = $http.post(project.apiUrl+'/api/project', data);
-            promise.success(function(res){
-                project.model.list.push(res);
-            });
-            return promise;
-
+        model:{
+            list:[],
+            item:null
         },
+        getList:function(cb){
 
-        getProjects:function(){
+            return $http.get('/api/projects')
+                .then(function(res){
 
-            var promise = $http.get(project.apiUrl+'/api/project');
-            promise.success(function(res){
-                project.model.list = res;
-            });
-            return promise;
+                    var list = res.data;
+                    project.model.list = list;
+                    console.log(list);
 
-        },
-        deleteProject:function(id){
-
-            var promise = $http.delete(project.apiUrl+'/api/project/'+id);
-            promise.success(function(res){
-                console.log('Delete status: ',res);
-                angular.forEach(project.model.list, function(_project, i){
-                    if(projectId === _project._id){
-                        project.model.list.splice(i,1);
+                    if(cb){
+                        cb(list);
                     }
+
+                });
+        },
+        create:function(data){
+
+            $http.post('/api/project', data)
+                .then(function(res){
+
+                    console.log(res);
+
                 });
 
-            });
-
-            return promise;
-
         },
+        remove:function(id, cb){
 
+            $http.delete('/api/project/'+id)
+                .then(function(res){
 
-        updateProject:function(projectId, projectData){
-
-            var promise = $http.put(project.apiUrl+'/api/project/'+projectId, projectData);
-
-            promise.success(function(projectResponse){
-
-                angular.extend(projectData, projectResponse);
+                if(cb){
+                    cb(res);
+                }
 
             });
-
-            return promise;
 
         }
-	};
+    };
 
 	return project;
 });
-
-
