@@ -2,58 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f3cdca0-b0a8-4c6e-bd26-65057652e8c2" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cms-dev/.bowerrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cms-dev/.editorconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cms-dev/.jshintrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cms-dev/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cms-dev/.yo-rc.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cms-dev/Gruntfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cms-dev/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cms-dev/app.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cms-dev/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cms-dev/dist/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cms-dev/gulpfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cms-dev/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cms-dev/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cms-dev/partial/about/about-spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cms-dev/partial/about/about.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cms-dev/partial/about/about.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cms-dev/partial/about/about.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cms-dev/partial/inquiries/inquiries-spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cms-dev/partial/inquiries/inquiries.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cms-dev/partial/inquiries/inquiries.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cms-dev/partial/inquiries/inquiries.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cms-dev/partial/modal-post/modal-post-spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cms-dev/partial/modal-post/modal-post.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cms-dev/partial/modal-post/modal-post.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cms-dev/partial/modal-post/modal-post.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cms-dev/partial/modal-project/modal-project-spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cms-dev/partial/modal-project/modal-project.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cms-dev/partial/modal-project/modal-project.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cms-dev/partial/modal-project/modal-project.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cms-dev/partial/posts/posts-spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cms-dev/partial/posts/posts.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cms-dev/partial/posts/posts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cms-dev/partial/posts/posts.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cms-dev/partial/projects/projects-spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cms-dev/partial/projects/projects.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cms-dev/partial/projects/projects.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cms-dev/partial/projects/projects.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cms-dev/service/posts-spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cms-dev/service/posts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cms-dev/service/project-spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cms-dev/service/project.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cms-dist/app.full.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cms-dist/app.full.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cms-dist/index.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms-dev/.gitignore" afterPath="$PROJECT_DIR$/cms-dev/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms-dev/dist/app.full.min.css" afterPath="$PROJECT_DIR$/cms-dev/dist/app.full.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms-dev/dist/app.full.min.js" afterPath="$PROJECT_DIR$/cms-dev/dist/app.full.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/models/project.js" afterPath="$PROJECT_DIR$/server/models/project.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/router.js" afterPath="$PROJECT_DIR$/server/router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.ejs" afterPath="$PROJECT_DIR$/views/index.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/projects/index.ejs" afterPath="$PROJECT_DIR$/views/projects/index.ejs" />
     </list>
     <ignored path="dynamic.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -94,10 +43,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cms-dev/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.051593322">
+            <state vertical-scroll-proportion="0.0">
               <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
@@ -130,7 +79,27 @@
         <entry file="file://$PROJECT_DIR$/server/models/project.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="34" />
+              <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/presentation/index.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-15.038462">
+              <caret line="24" column="48" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.ejs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/projects/index.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.31595576">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -182,7 +151,6 @@
         <option value="$PROJECT_DIR$/views/email-form.ejs" />
         <option value="$PROJECT_DIR$/views/about/index.ejs" />
         <option value="$PROJECT_DIR$/views/presentation/index.ejs" />
-        <option value="$PROJECT_DIR$/views/projects/index.ejs" />
         <option value="$PROJECT_DIR$/assets/style.css" />
         <option value="$PROJECT_DIR$/assets/style.less" />
         <option value="$PROJECT_DIR$/assets/main.css" />
@@ -203,6 +171,7 @@
         <option value="$PROJECT_DIR$/cms-dev/partial/project/project.js" />
         <option value="$PROJECT_DIR$/server/models/project.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/views/projects/index.ejs" />
       </list>
     </option>
   </component>
@@ -275,6 +244,42 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dynamic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vidrep" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dynamic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vidrep" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="presentation" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -729,20 +734,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/presentation/index.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/projects/index.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4792285">
@@ -900,14 +891,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/models/project.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cms-dev/partial/project/project.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.269231">
@@ -944,8 +927,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cms-dev/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.051593322">
+        <state vertical-scroll-proportion="0.0">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/models/project.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/presentation/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.038462">
+          <caret line="24" column="48" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/projects/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31595576">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>
