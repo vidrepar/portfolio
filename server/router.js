@@ -130,12 +130,33 @@ module.exports = function(app){
     });
 
   });
-  //Project API PUT route
-  app.put('/api/project/:id', function(req, res){
+
+
+  //SINGLE Project API GET route
+  app.get('/api/project/:id', function(req, res){
 
     var Project = mongoose.model('Project');
 
-    Project.findByIdAndUpdate(req.params.id, req.body,{new: true}, function(err, doc){
+    Project.findById(req.params.id, function(err, doc){
+
+      if(doc) {
+        res.send(doc);
+      }else{
+        res.sendStatus(404);
+      }
+
+    });
+
+  });
+  //Project API PUT route
+  app.put('/api/project/:id', function(req, res){
+
+    var projectData = req.body;
+    var projectId = req.params.id;
+
+    var Project = mongoose.model('Project');
+
+    Project.findByIdAndUpdate(projectId, projectData, { 'new': true }, function(err, doc){
 
       if(!err){
         res.send(doc);
@@ -145,18 +166,6 @@ module.exports = function(app){
 
     });
 
-  });
-  //SINGLE Project API GET route
-  app.get('/api/project/:id', function(req, res){
-
-    var Project = mongoose.model('Project');
-
-    var id = req.params.id;
-    Project.findOne({'_id':req.params.id},function(err, result) {
-      if(!err){
-        res.send(result);
-      }
-    });
   });
 
   //File Upload API POST routes

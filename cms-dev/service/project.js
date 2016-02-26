@@ -6,6 +6,29 @@ angular.module('cms').factory('projectService',function($http) {
             list:[],
             item:null
         },
+        create:function(data, cb){
+
+            $http.post('/api/project', data)
+                .then(function(res){
+
+                    if(cb){
+                        cb(res.data);
+                    }
+
+                });
+
+        },
+        getOne:function(id){
+
+            $http.get('/api/project/'+id)
+                .then(function(res){
+
+                    var item = res.data;
+                    project.model.item = item;
+
+                });
+
+        },
         getList:function(cb){
 
             return $http.get('/api/projects')
@@ -21,16 +44,6 @@ angular.module('cms').factory('projectService',function($http) {
 
                 });
         },
-        create:function(data){
-
-            $http.post('/api/project', data)
-                .then(function(res){
-
-                    console.log(res);
-
-                });
-
-        },
         remove:function(id, cb){
 
             $http.delete('/api/project/'+id)
@@ -41,6 +54,27 @@ angular.module('cms').factory('projectService',function($http) {
                 }
 
             });
+
+        },
+        /**
+         *
+         * @param {String} id
+         * @param {Object} data
+         * @param {Function} cb
+         * @returns {*}
+         */
+        update:function(id, data, cb){
+
+            return $http.put('/api/project/'+id, data)
+                .then(function(res){
+
+                    project.model.item = res.data;
+
+                    if(cb){
+                        cb(res.data);
+                    }
+
+                });
 
         }
     };

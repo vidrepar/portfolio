@@ -19,8 +19,22 @@ angular.module('cms').config(function($stateProvider, $urlRouterProvider) {
         }
     });
     $stateProvider.state('project', {
-        url: '/project',
-        templateUrl: 'partial/project/project.html'
+        url: '/project/:id',
+        templateUrl: 'partial/project/project.html',
+        resolve: {
+
+            project: function ($stateParams, $location, projectService) {
+
+                var id = $stateParams.id;
+
+                if (id.length > 0) {
+                    return projectService.getOne(id);
+                } else {
+                    return true;
+                }
+
+            }
+        }
     });
     /* Add New States Above */
     $urlRouterProvider.otherwise('/projects');

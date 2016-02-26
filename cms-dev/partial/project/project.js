@@ -1,12 +1,39 @@
-angular.module('cms').controller('ProjectCtrl',function($scope, projectService, Upload){
+/* globals alert */
+
+angular.module('cms').controller('ProjectCtrl',function(
+    $scope,
+    $stateParams,
+    $state,
+    projectService,
+    Upload){
+
 
     $scope.sections = [
         {
             title:''
         }
     ];
-
     $scope.options = {};
+    $scope.model = {
+        coverImage : null,
+        images : []
+    };
+
+    $scope.isEdit = false;
+
+    var id = $stateParams.id;
+
+    if(id.length > 0) {
+
+        $scope.model = projectService.model.item;
+        $scope.isEdit = true;
+
+        /*console.log('id.length', id.length);
+        console.log('$scope.model', $scope.model);
+        console.log('projectService.model.item', projectService.model.item);*/
+
+    }
+
 
     $scope.addSectionButton = function(){
 
@@ -47,10 +74,14 @@ angular.module('cms').controller('ProjectCtrl',function($scope, projectService, 
         Upload.upload({
             url:'/api/upload',
             data:{file:file}
-        }).then(function(resp){
+        }).then(function(resp) {
 
             section.image = resp.data;
             console.log(resp.data);
+
+        }, function(){
+
+        }, function(){
 
         });
 
@@ -58,8 +89,41 @@ angular.module('cms').controller('ProjectCtrl',function($scope, projectService, 
 
     $scope.save = function(){
 
-        $scope.model.sections = $scope.sections;
-        projectService.create($scope.model);
+        /*$scope.model.sections = $scope.sections;*/
+
+        /*projectService.create($scope.model, function(data){
+
+            $state.go('projects'); /!* todo it doesn't go to projects state yet *!/
+        });
+*/
+
+
+        if(!$scope.isEdit) {
+
+            projectService.create($scope.model, function(data){
+                $state.go('projects');
+            });
+
+        }else{
+
+            projectService.update($scope.model._id, $scope.model, function(data){
+                $state.go('projects');
+            });
+
+        }
+
+
+
+
+        /*if(!$scope.isEdit) {
+            projectService.create($scope.model, function(data){
+                $state.go('projects');
+            });
+        }else{
+            projectService.update($scope.model._id, $scope.model, function(data){
+                $state.go('projects');
+            });
+        }*/
 
     };
 

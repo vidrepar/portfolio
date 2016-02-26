@@ -1,3 +1,5 @@
+/* globals confirm */
+
 angular.module('cms').controller('ProjectsCtrl',function($scope, $state, projectService){
 
     $scope.list = projectService.model.list;
@@ -28,17 +30,21 @@ angular.module('cms').controller('ProjectsCtrl',function($scope, $state, project
 
         console.log(id);
 
-        projectService.remove(id, function(){
+        var c = confirm('Are you sure?');
 
-            angular.forEach($scope.list, function(project, index){
+        if(c) {
+            projectService.remove(id, function () {
 
-                if(project._id === id){
-                    $scope.list.splice(index,1);
-                }
+                angular.forEach($scope.list, function (project, index) {
+
+                    if (project._id === id) {
+                        $scope.list.splice(index, 1);
+                    }
+
+                });
 
             });
-
-        });
+        }
 
     };
 
