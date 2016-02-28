@@ -27,16 +27,16 @@ $(document).ready(function() {
     //console.log(page, pageProjects);
 
     if(page === ''){
-      console.log(document.getElementById("home"));
+      //console.log(document.getElementById("home"));
       $('#home').addClass('active');
     }else if(page === 'projects' || pageProjects === 'projects'){
-      console.log(document.getElementById("portfolio"));
+      //console.log(document.getElementById("portfolio"));
       $('#portfolio').addClass('active');
     }else if(page === 'about'){
-      console.log(document.getElementById("about"));
+      //console.log(document.getElementById("about"));
       $('#about').addClass('active');
     }else if(page === 'contact'){
-      console.log(document.getElementById("contact"));
+      //console.log(document.getElementById("contact"));
       $('#contact').addClass('active');
     }
 

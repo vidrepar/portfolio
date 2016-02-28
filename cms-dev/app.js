@@ -30,6 +30,7 @@ angular.module('cms').config(function($stateProvider, $urlRouterProvider) {
                 if (id.length > 0) {
                     return projectService.getOne(id);
                 } else {
+
                     return true;
                 }
 

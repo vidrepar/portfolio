@@ -30,7 +30,7 @@ exports.start = function(){
   app.listen(PORT, function(){
 
     console.log('Server running on http://localhost:'+PORT);
-    router(app); // routes for our API in our router
+    router(app);
 
   });
 
@@ -39,10 +39,10 @@ exports.start = function(){
 //CORS middleware
 var allowCrossDomain = function(req, res, next) {
 
-    res.header('Access-Control-Allow-Origin', '*');
-    res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
-    res.header('Access-Control-Allow-Headers', 'Content-Type');
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+  res.header('Access-Control-Allow-Headers', 'Content-Type');
 
-    next();
+  next();
 
 };

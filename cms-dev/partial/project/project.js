@@ -28,9 +28,7 @@ angular.module('cms').controller('ProjectCtrl',function(
         $scope.model = projectService.model.item;
         $scope.isEdit = true;
 
-        /*console.log('id.length', id.length);
-        console.log('$scope.model', $scope.model);
-        console.log('projectService.model.item', projectService.model.item);*/
+        console.log(projectService.model);
 
     }
 
@@ -89,15 +87,6 @@ angular.module('cms').controller('ProjectCtrl',function(
 
     $scope.save = function(){
 
-        /*$scope.model.sections = $scope.sections;*/
-
-        /*projectService.create($scope.model, function(data){
-
-            $state.go('projects'); /!* todo it doesn't go to projects state yet *!/
-        });
-*/
-
-
         if(!$scope.isEdit) {
 
             projectService.create($scope.model, function(data){
@@ -112,18 +101,25 @@ angular.module('cms').controller('ProjectCtrl',function(
 
         }
 
+    };
 
+    $scope.delete = function(id){
 
+        var c = confirm('Are you sure?');
 
-        /*if(!$scope.isEdit) {
-            projectService.create($scope.model, function(data){
+        if(c) {
+            console.log(
+                'id: ', id,
+                '$scope.model: ', $scope.model._id,
+                'projectService.model.list: ', projectService.model.list,
+                'projectService.model.item: ', projectService.model.item
+            );
+
+            projectService.remove($scope.model._id, function(data){
                 $state.go('projects');
             });
-        }else{
-            projectService.update($scope.model._id, $scope.model, function(data){
-                $state.go('projects');
-            });
-        }*/
+
+        }
 
     };
 

@@ -20,7 +20,7 @@ angular.module('cms').factory('projectService',function($http) {
         },
         getOne:function(id){
 
-            $http.get('/api/project/'+id)
+            return $http.get('/api/project/'+id)
                 .then(function(res){
 
                     var item = res.data;

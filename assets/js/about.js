@@ -34,3 +34,15 @@
   });
 
 
+  var aboutText = $('#text-about-cv p');
+  var aboutTextLength = $('#text-about-cv p').text().length;
+  console.log(aboutTextLength);
+
+
+  $('#text-about-cv p').readmore({
+    speed: 75,
+    lessLink: '<a href="#">Read less</a>'
+  });
+
+
+
