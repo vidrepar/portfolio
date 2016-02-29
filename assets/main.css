@@ -376,9 +376,6 @@ nav {
   background-size: cover;
   position: relative;
 }
-#about-section-1 img {
-  position: relative;
-}
 #about-section-1 h1 {
   font-size: 100px;
 }
@@ -388,9 +385,22 @@ nav {
 #text-about {
   margin-top: 45px;
 }
+#text-about h2 {
+  text-align: right;
+  padding-right: 25px;
+  padding-top: 30px;
+}
+#text-about #text-about-cv {
+  padding-left: 25px;
+  padding-top: 50px;
+}
 #arrow-nav {
   position: absolute;
-  bottom: 0px;
+  bottom: -43px;
+  cursor: pointer;
+}
+#arrow-nav:hover {
+  content: url("images/arrow-down-btn-hover.png");
 }
 #about-section-abilities {
   background: url("images/bg-abilities.png") no-repeat center center;

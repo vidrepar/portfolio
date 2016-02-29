@@ -9,13 +9,12 @@
 
   $('#about-section-1 .text-landing').css(
     {
-      "top":"33.3%",
+      "top":"33.3%"
     });
 
-  /*$('#arrow-nav').css(
-    {
-      "top": $windowHeight*0.20
-    });*/
+  $('#arrow-nav').css({
+    "left": $(window).width()*0.5 - $('#arrow-nav').width()*0.5
+  });
 
   /*resizing COVER image when resizing browser*/
   $(window).on('resize', function(){
@@ -26,18 +25,16 @@
       {
         "height": $windowHeight*0.75
       });
-  /*$('#arrow-nav').css(
-      {
-        "top": $windowHeight*0.20
-      });*/
+
+    $('#arrow-nav').css({
+      "left": $(window).width()*0.5 - $('#arrow-nav').width()*0.5
+    });
 
   });
 
 
   var aboutText = $('#text-about-cv p');
   var aboutTextLength = $('#text-about-cv p').text().length;
-  console.log(aboutTextLength);
-
 
   $('#text-about-cv p').readmore({
     speed: 75,
@@ -45,5 +42,13 @@
     lessLink: '<a href="#"><div class="btn">Read less</div></a>'
   });
 
+
+
+
+  $("#arrow-nav").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#arrow-nav").offset().top - 50},
+      'slow');
+  });
 
 

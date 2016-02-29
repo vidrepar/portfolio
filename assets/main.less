@@ -423,10 +423,6 @@ nav{
 
   position: relative;
 
-  img{
-    position:relative;
-  }
-
 }
 
 #about-section-1 h1{
@@ -439,15 +435,29 @@ nav{
 
 #text-about{
   margin-top: @marginLanding*1.5;
-}
 
-#text-about-cv{
+  h2{
+    text-align: right;
+    padding-right: 25px;
+    padding-top: 30px;
+  }
+
+  #text-about-cv{
+    padding-left: 25px;
+    padding-top: 50px;
+  }
 
 }
 
 #arrow-nav{
   position: absolute;
-  bottom:0px;
+  bottom: -43px;
+  cursor: pointer;
+
+  &:hover{
+    content: url("images/arrow-down-btn-hover.png");
+  }
+
 }
 
 #about-section-abilities{
