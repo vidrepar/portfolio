@@ -38,6 +38,7 @@
 
   $('#text-about-cv p').readmore({
     speed: 75,
+    collapsedHeight: 110,
     moreLink: '<a href="#"><div class="btn">Read more</div></a>',
     lessLink: '<a href="#"><div class="btn">Read less</div></a>'
   });
@@ -47,7 +48,7 @@
 
   $("#arrow-nav").click(function() {
     $('html,body').animate({
-        scrollTop: $("#arrow-nav").offset().top - 50},
+        scrollTop: $("#text-about h2").offset().top},
       'slow');
   });
 

@@ -59,6 +59,7 @@
   .p-details{
     font-size: 14px !important;
   }
+
 }
 
 .DefaultHeadingStyles{
@@ -179,7 +180,7 @@ h1, h2{
 
 h2{
   font-size: 40px !important;
-  color: #000 !important;
+  color: #000;
 }
 
 
@@ -215,10 +216,6 @@ textarea{
 
 .btn{
   .Button;
-}
-
-#text-about-cv p{
-  display: none;
 }
 
 .btn-more{
@@ -440,11 +437,22 @@ nav{
     text-align: right;
     padding-right: 25px;
     padding-top: 30px;
+    color: @blueDark2;
   }
 
   #text-about-cv{
     padding-left: 25px;
     padding-top: 50px;
+
+    .lead{
+      font-family: 'Montserrat', sans-serif;
+      color: @blueDefault;
+    }
+
+    p {
+      font-size: 16px !important;
+    }
+
   }
 
 }
@@ -470,6 +478,7 @@ nav{
   z-index: 9999;
   h2{
     padding-bottom: @marginLanding*3;
+    color: @blueDark2;
   }
 }
 

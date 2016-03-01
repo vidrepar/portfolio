@@ -103,6 +103,10 @@ angular.module('cms').controller('ProjectCtrl',function(
 
     };
 
+    $scope.cancel = function(){
+        $state.go('projects');
+    };
+
     $scope.delete = function(id){
 
         var c = confirm('Are you sure?');

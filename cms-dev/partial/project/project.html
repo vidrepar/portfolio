@@ -2,9 +2,10 @@
 
     <h1 ng-if="!isEdit">Create new project</h1>
     <h1 ng-if="isEdit">Edit project</h1>
+    <div class="btn btn-md pull-right btn-danger" ng-click="delete(model._id)" ng-if="isEdit">Delete</div>
+    <div class="btn btn-md pull-right btn-warning" ng-click="cancel()">Cancel</div>
     <div class="btn btn-md pull-right btn-success" ng-click="save()" ng-if="!isEdit">Create</div>
     <div class="btn btn-md pull-right btn-success" ng-click="save()" ng-if="isEdit">Save</div>
-    <div class="btn btn-md pull-right btn-danger" ng-click="delete(model._id)" ng-if="isEdit">Delete</div>
     <br/><br/>
     <label for="title">Title</label>
     <input type="text" id="title" class="form-control" ng-model="model.title"/><br/>
