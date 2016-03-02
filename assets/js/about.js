@@ -38,7 +38,7 @@
 
   $('#text-about-cv p').readmore({
     speed: 75,
-    collapsedHeight: 110,
+    collapsedHeight: 125,
     moreLink: '<a href="#"><div class="btn">Read more</div></a>',
     lessLink: '<a href="#"><div class="btn">Read less</div></a>'
   });

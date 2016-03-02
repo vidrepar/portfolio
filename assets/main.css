@@ -122,7 +122,7 @@ h2 {
   color: #fff;
 }
 h2 {
-  font-size: 40px !important;
+  font-size: 40px;
   color: #000;
 }
 h5 {
@@ -254,7 +254,6 @@ footer p {
 #popup {
   color: #d3d3d3 !important;
   background-color: lightgrey !important;
-  /*margin: 40px 40px !important;*/
   position: fixed;
   width: 100%;
   margin-left: -40px;
@@ -387,6 +386,10 @@ nav {
   padding-right: 25px;
   padding-top: 30px;
   color: #203060;
+  font-size: 40px;
+}
+#text-about .italic {
+  font-size: 100px;
 }
 #text-about #text-about-cv {
   padding-left: 25px;
@@ -398,6 +401,7 @@ nav {
 }
 #text-about #text-about-cv p {
   font-size: 16px !important;
+  line-height: 1.6;
 }
 #arrow-nav {
   position: absolute;
@@ -422,6 +426,14 @@ nav {
 #about-section-abilities h2 {
   padding-bottom: 90px;
   color: #203060;
+  font-size: 40px;
+}
+#about-section-abilities h3 {
+  margin-top: 60px;
+}
+#about-section-abilities .col-md-4 {
+  margin-bottom: 40px;
+  padding: 20px !important;
 }
 #section-connect {
   background: url("images/bg-connect.png") no-repeat center center;
@@ -609,10 +621,25 @@ nav {
   .grid-item {
     width: 370px;
   }
+  #text-about h2 {
+    text-align: center !important;
+  }
+  #text-about-cv .lead {
+    font-size: 21px;
+  }
 }
 @media (max-width: 740px) {
   .grid-item {
     width: 100%;
+  }
+  #text-about h2 {
+    text-align: center !important;
+  }
+  #text-about .btn {
+    display: block;
+  }
+  #text-about-cv .lead {
+    font-size: 21px;
   }
 }
 /* MEDIA QUERIES FOR DIFFERENT DEVICES */
@@ -661,14 +688,61 @@ nav {
     font-size: 30px !important;
   }
   #portfolio-section-1 h1,
-  #about-section-1 h1,
   #contact-section-1 h1 {
     font-size: 40px;
   }
   #portfolio-section-1 p,
-  #about-section-1 p,
   #contact-section-1 p {
     font-size: 20px;
+  }
+  #about-section-1 p {
+    font-size: 16px;
+  }
+  #about-section-abilities {
+    margin-top: 70px;
+  }
+  #about-section-abilities h2 {
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+  #about-section-abilities img {
+    width: 150px;
+  }
+  #about-section-abilities h3 {
+    margin-top: 30px;
+  }
+  #about-section-abilities p {
+    font-size: 16px;
+  }
+  #about-section-abilities .col-md-4 {
+    margin-bottom: 40px;
+    padding-bottom: 0px !important;
+  }
+  #text-about {
+    margin-top: 45px;
+  }
+  #text-about h2 {
+    text-align: center;
+    color: #203060;
+    padding-left: 10px;
+    font-size: 30px;
+  }
+  #text-about #text-about-cv {
+    padding-top: 20px;
+    padding-left: 25px;
+  }
+  #text-about #text-about-cv .lead {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #3550a0;
+  }
+  #text-about #text-about-cv p {
+    font-size: 16px !important;
+    line-height: 1.6;
+  }
+  #text-about #text-about-cv .btn {
+    display: block;
+    width: 100%;
   }
   #logo,
   #hamburger,

@@ -179,7 +179,7 @@ h1, h2{
 }
 
 h2{
-  font-size: 40px !important;
+  font-size: 40px;
   color: #000;
 }
 
@@ -259,7 +259,6 @@ footer{
 #popup{
   color: #d3d3d3 !important;
   background-color: lightgrey !important;
-  /*margin: 40px 40px !important;*/
   position: fixed;
 
   width: 100%;
@@ -438,6 +437,11 @@ nav{
     padding-right: 25px;
     padding-top: 30px;
     color: @blueDark2;
+    font-size: 40px;
+  }
+
+  .italic{
+    font-size: 100px;
   }
 
   #text-about-cv{
@@ -451,6 +455,7 @@ nav{
 
     p {
       font-size: 16px !important;
+      line-height: 1.6;
     }
 
   }
@@ -479,7 +484,18 @@ nav{
   h2{
     padding-bottom: @marginLanding*3;
     color: @blueDark2;
+    font-size: 40px;
   }
+
+  h3{
+    margin-top: @marginLanding*2;
+  }
+
+  .col-md-4{
+    margin-bottom: 40px;
+    padding: 20px !important;
+  }
+
 }
 
 #section-connect{
@@ -705,12 +721,45 @@ nav{
   .grid-item {
     width: 370px;
   }
+
+  #text-about {
+    h2 {
+      text-align: center !important;
+    }
+
+  }
+
+  #text-about-cv{
+    .lead{
+      font-size: 21px;
+    }
+  }
+
+
 }
 
 @media (max-width: 740px){
   .grid-item{
     width: 100%;
   }
+
+  #text-about {
+    h2 {
+      text-align: center !important;
+    }
+
+    .btn{
+      display: block;
+    }
+
+  }
+
+  #text-about-cv{
+    .lead{
+      font-size: 21px;
+    }
+  }
+
 }
 
 /* MEDIA QUERIES FOR DIFFERENT DEVICES */
@@ -782,7 +831,6 @@ and (orientation : portrait) {
 
 
   #portfolio-section-1,
-  #about-section-1,
   #contact-section-1{
 
     h1{
@@ -791,10 +839,76 @@ and (orientation : portrait) {
 
     p{
       font-size: 20px;
+
+    }
+  }
+
+  #about-section-1 p{
+    font-size: 16px;
+  }
+
+  #about-section-abilities{
+
+    margin-top: 70px;
+
+    h2{
+      font-size: 30px;
+      padding-bottom: 20px;
+    }
+    img{
+      width: 150px;
+    }
+
+    h3 {
+      margin-top: 30px;
+    }
+
+    p{
+      font-size: 16px;
+    }
+
+    .col-md-4{
+      margin-bottom: 40px;
+      padding-bottom: 0px !important;
     }
 
   }
 
+  #text-about{
+    margin-top: @marginLanding*1.5;
+
+    h2{
+      text-align: center;
+      color: @blueDark2;
+      padding-left: 10px;
+      font-size: 30px;
+    }
+
+
+
+    #text-about-cv{
+      padding-top: 20px;
+      padding-left: 25px;
+
+      .lead{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        color: @blueDefault;
+      }
+
+      p {
+        font-size: 16px !important;
+        line-height: 1.6;
+      }
+
+      .btn{
+        display: block;
+        width: 100%;
+      }
+
+    }
+
+  }
 
   #logo,
   #hamburger,
