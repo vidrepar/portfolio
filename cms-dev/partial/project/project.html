@@ -28,9 +28,10 @@
     <label>Sections</label><br/>
     <div ng-repeat="section in sections">
         <input type="text" class="form-control" ng-model="section.title"><br/>
-        <div class="btn btn-primary" ngf-select="addSections($file, section)">Upload section image</div>
+        <div class="btn btn-primary" ngf-select="addSections($file, section)">Upload {{ section.title }} image</div><div>Current {{ section.title }} image: {{ section.image.fileName }}</div><br/>
+        <img ng-src="/assets/images/{{ section.image.fileName }}">
         <br/><br/>
-        <div class="btn btn-success" ng-click="addSectionButton()">+</div><hr>
+        <div class="btn btn-lg btn-block btn-success" ng-click="addSectionButton()">Add another section</div><hr>
     </div>
 
 </div>
