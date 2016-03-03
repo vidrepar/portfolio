@@ -39,6 +39,23 @@ angular.module('cms').controller('ProjectCtrl',function(
 
     };
 
+    $scope.deleteSection = function(section, id){
+
+        var c = confirm('Are you sure you want to DELETE '+ section.title + ' section?');
+
+        if(c) {
+
+            angular.forEach($scope.model.sections, function (section, index) {
+
+                if (section._id === id) {
+                    $scope.model.sections.splice(index, 1);
+                }
+
+            });
+        }
+
+    };
+
     $scope.selectFile = function(file){
 
         $scope.options.selectedFile = file;
