@@ -27,10 +27,10 @@
     <hr>
     <label>Sections</label><br/>
     <div ng-repeat="section in sections">
-        <input type="text" class="form-control" ng-model="section.title">
-        <div class="btn btn-primary" ngf-select="addSections($file, section)">Upload images</div>
+        <input type="text" class="form-control" ng-model="section.title"><br/>
+        <div class="btn btn-primary" ngf-select="addSections($file, section)">Upload section image</div>
         <br/><br/>
-        <div class="btn btn-success" ng-click="addSectionButton()">+</div>
+        <div class="btn btn-success" ng-click="addSectionButton()">+</div><hr>
     </div>
 
 </div>

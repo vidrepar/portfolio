@@ -28,10 +28,11 @@ angular.module('cms').controller('ProjectCtrl',function(
         $scope.model = projectService.model.item;
         $scope.isEdit = true;
 
-        console.log(projectService.model);
-
     }
 
+    console.log('$scope.model', $scope.model);
+    console.log('$scope.sections', $scope.sections);
+    console.log('$scope.model.sections', $scope.model.sections);
 
     $scope.addSectionButton = function(){
 
@@ -86,6 +87,8 @@ angular.module('cms').controller('ProjectCtrl',function(
     };
 
     $scope.save = function(){
+
+        $scope.model.sections = $scope.sections;
 
         if(!$scope.isEdit) {
 
