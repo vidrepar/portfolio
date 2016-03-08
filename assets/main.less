@@ -649,14 +649,29 @@ nav{
 
 }
 
-#presentation-section-2,
-#lets-work{
+#presentation-section-2{
   position: relative;
   margin-top:@marginLanding*1.7 !important;
   margin-bottom: @marginLanding*5 !important;
 
+  #description h2{
+    font-size: 45px;
+    text-align: right;
+    margin-top: 0px;
+    padding-top: 50px;
+    padding-right: 25px;
+    word-wrap: break-word;
+      }
+
+  #project-description{
+    padding-top: 50px;
+    padding-left: 25px;
+  }
+
   p{
     font-style: normal !important;
+    line-height: 1.6;
+    font-size: 16px !important;
   }
 
 }
@@ -666,6 +681,7 @@ nav{
   h2 {
     font-size: 45px;
     padding-top: @marginLanding*3 !important;
+    padding-bottom: @marginLanding;
   }
 
 
@@ -729,7 +745,8 @@ nav{
     width: 370px;
   }
 
-  #text-about {
+  #text-about,
+  #description {
     h2 {
       text-align: center !important;
     }
@@ -750,7 +767,8 @@ nav{
     width: 100%;
   }
 
-  #text-about {
+  #text-about,
+  #description{
     h2 {
       text-align: center !important;
     }
@@ -844,9 +862,7 @@ and (orientation : portrait) {
 
   #portfolio-section-1,
   #contact-section-1,
-  #presentation-section-1,
-  #project-description,
-  {
+  #presentation-section-1  {
 
     h1{
       font-size: 40px;
@@ -863,9 +879,29 @@ and (orientation : portrait) {
 
   }
 
+  #presentation-section-2{
+    #description h2{
+      font-size: 30px;
+      text-align: center;
+      margin-top: 0px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+
+    }
+
+    #project-description{
+      padding-top: 20px;
+    }
+
+
+
+  }
+
   #section{
     h2{
       font-size: 30px !important;
+      padding-top: 35px !important;
+      padding-bottom: 20px !important;
     }
     p{
       font-size: 16px !important;
@@ -874,6 +910,15 @@ and (orientation : portrait) {
 
   #about-section-1 p{
     font-size: 16px !important;
+  }
+
+  #lets-work .centered-ghost{
+    h2{
+      font-size: 30px;
+    }
+    p{
+      font-size: 16px !important;
+    }
   }
 
   #about-section-abilities{

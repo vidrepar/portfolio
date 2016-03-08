@@ -565,35 +565,30 @@ nav {
   margin-top: 51px !important;
   margin-bottom: 150px !important;
 }
+#presentation-section-2 #description h2 {
+  font-size: 45px;
+  text-align: right;
+  margin-top: 0px;
+  padding-top: 50px;
+  padding-right: 25px;
+  word-wrap: break-word;
+}
+#presentation-section-2 #project-description {
+  padding-top: 50px;
+  padding-left: 25px;
+}
 #presentation-section-2 p {
   font-style: normal !important;
   line-height: 1.6;
-  
+  font-size: 16px !important;
 }
 #section h2 {
   font-size: 45px;
   padding-top: 90px !important;
+  padding-bottom: 30px;
 }
 #section img {
   width: 100%;
-}
-#presentation-section-4 {
-  border: solid black 1px;
-}
-#presentation-section-5 {
-  border: solid black 1px;
-  padding-top: 150px !important;
-  padding-bottom: 150px !important;
-}
-#presentation-section-6 {
-  border: solid black 1px;
-  padding-top: 150px !important;
-  padding-bottom: 150px !important;
-}
-#presentation-section-7 {
-  border: solid black 1px;
-  padding-top: 150px !important;
-  padding-bottom: 150px !important;
 }
 #lets-work {
   background: url("/assets/images/bg-lets-work.png") repeat-x center center;
@@ -631,7 +626,8 @@ nav {
   .grid-item {
     width: 370px;
   }
-  #text-about h2 {
+  #text-about h2,
+  #description h2 {
     text-align: center !important;
   }
   #text-about-cv .lead {
@@ -642,10 +638,12 @@ nav {
   .grid-item {
     width: 100%;
   }
-  #text-about h2 {
+  #text-about h2,
+  #description h2 {
     text-align: center !important;
   }
-  #text-about .btn {
+  #text-about .btn,
+  #description .btn {
     display: block;
   }
   #text-about-cv .lead {
@@ -702,26 +700,45 @@ nav {
   }
   #portfolio-section-1 h1,
   #contact-section-1 h1,
-  #presentation-section-1 h1,
-  #project-description h1,
-  #section h1 {
+  #presentation-section-1 h1 {
     font-size: 40px;
   }
   #portfolio-section-1 h2,
   #contact-section-1 h2,
-  #presentation-section-1 h2,
-  #project-description h2,
-  #section h2 {
+  #presentation-section-1 h2 {
     font-size: 30px !important;
   }
   #portfolio-section-1 p,
   #contact-section-1 p,
-  #presentation-section-1 p,
-  #project-description p,
+  #presentation-section-1 p {
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+  }
+  #presentation-section-2 #description h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  #presentation-section-2 #project-description {
+    padding-top: 20px;
+  }
+  #section h2 {
+    font-size: 30px !important;
+    padding-top: 35px !important;
+    padding-bottom: 20px !important;
+  }
   #section p {
     font-size: 16px !important;
   }
   #about-section-1 p {
+    font-size: 16px !important;
+  }
+  #lets-work .centered-ghost h2 {
+    font-size: 30px;
+  }
+  #lets-work .centered-ghost p {
     font-size: 16px !important;
   }
   #about-section-abilities {
