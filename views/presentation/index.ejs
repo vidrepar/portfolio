@@ -16,17 +16,17 @@
 
         <p class="italic">- <%= moment(project.timeStamp).format('LL') %> -</p></div>
 
-      <img src="/assets/images/bg-presentation.png">
+      <img src="/assets/images/<%= project.coverImage.fileName %>">
 
     </div>
   </div>
 
   <div class="container" id="presentation-section-2">
-    <div id="project-services" class="col-md-4">
+    <!--<div id="project-services" class="col-md-4">
       <h2>Provided Services</h2>
-      <p>Web Design</p><!-- todo create this dynamically -->
-    </div>
-    <div id="project-description" class="col-md-8">
+      <p>Web Design</p>&lt;!&ndash; todo create this dynamically &ndash;&gt;
+    </div>-->
+    <div id="project-description" class="col-md-12 text-align-center">
       <p><%- project.description %></p>
     </div>
 
@@ -34,8 +34,8 @@
     <!-- TODO DISPLAY SECTIONS -->
     <% for(var i=0;i<project.sections.length;i++){ %>
 
-    <div class="col-md-12 text-align-center">
-      <h1><%= project.sections[i].title %></h1>
+    <div id="section" class="col-md-12 text-align-center">
+      <h2><%= project.sections[i].title %></h2>
       <img src="/assets/images/<%- project.sections[i].image.fileName %>">
     </div>
 
@@ -45,15 +45,27 @@
   </div>
 
 
-
-
-  <div id="lets-work" class="container-fluid text-align-center">
-    <h2>Let's Work</h2>
-    <p class="italic">If  you need enthusiastic developer or creative designer, leave me a message and I’ll contact you soon.</p>
-    <a href="/contact">
-      <div class="btn">Contact Me</div>
-    </a>
+  <div id="block-ghost-fix-presentation">
+    <div id="lets-work" class="block-ghost">
+      <div class="centered-ghost">
+        <h2>Let's Work</h2>
+        <p class="italic">If you need an enthusiastic developer or a creative designer, leave me a message and
+          I’ll contact you
+          soon.</p>
+        <a href="/contact">
+          <div class="btn">Contact Me</div>
+        </a>
+      </div>
+    </div>
   </div>
 
 
+
   <% include ../footer.ejs %>
+
+<!--  <p class="italic col-md-4">If you need an enthusiastic developer or a creative designer, leave me a message and
+    I’ll contact you
+    soon.</p>
+  <a href="/contact">
+    <div class="btn">Contact Me</div>
+  </a>-->

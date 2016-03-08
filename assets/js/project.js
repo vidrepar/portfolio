@@ -13,3 +13,9 @@
     $widthBrowser = $(window).width();
     console.log($widthBrowser);
   });
+
+  $('.grid-item').css();
+
+  $(".grid").hover(function() {
+    $(this).css("color","red")
+  });

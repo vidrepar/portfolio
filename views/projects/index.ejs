@@ -20,13 +20,15 @@
       <% for(var i=0;i<projects.length;i++) { %>
 
           <a href="/projects/<%= projects[i]._id %>">
-            <div class="grid-item">
-              <div id="info-project">
-                <img src="/assets/images/<%= projects[i].coverImage.fileName %>">
+            <div class="grid-item block-ghost" style="background: url('/assets/images/<%= projects[i].coverImage.fileName %>'); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+
+              <div class="centered-ghost">
                 <h3><%= projects[i].title %></h3>
                 <p><%= projects[i].author %></p>
-                <p><%= moment(projects[i].timeStamp).format('LL') %></p>
+                <p class="italic"><%= moment(projects[i].timeStamp).format('LL') %></p>
               </div>
+
+
             </div>
           </a>
 

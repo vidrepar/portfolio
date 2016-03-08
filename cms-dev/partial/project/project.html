@@ -25,17 +25,18 @@
             {{ options.progressPercentage }}% Complete (success) <!--todo add proper styling-->
         </div>
     </div>
-    <img ng-src="/assets/images/{{ model.coverImage.fileName }}">
+    <img id="cover-image" ng-src="/assets/images/{{ model.coverImage.fileName }}">
     <hr>
     <h1><label>Sections</label></h1><br/>
-    <div ng-repeat="section in sections">
+    <div ng-repeat="section in sections" id="section" class="col-md-4">
         <input type="text" class="form-control" ng-model="section.title"><br/>
         <div class="btn btn-primary" ngf-select="addSections($file, section)">Upload {{ section.title }} image</div><div>Current {{ section.title }} image fileName: {{ section.image.fileName }}</div><br/>
-        <img ng-src="/assets/images/{{ section.image.fileName }}">
+
+        <img id="section-image" ng-src="/assets/images/{{ section.image.fileName }}">
+
         <br/><br/>
         <div class="btn btn-danger" ng-click="deleteSection(section, section._id)">Delete this section</div>
         <div class="btn btn-success" ng-click="addSectionButton()">Add another section</div>
-        <hr>
     </div>
 
 </div>

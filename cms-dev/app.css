@@ -7116,6 +7116,17 @@ button.close {
 .projects-list h1 {
   color: red;
 }
+#cover-image {
+  width: 300px;
+}
+#section {
+  border: 1px solid grey;
+  border-radius: 2px;
+  padding: 10px;
+}
+#section-image {
+  width: 100%;
+}
 /* Add Component LESS Above */
 /* Required for Angular UI Bootstrap */
 .nav,
