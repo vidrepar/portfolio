@@ -567,7 +567,8 @@ nav {
 }
 #presentation-section-2 p {
   font-style: normal !important;
-  line-height: 40px;
+  line-height: 1.6;
+  
 }
 #section h2 {
   font-size: 45px;
@@ -701,8 +702,24 @@ nav {
   }
   #portfolio-section-1 h1,
   #contact-section-1 h1,
-  #presentation-section-1 h1 {
+  #presentation-section-1 h1,
+  #project-description h1,
+  #section h1 {
     font-size: 40px;
+  }
+  #portfolio-section-1 h2,
+  #contact-section-1 h2,
+  #presentation-section-1 h2,
+  #project-description h2,
+  #section h2 {
+    font-size: 30px !important;
+  }
+  #portfolio-section-1 p,
+  #contact-section-1 p,
+  #presentation-section-1 p,
+  #project-description p,
+  #section p {
+    font-size: 16px !important;
   }
   #about-section-1 p {
     font-size: 16px !important;

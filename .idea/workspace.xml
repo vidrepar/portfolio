@@ -3,15 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6f3cdca0-b0a8-4c6e-bd26-65057652e8c2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/project.js" afterPath="$PROJECT_DIR$/assets/js/project.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/main.css" afterPath="$PROJECT_DIR$/assets/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/main.less" afterPath="$PROJECT_DIR$/assets/main.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms-dev/app.css" afterPath="$PROJECT_DIR$/cms-dev/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms-dev/partial/project/project.css" afterPath="$PROJECT_DIR$/cms-dev/partial/project/project.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms-dev/partial/project/project.html" afterPath="$PROJECT_DIR$/cms-dev/partial/project/project.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms-dev/partial/project/project.less" afterPath="$PROJECT_DIR$/cms-dev/partial/project/project.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/presentation/index.ejs" afterPath="$PROJECT_DIR$/views/presentation/index.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/projects/index.ejs" afterPath="$PROJECT_DIR$/views/projects/index.ejs" />
     </list>
     <ignored path="dynamic.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,9 +41,11 @@
           <file leaf-file-name="index.ejs" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/views/presentation/index.ejs">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.6057971">
-                  <caret line="50" column="27" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
-                  <folding />
+                <state vertical-scroll-proportion="0.56666666">
+                  <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+                  <folding>
+                    <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -85,8 +81,8 @@
           <file leaf-file-name="main.less" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/assets/main.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.25567323">
-                  <caret line="863" column="0" selection-start-line="863" selection-start-column="0" selection-end-line="863" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.35854766">
+                  <caret line="646" column="0" selection-start-line="646" selection-start-column="0" selection-end-line="646" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -165,7 +161,6 @@
         <option value="$PROJECT_DIR$/views/email-form.ejs" />
         <option value="$PROJECT_DIR$/assets/style.css" />
         <option value="$PROJECT_DIR$/assets/style.less" />
-        <option value="$PROJECT_DIR$/assets/main.css" />
         <option value="$PROJECT_DIR$/cms-dev/partial/projects/projects.less" />
         <option value="$PROJECT_DIR$/cms-dev/Gruntfile.js" />
         <option value="$PROJECT_DIR$/views/index.ejs" />
@@ -188,8 +183,9 @@
         <option value="$PROJECT_DIR$/cms-dev/partial/project/project.less" />
         <option value="$PROJECT_DIR$/assets/js/project.js" />
         <option value="$PROJECT_DIR$/views/projects/index.ejs" />
-        <option value="$PROJECT_DIR$/views/presentation/index.ejs" />
         <option value="$PROJECT_DIR$/views/nav.ejs" />
+        <option value="$PROJECT_DIR$/views/presentation/index.ejs" />
+        <option value="$PROJECT_DIR$/assets/main.css" />
         <option value="$PROJECT_DIR$/assets/main.less" />
       </list>
     </option>
@@ -381,6 +377,24 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dynamic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vidrep" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main.less" />
+              <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -709,13 +723,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4792285">
-          <caret line="126" column="1" selection-start-line="126" selection-start-column="1" selection-end-line="126" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cms-dev/partial/projects/projects.less">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.3076923">
@@ -916,24 +923,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cms-dev/partial/project/project.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.3461537">
-          <caret line="27" column="24" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="24" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#6;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/presentation/index.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6057971">
-          <caret line="50" column="27" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/nav.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -958,10 +947,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/presentation/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.56666666">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-dev/partial/project/project.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.3461537">
+          <caret line="27" column="24" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="24" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#6;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35854766">
+          <caret line="569" column="2" selection-start-line="569" selection-start-column="2" selection-end-line="569" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assets/main.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25567323">
-          <caret line="863" column="0" selection-start-line="863" selection-start-column="0" selection-end-line="863" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.35854766">
+          <caret line="646" column="0" selection-start-line="646" selection-start-column="0" selection-end-line="646" selection-end-column="0" />
           <folding />
         </state>
       </provider>
