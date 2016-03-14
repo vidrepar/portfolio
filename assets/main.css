@@ -520,6 +520,7 @@ nav {
 .grid {
   box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.35);
   padding: 1px;
+  overflow: hidden;
 }
 /* VERTICAL CENTERING WITH GHOST ELEMENT */
 /* This parent can be any width and height */

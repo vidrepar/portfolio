@@ -75,9 +75,7 @@ module.exports = function(app){
 
 
   /*API ROUTES ///////////////////////////////////////////////////////////////////////////////*/
-
-
-  /*PROJECTS  ///////////////////////////////////////////////////////////////////////////////*/
+  /*projects  ///////////////////////////////////////////////////////////////////////////////*/
 
   //Projects API GET routes
   app.get('/api/projects', function(req, res){
@@ -98,6 +96,7 @@ module.exports = function(app){
   app.post('/api/project', function(req, res){
 
     console.log('Create project');
+    console.log('req.body: ', req.body);
 
     var Project = mongoose.model('Project');
 
@@ -139,6 +138,8 @@ module.exports = function(app){
 
     Project.findById(req.params.id, function(err, doc){
 
+      console.log('req.params.id', req.params.id);
+
       if(doc) {
         res.send(doc);
       }else{
@@ -153,6 +154,9 @@ module.exports = function(app){
 
     var projectData = req.body;
     var projectId = req.params.id;
+
+    console.log('PUT API');
+    console.log('req.body: ', req.body);
 
     var Project = mongoose.model('Project');
 
@@ -171,7 +175,11 @@ module.exports = function(app){
   //File Upload API POST routes
   app.post('/api/upload', multipartMiddleware, function(req, res){
 
-    console.log(req.body, req.files);
+
+    //this all works, nothing is wrong here
+    console.log("api/upload --> req.body: ", req.body);
+    console.log("api/upload --> req.files: ", req.files);
+    console.log("api/upload --> req.files.file.path: ", req.files.file.path);
 
     var path = req.files.file.path;
 

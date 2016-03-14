@@ -15,23 +15,26 @@ angular.module('cms').controller('ProjectCtrl',function(
     ];
     $scope.options = {};
     $scope.model = {};
-
     $scope.isEdit = false;
+    $scope.model.sections = $scope.sections;
+
+    console.log('PROJECT.JS CONTROLLER');
+    console.log('$scope.model: ', $scope.model);
+    console.log('$scope.sections: ', $scope.sections);
+    console.log('$scope.model.sections: ', $scope.model.sections);
+    console.log('projectService.model.item: ', projectService.model.item);
+    console.log('projectService.model.list: ', projectService.model.list);
 
     var id = $stateParams.id;
 
     if(id.length > 0) {
 
         $scope.model = projectService.model.item;
-        $scope.sections = $scope.model.sections;
         $scope.isEdit = true;
+        $scope.sections = $scope.model.sections;
 
 
     }
-
-    console.log('$scope.model', $scope.model);
-    console.log('$scope.sections', $scope.sections);
-    console.log('$scope.model.sections', $scope.model.sections);
 
     $scope.addSectionButton = function(){
 
@@ -110,6 +113,7 @@ angular.module('cms').controller('ProjectCtrl',function(
         if(!$scope.isEdit) {
 
             projectService.create($scope.model, function(data){
+
                 $state.go('projects');
             });
 

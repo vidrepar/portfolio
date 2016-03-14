@@ -16,7 +16,9 @@ exports.start = function(){
 
   // middlewares for processing the request
 	app.use(bodyParser.json());
-	app.use(bodyParser.urlencoded());
+  app.use(bodyParser.urlencoded({
+    extended: true
+  }));
 	app.use(allowCrossDomain);
 
   app.set('view engine', 'ejs');
