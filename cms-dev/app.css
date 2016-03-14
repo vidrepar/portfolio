@@ -7127,6 +7127,13 @@ button.close {
 #section-image {
   width: 100%;
 }
+#actions-btns {
+  background-color: lightgrey;
+  padding: 18px;
+  padding-bottom: 0px;
+  position: fixed;
+  z-index: 3;
+}
 /* Add Component LESS Above */
 /* Required for Angular UI Bootstrap */
 .nav,

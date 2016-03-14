@@ -9,3 +9,10 @@
 #section-image {
   width: 100%;
 }
+#actions-btns {
+  background-color: lightgrey;
+  padding: 18px;
+  padding-bottom: 0px;
+  position: fixed;
+  z-index: 3;
+}
