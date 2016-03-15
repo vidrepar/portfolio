@@ -1,4 +1,4 @@
-/* globals alert */
+/* globals alert, confirm */
 
 angular.module('cms').controller('ProjectCtrl',function(
     $scope,
