@@ -105,17 +105,7 @@ module.exports = function (grunt) {
             files:[
                 { cwd:'dist', src:['**'], dest:'../cms-dist', expand:true }, {
                     expand: true,
-                    cwd: 'bower_components/tinymce-dist/themes/modern/',
-                    src: ['**'],
-                    dest: '../cms-dist'
-                }, {
-                    expand: true,
-                    cwd: 'bower_components/tinymce-dist/skins/',
-                    src: ['**'],
-                    dest: '../cms-dist'
-                }, {
-                    expand: true,
-                    cwd: 'bower_components/tinymce-dist/plugins/link/',
+                    cwd: 'bower_components/tinymce-dist/',
                     src: ['**'],
                     dest: '../cms-dist'
                 }
