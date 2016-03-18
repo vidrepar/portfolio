@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f3cdca0-b0a8-4c6e-bd26-65057652e8c2" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cms-dev/dist/app.full.min.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms-dev/dist/index.html" afterPath="$PROJECT_DIR$/cms-dev/dist/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms-dev/index.html" afterPath="$PROJECT_DIR$/cms-dev/index.html" />
     </list>
     <ignored path="dynamic.iws" />
@@ -107,8 +110,8 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/cms-dev/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.4934688">
-                  <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+                <state vertical-scroll-proportion="0.19738752">
+                  <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
                   <folding />
                 </state>
               </provider>
@@ -1089,8 +1092,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cms-dev/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4934688">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.19738752">
+          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
           <folding />
         </state>
       </provider>
