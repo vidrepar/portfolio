@@ -103,7 +103,22 @@ module.exports = function (grunt) {
       },
         dist:{
             files:[
-                { cwd:'dist', src:['**'], dest:'../cms-dist', expand:true }
+                { cwd:'dist', src:['**'], dest:'../cms-dist', expand:true }, {
+                    expand: true,
+                    cwd: 'bower_components/tinymce-dist/themes/modern/',
+                    src: ['**'],
+                    dest: '../cms-dist'
+                }, {
+                    expand: true,
+                    cwd: 'bower_components/tinymce-dist/skins/',
+                    src: ['**'],
+                    dest: '../cms-dist'
+                }, {
+                    expand: true,
+                    cwd: 'bower_components/tinymce-dist/plugins/link/',
+                    src: ['**'],
+                    dest: '../cms-dist'
+                }
             ]
         }
     },
