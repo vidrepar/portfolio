@@ -1,0 +1,16 @@
+<div class="main-sidebar">
+  <!-- Inner sidebar -->
+  <div class="sidebar">
+    <div class="info-container">
+    	<p>User Name</p>
+    </div>
+
+    <!-- Sidebar Menu -->
+    <ul class="sidebar-menu">
+      <li class="header">Menu</li>
+      <!-- Optionally, you can add icons to the links -->
+      <li ng-repeat="item in menuItems" ui-sref-active="active" ui-sref="{{item.state}}"><a href="#"><span>{{item.name}}</span></a></li>
+    </ul><!-- /.sidebar-menu -->
+
+  </div><!-- /.sidebar -->
+</div><!-- /.main-sidebar -->

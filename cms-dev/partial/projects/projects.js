@@ -22,7 +22,7 @@ angular.module('cms').controller('ProjectsCtrl',function($scope, $state, project
 
     $scope.createProject = function(){
 
-        $state.go('project');
+        $state.go('app.project');
 
     };
 

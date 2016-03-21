@@ -14,7 +14,7 @@
 
       <div class="container"><h1><%= project.title %></h1>
 
-        <p class="italic">- <%= moment(project.timeStamp).format('LL') %> -</p></div>
+        <p class="italic">- <%= moment(project.date).format('LL') %> -</p></div>
 
       <img src="/assets/images/<%= project.coverImage.fileName %>">
 

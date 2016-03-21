@@ -116,13 +116,13 @@ angular.module('cms').controller('ProjectCtrl',function(
 
             projectService.create($scope.model, function(data){
 
-                $state.go('projects');
+                $state.go('app.projects');
             });
 
         }else{
 
             projectService.update($scope.model._id, $scope.model, function(data){
-                $state.go('projects');
+                $state.go('app.projects');
             });
 
         }
@@ -130,7 +130,7 @@ angular.module('cms').controller('ProjectCtrl',function(
     };
 
     $scope.cancel = function(){
-        $state.go('projects');
+        $state.go('app.projects');
     };
 
     $scope.delete = function(id){
@@ -146,7 +146,7 @@ angular.module('cms').controller('ProjectCtrl',function(
             );
 
             projectService.remove($scope.model._id, function(data){
-                $state.go('projects');
+                $state.go('app.projects');
             });
 
         }

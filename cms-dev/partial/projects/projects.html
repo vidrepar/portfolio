@@ -1,6 +1,8 @@
-<div class="col-md-12 projects-list" ng-controller="ProjectsCtrl">
-
+<section class="content-header">
     <h1>Projects List</h1>
+</section>
+<section class="content">
+
     <div class="btn btn-primary" ng-click="createProject()">Create new</div>
 
     <!-- todo sorting lists, connect it to the existing projects from the db -->
@@ -20,10 +22,10 @@
                 <td>{{ project.sections.length }}</td>
                 <td>
                     <div class="btn btn-xs btn-danger" ng-click="deleteProject(project._id)">Delete</div>
-                    <div class="btn btn-xs btn-primary" ui-sref="project({id:project._id})">Edit</div>
+                    <div class="btn btn-xs btn-primary" ui-sref="app.project({id:project._id})">Edit</div>
                 </td>
             </tr>
         </tbody>
     </table>
 
-</div>
+</section>

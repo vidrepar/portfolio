@@ -9,36 +9,64 @@ angular.module('cms', [
 
 angular.module('cms').config(function($stateProvider, $urlRouterProvider) {
 
-    $stateProvider.state('projects', {
-        url: '/projects',
-        templateUrl: 'partial/projects/projects.html',
-        resolve:{
-            projects:function(projectService){
-                return projectService.getList();
+    $stateProvider.state('app', {
+
+        url:'/',
+        abstract:true,
+        views:{
+            sidebar:{
+                templateUrl:'partial/sidebar/sidebar.html',
+                controller:'SidebarCtrl'
+            },
+            'main-header':{
+                templateUrl:'partial/header/header.html',
+                controller:'HeaderCtrl'
+            }
+        }
+
+    });
+
+    $stateProvider.state('app.projects', {
+        url: 'projects',
+        views:{
+            'main@':{
+                resolve:{
+                    projects:function(projectService){
+                        return projectService.getList();
+                    }
+                },
+                templateUrl: 'partial/projects/projects.html',
+                controller: 'ProjectsCtrl'
             }
         }
     });
-    $stateProvider.state('project', {
-        url: '/project/:id',
-        templateUrl: 'partial/project/project.html',
-        resolve: {
+    $stateProvider.state('app.project', {
+        url: 'project/:id',
+        views:{
+            'main@':{
+                resolve: {
 
-            project: function ($stateParams, $location, projectService) {
+                    project: function ($stateParams, $location, projectService) {
 
-                var id = $stateParams.id;
+                        var id = $stateParams.id;
 
-                if (id.length > 0) {
-                    return projectService.getOne(id);
-                } else {
+                        if (id.length > 0) {
+                            return projectService.getOne(id);
+                        } else {
 
-                    return true;
-                }
+                            return true;
+                        }
 
+                    }
+                },
+                templateUrl: 'partial/project/project.html',
+                controller: 'ProjectCtrl'
             }
         }
+        
     });
     /* Add New States Above */
-    $urlRouterProvider.otherwise('/projects');
+    $urlRouterProvider.otherwise('app.projects');
 
 });
 
