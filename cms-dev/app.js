@@ -66,7 +66,7 @@ angular.module('cms').config(function($stateProvider, $urlRouterProvider) {
         
     });
     /* Add New States Above */
-    $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.otherwise('/projects');
 
 });
 
