@@ -63,7 +63,22 @@ angular.module('cms').config(function($stateProvider, $urlRouterProvider) {
                 controller: 'ProjectCtrl'
             }
         }
-        
+
+    });
+    $stateProvider.state('app.about', {
+        url: 'about',
+        templateUrl: 'partial/about/about.html',
+        views:{
+            'main@':{
+                resolve: {
+                    aboutData: function (aboutService) {
+                        return aboutService.getData();
+                    }
+                },
+                templateUrl: 'partial/about/about.html',
+                controller: 'AboutCtrl'
+            }
+        }
     });
     /* Add New States Above */
     $urlRouterProvider.otherwise('/projects');

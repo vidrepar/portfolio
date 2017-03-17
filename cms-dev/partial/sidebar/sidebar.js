@@ -7,8 +7,8 @@ angular.module('cms').controller('SidebarCtrl',function($scope, $state){
 			state:'app.projects'
 		},
 		{
-			name:'Articles',
-			state:'app.articles'
+			name:'About',
+			state:'app.about'
 		}
 
 	];

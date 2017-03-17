@@ -10,6 +10,7 @@ function init(){
     server.start();
 
     require('./server/models/project');
+    require('./server/models/about');
     require('./server/models/post');
     require('./server/models/file');
     require('./server/models/inquiry');

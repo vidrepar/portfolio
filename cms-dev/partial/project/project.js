@@ -18,15 +18,6 @@ angular.module('cms').controller('ProjectCtrl',function(
     $scope.isEdit = false;
     $scope.model.sections = $scope.sections;
 
-/*
-    console.log('PROJECT.JS CONTROLLER');
-    console.log('$scope.model: ', $scope.model);
-    console.log('$scope.sections: ', $scope.sections);
-    console.log('$scope.model.sections: ', $scope.model.sections);
-    console.log('projectService.model.item: ', projectService.model.item);
-    console.log('projectService.model.list: ', projectService.model.list);
-*/
-
     var id = $stateParams.id;
 
     if(id.length > 0) {
