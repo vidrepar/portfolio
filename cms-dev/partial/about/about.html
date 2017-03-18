@@ -3,8 +3,6 @@
 </section>
 <section class="content">
 
-    <pre>{{aboutData}}</pre>
-
     <form name="about_form" novalidate ng-submit="aboutForm()">
 
         <!-- about titleGeneral -->
@@ -25,6 +23,122 @@
                    name="subTitleGeneral"
                    ng-model="aboutData.subTitleGeneral"
                    placeholder="Subtitle..."
+                   class="form-control"
+            />
+        </div>
+
+        <!-- about description.title -->
+        <div class="form-group">
+            <label name="description.title">description.title</label>
+            <input type="text"
+                   name="description.title"
+                   ng-model="aboutData.description.title"
+                   placeholder="Title of the description..."
+                   class="form-control"
+            />
+        </div>
+
+        <!-- about titleAbilities -->
+        <div class="form-group">
+            <label name="titleAbilities">titleAbilities</label>
+            <input type="text"
+                   name="titleAbilities"
+                   ng-model="aboutData.titleAbilities"
+                   placeholder="Abilities title..."
+                   class="form-control"
+            />
+        </div>
+
+        <!-- aboutData.stack[0].title -->
+        <div class="form-group">
+            <label name="aboutData.stack[0].title">aboutData.stack[0].title</label>
+            <input type="text"
+                   name="aboutData.stack[0].title"
+                   ng-model="aboutData.stack[0].title"
+                   placeholder="Stack first column title..."
+                   class="form-control"
+            />
+        </div>
+
+        <pre>{{ aboutData.stack[0].abilities }}</pre>
+
+        <div class="row">
+            <div ng-repeat="ability in aboutData.stack[0].abilities track by $index">
+                <div class="form-group col-sm-4">
+                    <label name="aboutData.stack[0].abilities[$index]">{{ $index }}</label>
+                    <input type="text"
+                           name="aboutData.stack[0].abilities[$index]"
+                           ng-model="aboutData.stack[0].abilities[$index]"
+                           placeholder="Stack first column title..."
+                           class="form-control"
+                    />
+                </div>
+            </div>
+        </div>
+
+        <div class="btn btn-primary" ng-click="addAbility(0)">Add ability</div><br><br>
+
+        <!-- about aboutData.stack[1].title -->
+        <div class="form-group">
+            <label name="aboutData.stack[1].title">aboutData.stack[1].title</label>
+            <input type="text"
+                   name="aboutData.stack[1].title"
+                   ng-model="aboutData.stack[1].title"
+                   placeholder="Stack second column title..."
+                   class="form-control"
+            />
+        </div>
+
+        <div class="row">
+            <div ng-repeat="ability in aboutData.stack[1].abilities track by $index">
+                <div class="form-group col-sm-4">
+                    <label name="aboutData.stack[1].abilities[$index]">{{ $index }}</label>
+                    <input type="text"
+                           name="aboutData.stack[1].abilities[$index]"
+                           ng-model="aboutData.stack[1].abilities[$index]"
+                           placeholder="Stack second column title..."
+                           class="form-control"
+                    />
+                </div>
+            </div>
+        </div>
+
+        <div class="btn btn-primary" ng-click="addAbility(1)">Add ability</div><br><br>
+
+        <!-- about stack.thirdColumn.title -->
+        <div class="form-group">
+            <label name="aboutData.stack[2].title">aboutData.stack[2].title</label>
+            <input type="text"
+                   name="aboutData.stack[2].title"
+                   ng-model="aboutData.stack[2].title"
+                   placeholder="Stack third column title..."
+                   class="form-control"
+            />
+        </div>
+
+        <div class="row">
+            <div ng-repeat="ability in aboutData.stack[2].abilities track by $index">
+                <div class="form-group col-sm-4">
+                    <label name="aboutData.stack[2].abilities[$index]">{{ $index }}</label>
+                    <input type="text"
+                           name="aboutData.stack[2].abilities[$index]"
+                           ng-model="aboutData.stack[2].abilities[$index]"
+                           placeholder="Stack third column title..."
+                           class="form-control"
+                    />
+                </div>
+            </div>
+        </div>
+
+        <div class="btn btn-primary" ng-click="addAbility(2)">Add ability</div><br><br>
+
+        <!-- about connectTitle -->
+        <div class="form-group">
+            <label name="connectTitle">connectTitle</label>
+            <input type="text"
+                   name="connectTitle"
+                   ng-model="aboutData.connectTitle"
+                   placeholder="Connect title..."
                    class="form-control"
             />
         </div>

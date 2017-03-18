@@ -12,7 +12,7 @@
         <div id="about-section-1">
           <div class="text-landing text-align-center">
             <h1 class="inline-block"><%= about[0].titleGeneral %></h1>
-            <p class="italic"><%= about[0].subTitleGeneral %></p>
+            <p class="italic">- <%= about[0].subTitleGeneral %> -</p>
           </div>
           <img src="/assets/images/arrow-down-btn.png" id="arrow-nav">
         </div>
@@ -20,7 +20,7 @@
       <div id="text-about" class="container"> <!-- CONTAINER -->
 
       <div class="col-md-3 col-md-offset-3">
-        <h2>I'm eager to learn new things</h2>
+        <h2><%= about[0].description.title %></h2>
       </div>
 
       <div id="text-about-cv" class="col-md-6">
@@ -31,28 +31,30 @@
     <div id="about-section-abilities" class="container-fluid"> <!-- CONTAINER FLUID -->
         <div  class="text-align-center container">
           <div class="col-md-12">
-            <h2>Full Stack Abilities</h2>
+            <h2><%= about[0].titleAbilities %></h2>
           </div>
           <div class="col-md-4 ">
             <img src="assets/images/icon-vector.png">
-            <h3>Vector</h3>
-            <p>Print Design</p>
-            <p>Logo Design</p>
+            <h3><%= about[0].stack[0].title %></h3>
+
+              <% for(var i=0; i<about[0].stack[0].abilities.length; i++) {%>
+              <p><%= about[0].stack[0].abilities[i] %></p>
+              <% } %>
+
           </div>
           <div class="col-md-4">
             <img src="assets/images/icon-apps.png">
-            <h3>Apps</h3>
-            <p>Node.js</p>
-            <p>Angular</p>
-            <p>MongoDB</p>
-            <p>Express.js</p>
+            <h3><%= about[0].stack[1].title %></h3>
+              <% for(var i=0; i<about[0].stack[1].abilities.length; i++) {%>
+              <p><%= about[0].stack[1].abilities[i] %></p>
+              <% } %>
           </div>
           <div class="col-md-4">
             <img src="assets/images/icon-animations.png">
-            <h3>Animations</h3>
-            <p>HTML 5</p>
-            <p>LESS</p>
-            <p>jQuery</p>
+            <h3><%= about[0].stack[2].title %></h3>
+              <% for(var i=0; i<about[0].stack[2].abilities.length; i++) {%>
+              <p><%= about[0].stack[2].abilities[i] %></p>
+              <% } %>
           </div>
         </div>
 
@@ -61,7 +63,7 @@
     <div id="section-connect" class="container-fluid">
       <div class="text-align-center container">
         <div class="col-md-12">
-          <h2>Connect with me</h2>
+          <h2><%= about[0].connectTitle %></h2>
         </div>
         <div class="col-md-2">
           </div>

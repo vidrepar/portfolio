@@ -3,13 +3,29 @@ var Schema = mongoose.Schema;
 
 var schema = Schema({
 
-  titleGeneral            : String,
-  subTitleGeneral         : String,
-  titleDescription        : String,
-  descriptionDescription  : String,
-  titleAbilities          : String,
-  titleStack              : String,
-  listStackAbilities      : String
+    titleGeneral: String,
+    subTitleGeneral: String,
+    description: {
+        title: String,
+        lead: String,
+        paragraph: String
+    },
+    titleAbilities: String,
+    stack: [
+        {
+            title: String,
+            abilities: []
+        },
+        {
+            title: String,
+            abilities: []
+        },
+        {
+            title: String,
+            abilities: []
+        }
+    ],
+    connectTitle: String
 
 });
 
