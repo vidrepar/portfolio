@@ -68,7 +68,6 @@ angular.module('cms').config(function($stateProvider, $urlRouterProvider) {
     });
     $stateProvider.state('app.about', {
         url: 'about',
-        templateUrl: 'partial/about/about.html',
         views:{
             'main@':{
                 resolve: {
@@ -78,6 +77,18 @@ angular.module('cms').config(function($stateProvider, $urlRouterProvider) {
                 },
                 templateUrl: 'partial/about/about.html',
                 controller: 'AboutCtrl'
+            }
+        }
+    });
+    $stateProvider.state('app.homepage', {
+        url: 'homepage',
+        views:{
+            'main@':{
+                resolve: {
+
+                },
+                templateUrl: 'partial/homepage/homepage.html',
+                controller: 'HomepageCtrl'
             }
         }
     });

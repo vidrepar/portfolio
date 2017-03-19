@@ -11,6 +11,7 @@ function init(){
 
     require('./server/models/project');
     require('./server/models/about');
+    require('./server/models/homepage');
     require('./server/models/post');
     require('./server/models/file');
     require('./server/models/inquiry');
