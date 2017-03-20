@@ -17,7 +17,7 @@ angular.module('cms').controller('AboutCtrl',function($scope, aboutService, $sta
 
         $scope.aboutData.stack.map(function (c) {
             c.abilities.map(function (a,i) {
-                if ( a === '' ) { c.abilities.splice(i) }
+                if ( a === '' ) { c.abilities.splice(i); }
             });
         });
 

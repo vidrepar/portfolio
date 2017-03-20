@@ -32,11 +32,7 @@
 
   });
 
-
-  var aboutText = $('#text-about-cv p');
-  var aboutTextLength = $('#text-about-cv p').text().length;
-
-  $('#text-about-cv p').readmore({
+  $('#text-about-cv .paragraph').readmore({
     speed: 75,
     collapsedHeight: 125,
     moreLink: '<a href="#"><div class="btn">Read more</div></a>',

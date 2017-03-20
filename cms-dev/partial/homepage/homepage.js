@@ -1,4 +1,4 @@
-angular.module('cms').controller('HomepageCtrl',function($scope, homepageService){
+angular.module('cms').controller('HomepageCtrl',function($scope, $state, homepageService){
 
     $scope.homepageData = homepageService.model.data[0];
     var original = angular.copy($scope.homepageData);

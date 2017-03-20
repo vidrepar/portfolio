@@ -395,9 +395,11 @@ nav {
   padding-left: 25px;
   padding-top: 50px;
 }
-#text-about #text-about-cv .lead {
-  font-family: 'Montserrat', sans-serif;
+#text-about #text-about-cv .lead p {
+  font-family: 'Montserrat', sans-serif !important;
   color: #3550a0;
+  font-size: 21px !important;
+  line-height: 1.4;
 }
 #text-about #text-about-cv p {
   font-size: 16px !important;

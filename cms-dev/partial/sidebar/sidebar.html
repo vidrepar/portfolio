@@ -1,12 +1,13 @@
 <div class="main-sidebar">
-  <!-- Inner sidebar -->
-  <div class="sidebar">
+    <!-- Inner sidebar -->
+    <div class="sidebar">
 
-    <!-- Sidebar Menu -->
-    <ul class="sidebar-menu">
-      <li class="header">Menu</li>
-      <li ng-repeat="item in menuItems" ui-sref-active="active" ui-sref="{{item.state}}"><a href="#"><span>{{item.name}}</span></a></li>
-    </ul>
+        <!-- Sidebar Menu -->
+        <ul class="sidebar-menu">
+            <li class="header">Pages</li>
+            <li ng-repeat="item in menuItems" ui-sref-active="active" ui-sref="{{item.state}}"><a href="#"><span>{{item.name}}</span></a>
+            </li>
+        </ul>
 
-  </div>
+    </div>
 </div>

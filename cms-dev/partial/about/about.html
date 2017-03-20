@@ -1,5 +1,5 @@
 <section class="content-header">
-    <h1>About me content</h1>
+    <h1>About</h1>
 </section>
 <section class="content">
 
@@ -38,6 +38,28 @@
             />
         </div>
 
+        <div class="row">
+            <div class="col-md-6">
+                <!-- about aboutData.description.lead -->
+                <label for="aboutData.description.lead">aboutData.description.lead</label>
+                <textarea id="aboutData.description.lead"
+                          ui-tinymce
+                          ng-model="aboutData.description.lead"
+                          class="form-control"
+                ></textarea>
+                <br/>
+            </div>
+            <div class="col-md-6">
+                <!-- about aboutData.description.paragraph -->
+                <label for="aboutData.description.paragraph">aboutData.description.paragraph</label>
+                <textarea id="aboutData.description.paragraph"
+                          ui-tinymce
+                          ng-model="aboutData.description.paragraph"
+                          class="form-control"
+                ></textarea>
+            </div>
+        </div>
+
         <!-- about titleAbilities -->
         <div class="form-group">
             <label name="titleAbilities">titleAbilities</label>
@@ -60,12 +82,10 @@
             />
         </div>
 
-        <pre>{{ aboutData.stack[0].abilities }}</pre>
-
         <div class="row">
             <div ng-repeat="ability in aboutData.stack[0].abilities track by $index">
                 <div class="form-group col-sm-4">
-                    <label name="aboutData.stack[0].abilities[$index]">{{ $index }}</label>
+                    <label name="aboutData.stack[0].abilities[$index]">#{{ $index+1 }}</label>
                     <input type="text"
                            name="aboutData.stack[0].abilities[$index]"
                            ng-model="aboutData.stack[0].abilities[$index]"
@@ -92,7 +112,7 @@
         <div class="row">
             <div ng-repeat="ability in aboutData.stack[1].abilities track by $index">
                 <div class="form-group col-sm-4">
-                    <label name="aboutData.stack[1].abilities[$index]">{{ $index }}</label>
+                    <label name="aboutData.stack[1].abilities[$index]">#{{ $index+1 }}</label>
                     <input type="text"
                            name="aboutData.stack[1].abilities[$index]"
                            ng-model="aboutData.stack[1].abilities[$index]"
@@ -119,7 +139,7 @@
         <div class="row">
             <div ng-repeat="ability in aboutData.stack[2].abilities track by $index">
                 <div class="form-group col-sm-4">
-                    <label name="aboutData.stack[2].abilities[$index]">{{ $index }}</label>
+                    <label name="aboutData.stack[2].abilities[$index]">#{{ $index+1 }}</label>
                     <input type="text"
                            name="aboutData.stack[2].abilities[$index]"
                            ng-model="aboutData.stack[2].abilities[$index]"
