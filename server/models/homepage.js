@@ -10,11 +10,11 @@ var schema = Schema({
         },
         {
             title: String,
-            abilities: []
+            subTitle: String
         },
         {
             title: String,
-            abilities: []
+            subTitle: String
         }
     ]
 
