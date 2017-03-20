@@ -1,4 +1,51 @@
-<div class="col-md-12" ng-controller="HomepageCtrl">
+<section class="content-header">
+    <h1>About me content</h1>
+</section>
+<section class="content">
 
+    <form name="homepage_form" novalidate ng-submit="homepageForm()">
 
-</div>
+        <div ng-repeat="page in homepageData.content">
+            <div class="form-group">
+                <label name="page.title">#{{ $index+1 }} page.title</label>
+                <input type="text"
+                       name="page.title"
+                       ng-model="page.title"
+                       placeholder="#{{ $index+1 }} page.title..."
+                       class="form-control"
+                />
+            </div>
+            <div class="form-group">
+                <label name="page.subTitle">#{{ $index+1 }} page.subTitle</label>
+                <input type="text"
+                       name="page.subTitle"
+                       ng-model="page.subTitle"
+                       placeholder="#{{ $index+1 }} page.subTitle..."
+                       class="form-control"
+                />
+            </div>
+        </div>
+
+        <button type="submit"
+                class="btn btn-success btn-md pull-right"
+                ng-click="save()"
+                ng-disabled="isOriginal()"
+                ng-if="!homepageData._id"
+        >Create</button>
+
+        <button type="submit"
+                class="btn btn-primary btn-md pull-right"
+                ng-click="save()"
+                ng-disabled="isOriginal()"
+                ng-if="homepageData._id"
+        >Save</button>
+
+        <button type="button"
+                class="btn btn-warn btn-md pull-right"
+                ng-click="cancel()"
+                ng-disabled="isOriginal()"
+        >Cancel</button>
+
+    </form>
+
+</section>

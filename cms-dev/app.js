@@ -85,7 +85,9 @@ angular.module('cms').config(function($stateProvider, $urlRouterProvider) {
         views:{
             'main@':{
                 resolve: {
-
+                    homepageData: function (homepageService) {
+                        return homepageService.getData();
+                    }
                 },
                 templateUrl: 'partial/homepage/homepage.html',
                 controller: 'HomepageCtrl'

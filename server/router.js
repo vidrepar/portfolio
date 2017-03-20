@@ -13,7 +13,20 @@ module.exports = function (app) {
     // Landing page route
     app.get('/', function (req, res) {
 
-        res.render('index', {title: 'Welcome', jsSrc: 'assets/js/index.js'});
+        var Homepage = mongoose.model('Homepage');
+
+        Homepage.find(function (err, result) {
+            if (!err) {
+                res.render('index', {
+                    title: 'Welcome',
+                    jsSrc: 'assets/js/index.js',
+                    homepage: result
+                });
+            } else {
+                console.log(err);
+            }
+
+        });
 
     });
     // About GET route
