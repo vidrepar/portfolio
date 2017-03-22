@@ -59,16 +59,17 @@
   <script src="service/common.js"></script>
   <script src="partial/register/register.js"></script>
   <script src="service/auth.js"></script>
+  <script src="partial/login/login.js"></script>
   <!-- Add New Component JS Above -->
 
   <div class="wrapper">
 
-    <header class="main-header" ui-view="main-header"></header>
-    <aside class="sidebar-wrapper" ui-view="sidebar">
+    <header class="main-header" ng-if="!isViewLogin" ui-view="main-header"></header>
+    <aside ng-if="!isViewLogin" class="sidebar-wrapper" ui-view="sidebar">
 
     </aside>
 
-    <div class="content-wrapper" ui-view="main"></div>
+    <div class="content-wrapper" ng-class="{'wrapper-no-margin':isViewLogin}" ui-view="main"></div>
 
   </div>
 

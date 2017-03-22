@@ -3,7 +3,8 @@ var bodyParser = require('body-parser');
 var app = express();
 var serveIndex = require('serve-index');
 var serveStatic = require('serve-static');
-var router = require('./router');
+var router = require('./router'); // Not needed?
+var authMiddleware = require('./middlewares/auth');
 
 var PORT = process.env.PORT || 3000;
 
@@ -24,6 +25,8 @@ exports.start = function () {
     app.use('/cms-dev', serveStatic('cms-dev'));
     app.use('/cms', serveStatic('cms-dist'));
     app.use('/assets', serveIndex('assets'));
+
+    app.use(authMiddleware);
 
     app.listen(PORT, function () {
 

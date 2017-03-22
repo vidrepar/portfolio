@@ -1,6 +1,6 @@
-angular.module('cms').factory('authService',function($http) {
+angular.module('cms').factory('authService',function($http, $rootScope) {
 
-    return auth = {
+    var auth = {
 
         model:{
             user:null
@@ -14,8 +14,25 @@ angular.module('cms').factory('authService',function($http) {
                     }
                 });
 
+        },
+        loginUser:function (user, cb) {
+
+            $http.post('/api/login', user)
+                .then(function (res) {
+
+                    console.log(res.data);
+                    $rootScope.token = res.data.token;
+
+                    if ( cb ) {
+                        cb(res);
+                    }
+
+                });
+
         }
 
     };
+
+    return auth;
 
 });

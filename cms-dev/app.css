@@ -7149,6 +7149,13 @@ button.close {
   padding: 20px;
   border-radius: 3px;
 }
+.login-panel {
+  width: 400px;
+  background-color: #e5e9ee;
+  margin: auto;
+  padding: 20px;
+  border-radius: 3px;
+}
 /* Add Component LESS Above */
 /* Required for Angular UI Bootstrap */
 .nav,
@@ -7161,4 +7168,10 @@ button.close {
    causes the modal to fade in rather than slide in. */
 .content-wrapper {
   min-height: 100vh !important;
+}
+.wrapper-no-margin {
+  margin-left: 0 !important;
+}
+.content-wrapper {
+  overflow-y: scroll;
 }

@@ -21,9 +21,15 @@ exports.init = function (app) {
 
                 if ( match === true ) {
 
-                    console.log('Success');
+                    var token = {
+                        token:generateToken(30)
+                    };
 
-                    res.send(userDoc);
+                    userDoc.tokens.push(token);
+
+                    userDoc.save(function (err) {
+                        res.send(token);
+                    });
 
                 } else {
                     res.sendStatus(401);

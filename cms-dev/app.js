@@ -8,7 +8,7 @@ angular.module('cms', [
     'wu.masonry'
 ]);
 
-angular.module('cms').config(function($stateProvider, $urlRouterProvider) {
+angular.module('cms').config(function($stateProvider, $urlRouterProvider, $httpProvider) {
 
     $stateProvider.state('app', {
 
@@ -104,12 +104,48 @@ angular.module('cms').config(function($stateProvider, $urlRouterProvider) {
         }
     });
 
+    $stateProvider.state('login', {
+        url: '/login',
+        views:{
+            'main@':{
+                templateUrl: 'partial/login/login.html',
+                controller: 'LoginCtrl'
+            }
+        }
+    });
     /* Add New States Above */
     $urlRouterProvider.otherwise('/register');
+
+    $httpProvider.interceptors.push('RequestInterceptorService');
+
+});
+
+angular.module('cms').factory('RequestInterceptorService', function ($rootScope) {
+
+    return {
+        request: function ($config) {
+
+            $config.headers['Authorization'] = $rootScope.token;
+
+            return $config;
+
+        }
+    }
 
 });
 
 angular.module('cms').run(function($rootScope) {
+
+    $rootScope.$on('$stateChangeSuccess',
+        function(event, toState, toParams, fromState, fromParams){
+
+            if(toState.name === 'login' || toState.name === 'register'){
+                $rootScope.isViewLogin = true;
+            }else{
+                $rootScope.isViewLogin = false;
+            }
+
+        });
 
     $rootScope.safeApply = function(fn) {
         var phase = $rootScope.$$phase;

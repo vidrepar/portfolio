@@ -1,4 +1,4 @@
-angular.module('cms').controller('RegisterCtrl',function($scope, $state){
+angular.module('cms').controller('RegisterCtrl',function($scope, $state, authService){
 
     $scope.user = {};
 
@@ -7,11 +7,11 @@ angular.module('cms').controller('RegisterCtrl',function($scope, $state){
         if ( validateEmail($scope.user.email) ) {
 
             authService.registerUser($scope.user, function () {
-                $state.go('app.projects');
+                $state.go('login');
             });
 
         } else {
-            alert('Your email is not correctly formatted');
+            console.log('Your email is not correctly formatted');
         }
 
     };
