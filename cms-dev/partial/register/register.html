@@ -1,0 +1,26 @@
+<section class="content">
+    <div class="col-md-12">
+
+        <div class="register-panel">
+            <h3>Register</h3>
+            <label for="user.email">Email</label>
+            <input id="user.email"
+                   class="form-control"
+                   type="email"
+                   ng-model="user.email"
+            >
+            <label for="user.password">Password</label>
+            <input id="user.password"
+                   class="form-control"
+                   type="password"
+                   ng-model="user.password"
+            >
+            <br/>
+            <div class="btn btn-success"
+                 ng-click="register()"
+            >Register
+            </div>
+        </div>
+
+    </div>
+</section>

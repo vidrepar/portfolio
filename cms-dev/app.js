@@ -94,8 +94,18 @@ angular.module('cms').config(function($stateProvider, $urlRouterProvider) {
             }
         }
     });
+    $stateProvider.state('register', {
+        url: '/register',
+        views:{
+            'main@':{
+                templateUrl: 'partial/register/register.html',
+                controller: 'RegisterCtrl'
+            }
+        }
+    });
+
     /* Add New States Above */
-    $urlRouterProvider.otherwise('/projects');
+    $urlRouterProvider.otherwise('/register');
 
 });
 

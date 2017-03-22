@@ -7119,10 +7119,11 @@ button.close {
 #cover-image {
   width: 300px;
 }
-#section {
+.section {
   border: 1px solid grey;
   border-radius: 2px;
   padding: 10px;
+  margin: 10px;
 }
 #section-image {
   width: 100%;
@@ -7132,7 +7133,21 @@ button.close {
   padding: 18px;
   padding-bottom: 0px;
   position: fixed;
+  right: 0px;
   z-index: 3;
+}
+.sidebar .info-container {
+  padding: 10px;
+}
+.sidebar .info-container p {
+  color: #fff;
+}
+.register-panel {
+  width: 400px;
+  background-color: #e5e9ee;
+  margin: auto;
+  padding: 20px;
+  border-radius: 3px;
 }
 /* Add Component LESS Above */
 /* Required for Angular UI Bootstrap */
@@ -7144,3 +7159,6 @@ button.close {
 }
 /* Personal preference for BS modal.  The LESS below makes the backdrop white and
    causes the modal to fade in rather than slide in. */
+.content-wrapper {
+  min-height: 100vh !important;
+}

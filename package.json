@@ -13,8 +13,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "base64url": "^2.0.0",
+    "bcrypt": "^1.0.2",
     "body-parser": "^1.15.0",
     "connect-multiparty": "^2.0.0",
+    "crypto": "0.0.3",
     "ejs": "^2.3.4",
     "express": "^4.13.3",
     "gm": "^1.21.1",
