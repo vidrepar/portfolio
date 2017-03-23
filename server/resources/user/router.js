@@ -5,6 +5,17 @@ var base64url = require('base64url');
 
 exports.init = function (app) {
 
+    // Check login status
+    app.get('/api/login-status', function(req, res){
+
+        if ( req.user ) {
+            res.sendStatus(200);
+        } else {
+            res.sendStatus(401);
+        }
+
+    });
+
     // Login
     app.post('/api/login', function (req, res) {
 
@@ -95,7 +106,6 @@ function generateToken(size) {
     return _randomStringAsBase64Url(size);
 }
 
-// Sync
 function _randomStringAsBase64Url(size) {
     return base64url(crypto.randomBytes(size));
 }

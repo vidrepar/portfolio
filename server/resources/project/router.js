@@ -57,8 +57,6 @@ exports.init = function (app) {
 
         Project.findById(req.params.id, function (err, doc) {
 
-            console.log('req.params.id', req.params.id);
-
             if (doc) {
                 res.send(doc);
             } else {

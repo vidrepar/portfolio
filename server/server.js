@@ -10,7 +10,7 @@ var PORT = process.env.PORT || 3000;
 
 global.APP = app;
 
-// Initialization of our server
+// Server intialization
 exports.start = function () {
 
     // middlewares for processing the request
@@ -30,7 +30,7 @@ exports.start = function () {
 
     app.listen(PORT, function () {
 
-        console.log('Server running on http://localhost:' + PORT);
+        console.log('Server running on port:' + PORT);
         router(app);
 
     });

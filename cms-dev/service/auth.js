@@ -1,4 +1,4 @@
-angular.module('cms').factory('authService',function($http, $rootScope) {
+angular.module('cms').factory('authService',function($http, $rootScope, $localForage, $q) {
 
     var auth = {
 
@@ -17,17 +17,64 @@ angular.module('cms').factory('authService',function($http, $rootScope) {
         },
         loginUser:function (user, cb) {
 
-            $http.post('/api/login', user)
-                .then(function (res) {
+            var promise = $http.post('/api/login', user);
+
+                promise.then(function (res) {
 
                     console.log(res.data);
                     $rootScope.token = res.data.token;
 
-                    if ( cb ) {
-                        cb(res);
-                    }
+                    return $localForage.setItem('token', res.data.token)
+                        .then(function () {
+                            if ( cb ) {
+                                cb(res);
+                            }
+                        });
 
                 });
+
+                return promise;
+
+        },
+        loginStatus:function () {
+
+            console.log('Im in login status');
+
+            return new Promise(function (resolve, reject) {
+
+                if (!$rootScope.token) {
+
+                    $localForage.getItem('token')
+                        .then(function (token) {
+
+                            if (token) {
+
+                                $rootScope.token = token;
+
+                                $http.get('/api/login-status')
+                                    .then(function (res) {
+
+                                        resolve(res.data);
+
+                                    });
+                            } else {
+                                reject('No token');
+                            }
+
+                        });
+
+                } else {
+
+                    $http.get('/api/login-status')
+                        .then(function (res) {
+
+                            resolve(res.data);
+
+                        });
+
+                }
+
+            });
 
         }
 

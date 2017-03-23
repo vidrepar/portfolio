@@ -1,11 +1,11 @@
 angular.module('cms', [
     'ui.bootstrap',
-    'ui.utils',
     'ui.router',
     'ngAnimate',
     'ngFileUpload',
     'ui.tinymce',
-    'wu.masonry'
+    'wu.masonry',
+    'LocalForageModule'
 ]);
 
 angular.module('cms').config(function($stateProvider, $urlRouterProvider, $httpProvider) {
@@ -39,6 +39,11 @@ angular.module('cms').config(function($stateProvider, $urlRouterProvider, $httpP
                 templateUrl: 'partial/projects/projects.html',
                 controller: 'ProjectsCtrl'
             }
+        },
+        resolve:{
+            loginStatus:function (authService) {
+                return authService.loginStatus();
+            }
         }
     });
     $stateProvider.state('app.project', {
@@ -63,6 +68,11 @@ angular.module('cms').config(function($stateProvider, $urlRouterProvider, $httpP
                 templateUrl: 'partial/project/project.html',
                 controller: 'ProjectCtrl'
             }
+        },
+        resolve:{
+            loginStatus:function (authService) {
+                return authService.loginStatus();
+            }
         }
 
     });
@@ -78,6 +88,11 @@ angular.module('cms').config(function($stateProvider, $urlRouterProvider, $httpP
                 templateUrl: 'partial/about/about.html',
                 controller: 'AboutCtrl'
             }
+        },
+        resolve:{
+            loginStatus:function (authService) {
+                return authService.loginStatus();
+            }
         }
     });
     $stateProvider.state('app.homepage', {
@@ -91,6 +106,11 @@ angular.module('cms').config(function($stateProvider, $urlRouterProvider, $httpP
                 },
                 templateUrl: 'partial/homepage/homepage.html',
                 controller: 'HomepageCtrl'
+            }
+        },
+        resolve:{
+            loginStatus:function (authService) {
+                return authService.loginStatus();
             }
         }
     });
@@ -114,9 +134,29 @@ angular.module('cms').config(function($stateProvider, $urlRouterProvider, $httpP
         }
     });
     /* Add New States Above */
-    $urlRouterProvider.otherwise('/register');
+    $urlRouterProvider.otherwise('/login');
 
     $httpProvider.interceptors.push('RequestInterceptorService');
+    $httpProvider.interceptors.push(function ($q, $location) {
+
+        return {
+
+            responseError: function (responseError) {
+                console.log(responseError);
+
+                if ( responseError.status === 401 ) {
+
+                    $location.url('/login');
+
+                }
+
+                return $q.reject(responseError);
+
+            }
+
+        };
+
+    });
 
 });
 
@@ -130,7 +170,7 @@ angular.module('cms').factory('RequestInterceptorService', function ($rootScope)
             return $config;
 
         }
-    }
+    };
 
 });
 

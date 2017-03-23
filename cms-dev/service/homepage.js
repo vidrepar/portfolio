@@ -12,8 +12,6 @@ angular.module('cms').factory('homepageService',function($http) {
                     var data = res.data;
                     homepage.model.data = data;
 
-                    console.log(data);
-
                     if(cb){
                         cb(data);
                     }

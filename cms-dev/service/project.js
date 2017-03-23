@@ -11,9 +11,6 @@ angular.module('cms').factory('projectService',function($http) {
             $http.post('/api/project', data)
                 .then(function(res){
 
-                    console.log('PROJECT.JS SERVICE');
-                    console.log("res.data: ",res.data);
-
                     if(cb){
                         cb(res.data);
                     }
@@ -39,7 +36,6 @@ angular.module('cms').factory('projectService',function($http) {
 
                     var list = res.data;
                     project.model.list = list;
-                    console.log(list);
 
                     if(cb){
                         cb(list);
