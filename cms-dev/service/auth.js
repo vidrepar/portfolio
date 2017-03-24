@@ -21,7 +21,6 @@ angular.module('cms').factory('authService',function($http, $rootScope, $localFo
 
                 promise.then(function (res) {
 
-                    console.log(res.data);
                     $rootScope.token = res.data.token;
 
                     return $localForage.setItem('token', res.data.token)
@@ -38,14 +37,14 @@ angular.module('cms').factory('authService',function($http, $rootScope, $localFo
         },
         loginStatus:function () {
 
-            console.log('Im in login status');
-
             return new Promise(function (resolve, reject) {
 
                 if (!$rootScope.token) {
 
                     $localForage.getItem('token')
                         .then(function (token) {
+
+                            console.log(token);
 
                             if (token) {
 

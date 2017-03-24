@@ -3,7 +3,8 @@ var _ = require('lodash');
 
 module.exports = function (req, res, next) {
 
-    if ( _.includes(publicRoutes, req.url) ) {  next();  }
+                                                // Don't forget to return; you can't set headers after they are sent
+    if ( _.includes(publicRoutes, req.url) ) {  return next();  }
 
     var token = req.headers['authorization'];
 
@@ -19,7 +20,6 @@ module.exports = function (req, res, next) {
         }
 
     });
-
 };
 
 var publicRoutes = [ '/api/login', '/api/register' ];

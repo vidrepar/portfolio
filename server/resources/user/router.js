@@ -39,11 +39,11 @@ exports.init = function (app) {
                     userDoc.tokens.push(token);
 
                     userDoc.save(function (err) {
-                        res.send(token);
+                        return res.send(token);
                     });
 
                 } else {
-                    res.sendStatus(401);
+                    return res.sendStatus(401);
                 }
 
             });

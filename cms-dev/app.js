@@ -8,6 +8,10 @@ angular.module('cms', [
     'LocalForageModule'
 ]);
 
+angular.module('cms').config(['$qProvider', function ($qProvider) {
+    $qProvider.errorOnUnhandledRejections(false);
+}]);
+
 angular.module('cms').config(function($stateProvider, $urlRouterProvider, $httpProvider) {
 
     $stateProvider.state('app', {
@@ -137,7 +141,7 @@ angular.module('cms').config(function($stateProvider, $urlRouterProvider, $httpP
     $urlRouterProvider.otherwise('/login');
 
     $httpProvider.interceptors.push('RequestInterceptorService');
-    $httpProvider.interceptors.push(function ($q, $location) {
+    /*$httpProvider.interceptors.push(function ($q, $location) {
 
         return {
 
@@ -156,7 +160,7 @@ angular.module('cms').config(function($stateProvider, $urlRouterProvider, $httpP
 
         };
 
-    });
+    });*/
 
 });
 
