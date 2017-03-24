@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f3cdca0-b0a8-4c6e-bd26-65057652e8c2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms-dev/partial/header/header.html" afterPath="$PROJECT_DIR$/cms-dev/partial/header/header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms-dev/service/auth.js" afterPath="$PROJECT_DIR$/cms-dev/service/auth.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms-dev/app.js" afterPath="$PROJECT_DIR$/cms-dev/app.js" />
     </list>
     <ignored path="dynamic.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,11 +42,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cms-dev/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="91" column="56" lean-forward="true" selection-start-line="91" selection-start-column="56" selection-end-line="91" selection-end-column="56" />
+            <state relative-caret-position="88">
+              <caret line="143" column="4" lean-forward="false" selection-start-line="143" selection-start-column="4" selection-end-line="162" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -64,7 +62,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cms-dev/partial/header/header.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
@@ -211,10 +209,10 @@
         <option value="$PROJECT_DIR$/server/server.js" />
         <option value="$PROJECT_DIR$/server/resources/user/router.js" />
         <option value="$PROJECT_DIR$/server/middlewares/auth.js" />
-        <option value="$PROJECT_DIR$/cms-dev/app.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/cms-dev/partial/header/header.html" />
         <option value="$PROJECT_DIR$/cms-dev/service/auth.js" />
+        <option value="$PROJECT_DIR$/cms-dev/app.js" />
       </list>
     </option>
   </component>
@@ -806,12 +804,12 @@
       <workItem from="1490267386572" duration="4092000" />
       <workItem from="1490271498050" duration="27237000" />
       <workItem from="1490360128911" duration="6228000" />
-      <workItem from="1490367292774" duration="1687000" />
+      <workItem from="1490367292774" duration="1980000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115048000" />
+    <option name="totallyTimeSpent" value="115341000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1218,14 +1216,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cms-dev/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="91" column="56" lean-forward="true" selection-start-line="91" selection-start-column="56" selection-end-line="91" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -1254,6 +1244,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-dev/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="143" column="4" lean-forward="false" selection-start-line="143" selection-start-column="4" selection-end-line="162" selection-end-column="7" />
           <folding />
         </state>
       </provider>

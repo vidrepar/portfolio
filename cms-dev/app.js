@@ -141,7 +141,7 @@ angular.module('cms').config(function($stateProvider, $urlRouterProvider, $httpP
     $urlRouterProvider.otherwise('/login');
 
     $httpProvider.interceptors.push('RequestInterceptorService');
-    /*$httpProvider.interceptors.push(function ($q, $location) {
+    $httpProvider.interceptors.push(function ($q, $location) {
 
         return {
 
@@ -160,7 +160,7 @@ angular.module('cms').config(function($stateProvider, $urlRouterProvider, $httpP
 
         };
 
-    });*/
+    });
 
 });
 
