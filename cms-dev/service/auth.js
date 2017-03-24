@@ -44,8 +44,6 @@ angular.module('cms').factory('authService',function($http, $rootScope, $localFo
                     $localForage.getItem('token')
                         .then(function (token) {
 
-                            console.log(token);
-
                             if (token) {
 
                                 $rootScope.token = token;
