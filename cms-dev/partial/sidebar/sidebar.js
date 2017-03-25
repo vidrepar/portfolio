@@ -1,4 +1,5 @@
-angular.module('cms').controller('SidebarCtrl',function($scope, $state){
+angular.module('cms')
+    .controller('SidebarCtrl',function($scope, $state){
 
 	$scope.menuItems = [
 
@@ -17,4 +18,8 @@ angular.module('cms').controller('SidebarCtrl',function($scope, $state){
 
 	];
 
-});
+})
+    .directive('sidebarCollapse', function () {
+        
+    })
+;
