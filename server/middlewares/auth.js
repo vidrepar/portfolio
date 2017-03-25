@@ -3,8 +3,11 @@ var _ = require('lodash');
 
 module.exports = function (req, res, next) {
 
-                                                // Don't forget to return; you can't set headers after they are sent
-    if ( _.includes(publicRoutes, req.url) ) {  return next();  }
+    var regExp = req.url.match(/^\/(api).*(?:\/(?=$))?$/i); // TODO improve regExp to exclude '/api/login', '/api/register'
+    if ( null === regExp ||
+        regExp[0] === '/api/login' ||
+        regExp[0] === '/api/register'
+     ) { return next(); } // Don't forget to return; you can't set headers after they are sent
 
     var token = req.headers['authorization'];
 
@@ -21,5 +24,3 @@ module.exports = function (req, res, next) {
 
     });
 };
-
-var publicRoutes = [ '/api/login', '/api/register' ];

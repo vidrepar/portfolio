@@ -37,10 +37,9 @@ angular.module('cms').factory('authService',function($http, $rootScope, $localFo
         },
         loginStatus:function () {
 
-            return new Promise(function (resolve, reject) {
+            return $q(function (resolve, reject) {
 
                 if (!$rootScope.token) {
-
                     $localForage.getItem('token')
                         .then(function (token) {
 
@@ -49,13 +48,10 @@ angular.module('cms').factory('authService',function($http, $rootScope, $localFo
                                 $rootScope.token = token;
 
                                 $http.get('/api/login-status')
-                                    .then(function (res) {
-
-                                        resolve(res.data);
-
-                                    });
+                                    .then(function (res) {  resolve(res.data);  });
                             } else {
-                                reject('No token');
+                                $http.get('/api/login-status')
+                                    .then(function (res) {  reject('No token');  });
                             }
 
                         });
@@ -63,12 +59,7 @@ angular.module('cms').factory('authService',function($http, $rootScope, $localFo
                 } else {
 
                     $http.get('/api/login-status')
-                        .then(function (res) {
-
-                            resolve(res.data);
-
-                        });
-
+                        .then(function (res) {  resolve(res.data);  });
                 }
 
             });

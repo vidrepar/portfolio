@@ -146,7 +146,6 @@ angular.module('cms').config(function($stateProvider, $urlRouterProvider, $httpP
         return {
 
             responseError: function (responseError) {
-                console.log(responseError);
 
                 if ( responseError.status === 401 ) {
 
