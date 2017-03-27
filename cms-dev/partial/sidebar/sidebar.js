@@ -18,8 +18,4 @@ angular.module('cms')
 
 	];
 
-})
-    .directive('sidebarCollapse', function () {
-        
-    })
-;
+});
