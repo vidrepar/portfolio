@@ -32,12 +32,12 @@
 
   });
 
-  $('#text-about-cv .paragraph').readmore({
+  /*$('#text-about-cv .paragraph').readmore({
     speed: 75,
-    collapsedHeight: 125,
+    collapsedHeight: 117,
     moreLink: '<a href="#"><div class="btn">Read more</div></a>',
     lessLink: '<a href="#"><div class="btn">Read less</div></a>'
-  });
+  });*/
 
 
 

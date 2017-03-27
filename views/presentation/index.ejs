@@ -39,9 +39,11 @@
     <!-- TODO DISPLAY SECTIONS -->
     <% for(var i=0;i<project.sections.length;i++){ %>
 
-    <div id="section" class="col-md-12 text-align-center">
-      <h2><%= project.sections[i].title %></h2>
-      <img src="/assets/images/<%- project.sections[i].image.fileName %>">
+    <div id="section" class="row">
+      <div class="col-md-6 col-md-push-3 text-align-center">
+        <h2><%= project.sections[i].title %></h2>
+        <img src="/assets/images/<%- project.sections[i].image.fileName %>">
+      </div>
     </div>
 
     <% } %>

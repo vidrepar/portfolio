@@ -138,13 +138,25 @@ angular.module('cms').config(function($stateProvider, $urlRouterProvider, $httpP
         }
     });
     /* Add New States Above */
-    $urlRouterProvider.otherwise('/login');
+    $urlRouterProvider.otherwise('app.projects');
 
     $httpProvider.interceptors.push('RequestInterceptorService');
     $httpProvider.interceptors.push(function ($q, $location) {
 
         return {
 
+            response: function (response) {
+
+                if (
+                    response.status === 200 && $location.url() === '/login' ||
+                    response.status === 200 && $location.url() === '/register'
+                ) {
+                    $location.url('/projects');
+                }
+
+                return response;
+
+            },
             responseError: function (responseError) {
 
                 if ( responseError.status === 401 ) {
