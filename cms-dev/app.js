@@ -12,7 +12,7 @@ angular.module('cms').config(['$qProvider', function ($qProvider) {
     $qProvider.errorOnUnhandledRejections(false);
 }]);
 
-angular.module('cms').config(function($stateProvider, $urlRouterProvider, $httpProvider) {
+angular.module('cms').config(function($stateProvider, $urlRouterProvider, $httpProvider, $locationProvider) {
 
     $stateProvider.state('app', {
 
@@ -137,8 +137,9 @@ angular.module('cms').config(function($stateProvider, $urlRouterProvider, $httpP
             }
         }
     });
+
     /* Add New States Above */
-    $urlRouterProvider.otherwise('app.projects');
+    $urlRouterProvider.otherwise('projects');
 
     $httpProvider.interceptors.push('RequestInterceptorService');
     $httpProvider.interceptors.push(function ($q, $location) {
