@@ -26,8 +26,8 @@
       <file leaf-file-name="main.less" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/main.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="250" column="11" lean-forward="false" selection-start-line="250" selection-start-column="11" selection-end-line="250" selection-end-column="11" />
+            <state relative-caret-position="127">
+              <caret line="243" column="90" lean-forward="false" selection-start-line="243" selection-start-column="90" selection-end-line="243" selection-end-column="90" />
               <folding />
             </state>
           </provider>
@@ -846,12 +846,12 @@
       <workItem from="1491496868091" duration="3430000" />
       <workItem from="1491583728953" duration="12000" />
       <workItem from="1491662583896" duration="605000" />
-      <workItem from="1492237714051" duration="12535000" />
+      <workItem from="1492237714051" duration="12726000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="156326000" />
+    <option name="totallyTimeSpent" value="156517000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1292,8 +1292,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/main.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="250" column="11" lean-forward="false" selection-start-line="250" selection-start-column="11" selection-end-line="250" selection-end-column="11" />
+        <state relative-caret-position="127">
+          <caret line="243" column="90" lean-forward="false" selection-start-line="243" selection-start-column="90" selection-end-line="243" selection-end-column="90" />
           <folding />
         </state>
       </provider>
