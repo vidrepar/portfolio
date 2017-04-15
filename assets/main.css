@@ -227,7 +227,9 @@ textarea:focus {
   /* To generate the box */
   height: 200%;
   width: 100%;
-  background: linear-gradient(0deg, white 10%, white 30%, white 55%, rgba(0, 0, 0, 0));
+  background: linear-gradient(0deg, white 10%, white 30%, white 55%, transparent);
+  background: -webkit-gradient(linear, 0deg, color-stop(10%, white), color-stop(30%, white), color-stop(55%, white), color-stop(transparent));
+  /* Chrome,Safari4+ */
   display: block;
   position: relative;
   z-index: -1;
