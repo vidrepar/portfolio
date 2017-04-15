@@ -98,8 +98,8 @@
 @textareaPadding:6px;
 .Form{
   height:@formFieldHeight;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
   .RoundCornerForm !important;
 }
 
@@ -112,7 +112,7 @@
 
 //input fields white spaces...
 .col-md-4, .col-md-8{
-  padding: 0px !important;
+  padding: 0 !important;
 }
 
 /*LANDING DESIGN GUIDELINES*/
@@ -126,7 +126,7 @@
   color: @blueDark2 !important;
   h1{
     font-size: 100px;
-    margin-top: 0px;
+    margin-top: 0;
     padding-top: 30px;
   }
   h3{
@@ -148,10 +148,10 @@
   p{
     font-size: 14px;
     font-style: italic;
-    margin:20px 0px;
+    margin:20px 0;
   }
   position: relative;
-  bottom: 0px;
+  bottom: 0;
 
 }
 
@@ -218,9 +218,36 @@ textarea{
   .Button;
 }
 
+.paragraph {
+  position: relative;
+  z-index: -2;
+}
+
 .btn-more{
   .Button;
+  padding: 0 !important;
+  height: 55px;
+  position: relative;
   display: block;
+
+  span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &::before {
+    content: ''; /* To generate the box */
+    height: 200%;
+    width:100%;
+    background: linear-gradient(0deg, white 10%, white 30%, white 55%, transparent);
+    display: block;
+    position: relative;
+    z-index: -1;
+    top: -100%;
+  }
+
 }
 
 .form-control{
@@ -244,7 +271,7 @@ label{
 
 ul{
   text-transform: uppercase;
-  padding-left: 0px;
+  padding-left: 0;
 }
 
 /*FOOTER DESIGN*/
@@ -663,7 +690,7 @@ nav{
   #description h2{
     font-size: 45px;
     text-align: right;
-    margin-top: 0px;
+    margin-top: 0;
     padding-top: 50px;
     padding-right: 25px;
     word-wrap: break-word;

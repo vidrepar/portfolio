@@ -16,7 +16,7 @@
     "left": $(window).width()*0.5 - $('#arrow-nav').width()*0.5
   });
 
-  /*resizing COVER image when resizing browser*/
+  // Resizing COVER image when resizing browser
   $(window).on('resize', function(){
     $windowHeight = $(window).height();
     console.log($windowHeight);
@@ -32,12 +32,12 @@
 
   });
 
-  /*$('#text-about-cv .paragraph').readmore({
+  $('#text-about-cv .paragraph').readmore({
     speed: 75,
-    collapsedHeight: 117,
-    moreLink: '<a href="#"><div class="btn">Read more</div></a>',
-    lessLink: '<a href="#"><div class="btn">Read less</div></a>'
-  });*/
+    collapsedHeight: 113,
+    moreLink: '<a href="#"><div class="btn-more"><span>Read more</span></div></a>',
+    lessLink: '<a href="#"><div class="btn-more"><span>Read less</span></div></a>'
+  });
 
 
 
