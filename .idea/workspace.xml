@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f3cdca0-b0a8-4c6e-bd26-65057652e8c2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/about.js" afterPath="$PROJECT_DIR$/assets/js/about.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/presentation.js" afterPath="$PROJECT_DIR$/assets/js/presentation.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/main.css" afterPath="$PROJECT_DIR$/assets/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/main.less" afterPath="$PROJECT_DIR$/assets/main.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/presentation/index.ejs" afterPath="$PROJECT_DIR$/views/presentation/index.ejs" />
     </list>
     <ignored path="dynamic.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,20 +23,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.less" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.less" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/main.less">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="231">
-              <caret line="243" column="70" lean-forward="false" selection-start-line="243" selection-start-column="70" selection-end-line="243" selection-end-column="70" />
+              <caret line="243" column="89" lean-forward="false" selection-start-line="243" selection-start-column="89" selection-end-line="243" selection-end-column="89" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="about.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="about.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/about.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
+            <state relative-caret-position="433">
               <caret line="36" column="24" lean-forward="false" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
               <folding />
             </state>
@@ -226,8 +222,8 @@
         <option value="$PROJECT_DIR$/cms-dev/app.js" />
         <option value="$PROJECT_DIR$/views/presentation/index.ejs" />
         <option value="$PROJECT_DIR$/assets/js/presentation.js" />
-        <option value="$PROJECT_DIR$/assets/main.less" />
         <option value="$PROJECT_DIR$/assets/js/about.js" />
+        <option value="$PROJECT_DIR$/assets/main.less" />
       </list>
     </option>
   </component>
@@ -850,12 +846,12 @@
       <workItem from="1491496868091" duration="3430000" />
       <workItem from="1491583728953" duration="12000" />
       <workItem from="1491662583896" duration="605000" />
-      <workItem from="1492237714051" duration="10914000" />
+      <workItem from="1492237714051" duration="11410000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="154705000" />
+    <option name="totallyTimeSpent" value="155201000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1286,18 +1282,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/main.less">
+    <entry file="file://$PROJECT_DIR$/assets/js/about.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="243" column="70" lean-forward="false" selection-start-line="243" selection-start-column="70" selection-end-line="243" selection-end-column="70" />
+        <state relative-caret-position="433">
+          <caret line="36" column="24" lean-forward="false" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/about.js">
+    <entry file="file://$PROJECT_DIR$/assets/main.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="24" lean-forward="false" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
+        <state relative-caret-position="231">
+          <caret line="243" column="89" lean-forward="false" selection-start-line="243" selection-start-column="89" selection-end-line="243" selection-end-column="89" />
           <folding />
         </state>
       </provider>
